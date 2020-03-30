@@ -117,7 +117,7 @@
 
     <section class="plans">
       <div class="plans__wrapper">
-        <h3 class="plans__title">Мои планы:</h3>
+        <h2 class="plans__title">Мои планы:</h2>
         <ul class="plans__list">
           <li class="plans__item">
             <p class="planes__title">
@@ -137,6 +137,65 @@
           </li>
         </ul>
       </div>
+    </section>
+    <section class="steps">
+      <div class="steps__wrapper slider">
+        <div class="steps__top">
+          <h2 class="steps__title">Добавить план:</h2>
+          <div class="slider__toggles">
+            <button class="slider__toggle" type="button">1</button>
+            <button class="slider__toggle" type="button">2</button>
+            <button class="slider__toggle" type="button">3</button>
+          </div>
+        </div><!--/.steps__top-->
+        <ul class="steps-list slider-list">
+
+          <li class="steps__item slider__item">
+            <div class="slider__item-header">
+              <h3 class="slider__item-title">Шаг 1. Даты пребывания</h3>
+            </div>
+            <p class="slider__text">
+              Укажите предпочтительное количество попутчиков,
+                которых вы хотели бы позвать в поездку и ее предполагаемую длительность.
+            </p>
+            <div class="slider__quantity-people quantity">
+              <div class="quantity__label">
+                <span>Ищу попутчиков:</span>
+                <span class="quantity__people">чел.</span>
+              </div>
+              <div class="quantity__block">
+                <button class="quantity__btn-neg" type="button">-</button>
+                <input type="number" class="slider__numb">
+                <button class="quantity__btn-pos" type="button">+</button>
+              </div>
+            </div><!--/.slider__quantity-people-->
+
+            <div class="slider__duration-day duration">
+              <div class="duration__label">
+                <span>Длительность:</span>
+                <span class="duration__day">дн.</span>
+              </div>
+              <div class="duration__block">
+                <button class="duration__btn-neg" type="button">-</button>
+                <input type="number" class="slider__numb">
+                <button class="duration__btn-pos" type="button">+</button>
+              </div>
+            </div><!--/.slider__duration-day-->
+            <div class="slider__checkbox">
+              <label class="slider__check-label">
+                <input type="checkbox" class="visually-hidden slider__check-input">
+                <span class="slider__check-name">Можно с детьми</span>
+              </label>
+            </div>
+            
+          </li>
+
+          <li class="steps__item slider__item"></li>
+
+          <li class="steps__item slider__item"></li>
+
+        </ul>
+      </div><!--/.slider-->
     </section>
   </main>
   <footer class="footer">
