@@ -48,9 +48,72 @@
         </ul><!--/.social-list-->
       </div>
     </nav>
-    <h1 class="header__title page-title">Направления</h1>
   </header>
-  <main>
+  <main class="main">
+
+    <div class="main__header">
+      <div class="main__header-wrapper">
+        <h1 class="main__header-title page-title">Направления</h1>
+      </div>
+    </div>
+
+    <section class="profile">
+      <div class="profile__wrapper">
+        <h2 class="visually-hidden">Мой профиль</h2>
+        <form action="https://echo.htmlacademy.ru" method="GET" class="profile__form">
+          <div class="profile__pic-lev">
+            <div class="profile__level">
+              <img src="https://via.placeholder.com/100x100">
+            </div>
+            <div class="profile__photo">
+              <img src="https://via.placeholder.com/100x100">
+            </div>
+          </div><!--/.profile__pic-lev-->
+
+          <div class="profile__upload">
+            <label for="image" class="profile__label">
+              <input type="file" id="image" class="visually-hidden" name="profile-photo" value="Сменить фото" aria-label="загрузить новое фото">
+              <span class="button profile__change-pic">Сменить фото</span>
+            </label>
+          </div>
+
+          <fieldset class="profile__tags tags">
+            <legend class="tags__legend">Тэги</legend>
+            <textarea name="tags" cols="30" rows="10">#бургер #бар #футбол #концерт #крафт</textarea>
+          </fieldset>
+
+          <fieldset class="profile__transport transport">
+            <legend class="transport__legends">Транспорт</legend>
+            <div class="transport__group">
+              <label class="transport__check-label">
+                <input type="checkbox" class="visually-hidden transport__check-input">
+                <span class="transport__check-name">Авиаперелёты</span>
+              </label>
+            </div>
+            <div class="transport__group">
+              <label class="transport__check-label">
+                <input type="checkbox" class="visually-hidden transport__check-input">
+                <span class="transport__check-name">Автотранспортом</span>
+              </label>
+            </div>
+            <div class="transport__group">
+              <label class="transport__check-label">
+                <input type="checkbox" class="visually-hidden transport__check-input">
+                <span class="transport__check-name">Велосипедом</span>
+              </label>
+            </div>
+            <div class="transport__group">
+              <label class="transport__check-label">
+                <input type="checkbox" class="visually-hidden transport__check-input">
+                <span class="transport__check-name">Пешком</span>
+              </label>
+            </div>
+          </fieldset>
+          </fieldset>
+
+        </form><!--/.profile__form-->
+      </div><!--/.profile__wrapper-->
+    </section><!--/.profile-->
 
   </main>
   <footer class="footer">
