@@ -51,6 +51,151 @@
     <h1 class="header__title page-title">Попутчики</h1>
   </header>
   <main>
+    <div class="countries-filter">
+      <div class="countries-filter__wrapper">
+        <div class="countries-filter__preview">
+          <h3 class="countries-filter__title">Фильтрация по странам</h3>
+          <div class="countries-filter__buttons">
+            <button class="countries-filter__btn countries-filter__btn--open" type="button">Открыть фильтр по странам</button>
+            <button class="countries-filter__btn countries-filter__btn--close" type="button">Закрыть фильтр по странам</button>
+          </div><!--/.countries-filter__buttons-->
+        </div><!--/.countries-filter__preview-->
+
+        <div class="countries-filter__review">
+          <ul class="countries-filter__continents continents">
+            <li class="continents__item">
+              <a href="#" class="continents__link continents__link--active">Европа</a>
+            </li>
+            <li class="continents__item">
+              <a href="#" class="continents__link">Азия</a>
+            </li>
+            <li class="continents__item">
+              <a href="#" class="continents__link">Америка</a>
+            </li>
+            <li class="continents__item">
+              <a href="#" class="continents__link">Острова</a>
+            </li>
+          </ul><!--/.continents-->
+
+          <ul class="countries-filter__alfabet alfabet">
+            <li class="alfabet__item">
+              <a href="#" class="alfabet__link alfabet__link--active">A</a>
+            </li>
+            <li class="alfabet__item">
+              <a href="#" class="alfabet__link">Б</a>
+            </li>
+            <li class="alfabet__item">
+              <a href="#" class="alfabet__link">В</a>
+            </li>
+            <li class="alfabet__item">
+              <a href="#" class="alfabet__link">Г</a>
+            </li>
+            <li class="alfabet__item">
+              <a href="#" class="alfabet__link">Д</a>
+            </li>
+            <li class="alfabet__item">
+              <a href="#" class="alfabet__link">Е</a>
+            </li>
+            <li class="alfabet__item">
+              <a href="#" class="alfabet__link">З</a>
+            </li>
+            <li class="alfabet__item">
+              <a href="#" class="alfabet__link">И</a>
+            </li>
+            <li class="alfabet__item">
+              <a href="#" class="alfabet__link">К</a>
+            </li>
+            <li class="alfabet__item">
+              <a href="#" class="alfabet__link">Л</a>
+            </li>
+            <li class="alfabet__item">
+              <a href="#" class="alfabet__link">М</a>
+            </li>
+            <li class="alfabet__item">
+              <a href="#" class="alfabet__link">Н</a>
+            </li>
+            <li class="alfabet__item">
+              <a href="#" class="alfabet__link">О</a>
+            </li>
+            <li class="alfabet__item">
+              <a href="#" class="alfabet__link">П</a>
+            </li>
+            <li class="alfabet__item">
+              <a href="#" class="alfabet__link">Р</a>
+            </li>
+            <li class="alfabet__item">
+              <a href="#" class="alfabet__link">С</a>
+            </li>
+            <li class="alfabet__item">
+              <a href="#" class="alfabet__link">Т</a>
+            </li>
+            <li class="alfabet__item">
+              <a href="#" class="alfabet__link">У</a>
+            </li>
+            <li class="alfabet__item">
+              <a href="#" class="alfabet__link">Ф</a>
+            </li>
+            <li class="alfabet__item">
+              <a href="#" class="alfabet__link">Х</a>
+            </li>
+            <li class="alfabet__item">
+              <a href="#" class="alfabet__link">Ч</a>
+            </li>
+            <li class="alfabet__item">
+              <a href="#" class="alfabet__link">Ш</a>
+            </li>
+            <li class="alfabet__item">
+              <a href="#" class="alfabet__link">Э</a>
+            </li>
+            <li class="alfabet__item">
+              <a href="#" class="alfabet__link">Ю</a>
+            </li>
+            <li class="alfabet__item">
+              <a href="#" class="alfabet__link">Я</a>
+            </li>
+          </ul><!--/.alfabet-->
+
+          <ul class="countries-fiter__countries countries">
+            <li class="countries__item">
+              <a href="#" class="countries__link">Австралия</a>
+            </li>
+            <li class="countries__item">
+              <a href="#" class="countries__link">Австрия</a>
+            </li>
+            <li class="countries__item">
+              <a href="#" class="countries__link">Азербайджан</a>
+            </li>
+            <li class="countries__item">
+              <a href="#" class="countries__link">Албания</a>
+            </li>
+            <li class="countries__item">
+              <a href="#" class="countries__link">Алжир</a>
+            </li>
+            <li class="countries__item">
+              <a href="#" class="countries__link">Ангола</a>
+            </li>
+            <li class="countries__item">
+              <a href="#" class="countries__link">Андорра</a>
+            </li>
+            <li class="countries__item">
+              <a href="#" class="countries__link">Антигуа и Барбуда</a>
+            </li>
+            <li class="countries__item">
+              <a href="#" class="countries__link">Аргентина</a>
+            </li>
+            <li class="countries__item">
+              <a href="#" class="countries__link">Армения</a>
+            </li>
+            <li class="countries__item">
+              <a href="#" class="countries__link">Афганистан</a>
+            </li>
+          </ul>
+
+          <button class="countries-filter__collapse" type="button">Свернуть</button>
+
+        </div><!--/.countries-filter__review-->
+      </div><!--/.countries-filter__wrapper-->
+    </div><!--/.countries-filter-->
     <div class="travelmates">
       <div class="travelmates__wrapper">
         <ul class="travelmates__list">
@@ -108,6 +253,7 @@
             </div>
             <a href="#" class="travelmates__btn button">Позвать!</a>
           </li><!--/.travelmates__item-->
+
           <li class="travelmates__item">
             <div class="travelmates__main-info">
               <a href="#" class="travelmates__photo">
@@ -157,6 +303,7 @@
             </div>
             <a href="#" class="travelmates__btn button">Позвать!</a>
           </li><!--/.travelmates__item-->
+
           <li class="travelmates__item">
             <div class="travelmates__main-info">
               <a href="#" class="travelmates__photo">
@@ -209,6 +356,7 @@
             </div>
             <a href="#" class="travelmates__btn button">Позвать!</a>
           </li><!--/.travelmates__item-->
+
           <li class="travelmates__item">
             <div class="travelmates__main-info">
               <a href="#" class="travelmates__photo">
@@ -261,6 +409,7 @@
             </div>
             <a href="#" class="travelmates__btn button">Позвать!</a>
           </li><!--/.travelmates__item-->
+
         </ul><!--/.travelmates__list-->
           <a href="#" class="travelmates__show-more">Показать ещё</a>
           <div class="travelmates__arrows">
@@ -270,6 +419,7 @@
       </div><!--/.travelmates__wrapper-->
     </div><!--/.travelmates-->
   </main>
+
   <footer class="footer">
     <div class="footer__wrapper">
       <div class="footer__social social">
