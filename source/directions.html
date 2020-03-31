@@ -48,10 +48,155 @@
         </ul><!--/.social-list-->
       </div>
     </nav>
-    <h1 class="header__title page-title">Направления</h1>
   </header>
-  <main>
+  <main class="main">
 
+    <div class="main__header">
+      <div class="main__header-wrapper">
+        <h1 class="main__header-title page-title">Направления</h1>
+      </div>
+    </div>
+
+    <section class="profile">
+      <div class="profile__wrapper">
+        <h2 class="visually-hidden">Мой профиль</h2>
+        <form action="https://echo.htmlacademy.ru" method="GET" class="profile__form">
+          <div class="profile__pic-lev">
+            <div class="profile__level">
+              <img src="https://via.placeholder.com/100x100">
+            </div>
+            <div class="profile__photo">
+              <img src="https://via.placeholder.com/100x100">
+            </div>
+          </div><!--/.profile__pic-lev-->
+
+          <div class="profile__upload">
+            <label for="image" class="profile__label">
+              <input type="file" id="image" class="visually-hidden" name="profile-photo" value="Сменить фото" aria-label="загрузить новое фото">
+              <span class="button profile__change-pic">Сменить фото</span>
+            </label>
+          </div>
+
+          <fieldset class="profile__tags tags">
+            <legend class="tags__legend">Тэги</legend>
+            <textarea name="tags" cols="30" rows="10">#бургер #бар #футбол #концерт #крафт</textarea>
+          </fieldset>
+
+          <fieldset class="profile__transport transport">
+            <legend class="transport__legends">Транспорт</legend>
+            <div class="transport__group">
+              <label class="transport__check-label">
+                <input type="checkbox" class="visually-hidden transport__check-input">
+                <span class="transport__check-name">Авиаперелёты</span>
+              </label>
+            </div>
+            <div class="transport__group">
+              <label class="transport__check-label">
+                <input type="checkbox" class="visually-hidden transport__check-input">
+                <span class="transport__check-name">Автотранспортом</span>
+              </label>
+            </div>
+            <div class="transport__group">
+              <label class="transport__check-label">
+                <input type="checkbox" class="visually-hidden transport__check-input">
+                <span class="transport__check-name">Велосипедом</span>
+              </label>
+            </div>
+            <div class="transport__group">
+              <label class="transport__check-label">
+                <input type="checkbox" class="visually-hidden transport__check-input">
+                <span class="transport__check-name">Пешком</span>
+              </label>
+            </div>
+          </fieldset>
+          </fieldset>
+
+        </form><!--/.profile__form-->
+      </div><!--/.profile__wrapper-->
+    </section><!--/.profile-->
+
+    <section class="plans">
+      <div class="plans__wrapper">
+        <h2 class="plans__title">Мои планы:</h2>
+        <ul class="plans__list">
+          <li class="plans__item">
+            <p class="planes__title">
+              <span>1.</span>Франция, Италия
+            </p>
+            <p class="plans__folow-travels">3 Попутчика</p>
+            <p class="plans__date">26 Мар - 29 Мар</p>
+            <a href="#" class="plans__change">Изменить</a>
+          </li>
+          <li class="plans__item">
+            <p class="planes__title">
+              <span>2.</span>Таиланд, Индонезия
+            </p>
+            <p class="plans__folow-travels">1 Попутчик</p>
+            <p class="plans__date">1 Июл - 15 Июл</p>
+            <a href="#" class="plans__change">Изменить</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="steps">
+      <div class="steps__wrapper slider">
+        <div class="steps__top">
+          <h2 class="steps__title">Добавить план:</h2>
+          <div class="slider__toggles">
+            <button class="slider__toggle" type="button">1</button>
+            <button class="slider__toggle" type="button">2</button>
+            <button class="slider__toggle" type="button">3</button>
+          </div>
+        </div><!--/.steps__top-->
+        <ul class="steps-list slider-list">
+
+          <li class="steps__item slider__item">
+            <div class="slider__item-header">
+              <h3 class="slider__item-title">Шаг 1. Даты пребывания</h3>
+            </div>
+            <p class="slider__text">
+              Укажите предпочтительное количество попутчиков,
+                которых вы хотели бы позвать в поездку и ее предполагаемую длительность.
+            </p>
+            <div class="slider__quantity-people quantity">
+              <div class="quantity__label">
+                <span>Ищу попутчиков:</span>
+                <span class="quantity__people">чел.</span>
+              </div>
+              <div class="quantity__block">
+                <button class="quantity__btn-neg" type="button">-</button>
+                <input type="number" class="slider__numb">
+                <button class="quantity__btn-pos" type="button">+</button>
+              </div>
+            </div><!--/.slider__quantity-people-->
+
+            <div class="slider__duration-day duration">
+              <div class="duration__label">
+                <span>Длительность:</span>
+                <span class="duration__day">дн.</span>
+              </div>
+              <div class="duration__block">
+                <button class="duration__btn-neg" type="button">-</button>
+                <input type="number" class="slider__numb">
+                <button class="duration__btn-pos" type="button">+</button>
+              </div>
+            </div><!--/.slider__duration-day-->
+            <div class="slider__checkbox">
+              <label class="slider__check-label">
+                <input type="checkbox" class="visually-hidden slider__check-input">
+                <span class="slider__check-name">Можно с детьми</span>
+              </label>
+            </div>
+            
+          </li>
+
+          <li class="steps__item slider__item"></li>
+
+          <li class="steps__item slider__item"></li>
+
+        </ul>
+      </div><!--/.slider-->
+    </section>
   </main>
   <footer class="footer">
     <div class="footer__wrapper">
