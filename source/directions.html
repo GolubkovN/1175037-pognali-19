@@ -130,59 +130,195 @@
           </li>
         </ul>
       </div>
-    </section>
+    </section><!--/.plans-->
     <section class="steps">
-      <div class="steps__wrapper slider">
+      <div class="steps__wrapper">
         <div class="steps__top">
           <h2 class="steps__title">Добавить план:</h2>
-          <div class="slider__toggles">
-            <button class="slider__toggle" type="button">1</button>
-            <button class="slider__toggle" type="button">2</button>
-            <button class="slider__toggle" type="button">3</button>
+          <div class="steps__toggles">
+            <button class="steps__toggle" type="button">1</button>
+            <button class="steps__toggle" type="button">2</button>
+            <button class="steps__toggle" type="button">3</button>
           </div>
         </div><!--/.steps__top-->
-        <ul class="steps-list slider-list">
-          <li class="steps__item slider__item">
-            <div class="slider__item-header">
-              <h3 class="slider__item-title">Шаг 1. Даты пребывания</h3>
+        <form action="http://echo.htmlacademy.ru" method="POST" class="steps-list steps-list">
+          <div class="steps__item" id="step-1">
+            <div class="steps__item-header">
+              <h3 class="steps__item-title">Шаг 1. Даты пребывания</h3>
             </div>
-            <p class="slider__text">
+            <p class="steps__text">
               Укажите предпочтительное количество попутчиков,
                 которых вы хотели бы позвать в поездку и ее предполагаемую длительность.
             </p>
-            <div class="slider__quantity-people quantity">
+            <div class="steps__quantity-people quantity">
               <div class="quantity__label">
                 <span>Ищу попутчиков:</span>
                 <span class="quantity__people">чел.</span>
               </div>
               <div class="quantity__block">
                 <button class="quantity__btn-neg" type="button">-</button>
-                <input type="number" class="slider__numb">
+                <input type="number" class="steps__numb">
                 <button class="quantity__btn-pos" type="button">+</button>
               </div>
-            </div><!--/.slider__quantity-people-->
-            <div class="slider__duration-day duration">
+            </div><!--/.steps__quantity-people-->
+            <div class="steps__duration-day duration">
               <div class="duration__label">
                 <span>Длительность:</span>
                 <span class="duration__day">дн.</span>
               </div>
               <div class="duration__block">
                 <button class="duration__btn-neg" type="button">-</button>
-                <input type="number" class="slider__numb">
+                <input type="number" class="steps__numb">
                 <button class="duration__btn-pos" type="button">+</button>
               </div>
-            </div><!--/.slider__duration-day-->
-            <div class="slider__checkbox">
-              <label class="slider__check-label">
-                <input type="checkbox" class="visually-hidden slider__check-input">
-                <span class="slider__check-name">Можно с детьми</span>
+            </div><!--/.steps__duration-day-->
+            <div class="steps__checkbox">
+              <label class="steps__check-label">
+                <input type="checkbox" class="visually-hidden steps__check-input">
+                <span class="steps__check-name">Можно с детьми</span>
               </label>
             </div>
-          </li>
-          <li class="steps__item slider__item"></li>
-          <li class="steps__item slider__item"></li>
-        </ul>
-      </div><!--/.slider-->
+            <div class="steps__calendar calendar">
+              <div class="calendar__top">
+                <button class="calendar__btn-prev" type="button">назад</button>
+                <span class="calendar__month">Мар 2020</span>
+                <button class="calendar__btn-next" type="button">вперёд</button>
+              </div>
+              <ul class="calendar__week-list">
+                <li class="calendar__week-item">Пн</li>
+                <li class="calendar__week-item">Вт</li>
+                <li class="calendar__week-item">Ср</li>
+                <li class="calendar__week-item">Чт</li>
+                <li class="calendar__week-item">Пт</li>
+                <li class="calendar__week-item">Сб</li>
+                <li class="calendar__week-item">Вс</li>
+              </ul>
+              <ul class="calendar__days-list">
+                <li class="calendar__days-item calendar__days-item--disabled">23</li>
+                <li class="calendar__days-item calendar__days-item--disabled">24</li>
+                <li class="calendar__days-item calendar__days-item--disabled">25</li>
+                <li class="calendar__days-item calendar__days-item--disabled">26</li>
+                <li class="calendar__days-item calendar__days-item--disabled">27</li>
+                <li class="calendar__days-item calendar__days-item--disabled">28</li>
+                <li class="calendar__days-item calendar__days-item--disabled">1</li>
+                <li class="calendar__days-item calendar__days-item--disabled">2</li>
+                <li class="calendar__days-item calendar__days-item--disabled">3</li>
+                <li class="calendar__days-item calendar__days-item--disabled">4</li>
+                <li class="calendar__days-item calendar__days-item--disabled">5</li>
+                <li class="calendar__days-item calendar__days-item--disabled">6</li>
+                <li class="calendar__days-item calendar__days-item--disabled">7</li>
+                <li class="calendar__days-item calendar__days-item--disabled">8</li>
+                <li class="calendar__days-item calendar__days-item--disabled">9</li>
+                <li class="calendar__days-item calendar__days-item--disabled">10</li>
+                <li class="calendar__days-item calendar__days-item--disabled">11</li>
+                <li class="calendar__days-item calendar__days-item--disabled">12</li>
+                <li class="calendar__days-item calendar__days-item--disabled">13</li>
+                <li class="calendar__days-item calendar__days-item--disabled">14</li>
+                <li class="calendar__days-item calendar__days-item--disabled">15</li>
+                <li class="calendar__days-item calendar__days-item--disabled">16</li>
+                <li class="calendar__days-item calendar__days-item--disabled">17</li>
+                <li class="calendar__days-item calendar__days-item--disabled">18</li>
+                <li class="calendar__days-item calendar__days-item--disabled">19</li>
+                <li class="calendar__days-item calendar__days-item--disabled">20</li>
+                <li class="calendar__days-item calendar__days-item--disabled">21</li>
+                <li class="calendar__days-item calendar__days-item--disabled">22</li>
+                <li class="calendar__days-item calendar__days-item--disabled">23</li>
+                <li class="calendar__days-item calendar__days-item--disabled">24</li>
+                <li class="calendar__days-item calendar__days-item--disabled">25</li>
+                <li class="calendar__days-item calendar__days-item--check">26</li>
+                <li class="calendar__days-item calendar__days-item--check">27</li>
+                <li class="calendar__days-item calendar__days-item--check">28</li>
+                <li class="calendar__days-item calendar__days-item--used">29</li>
+                <li class="calendar__days-item calendar__days-item--used">30</li>
+                <li class="calendar__days-item calendar__days-item--used">31</li>
+                <li class="calendar__days-item calendar__days-item--used">1</li>
+                <li class="calendar__days-item calendar__days-item--used">2</li>
+                <li class="calendar__days-item calendar__days-item--used">3</li>
+                <li class="calendar__days-item calendar__days-item--used">4</li>
+                <li class="calendar__days-item calendar__days-item--used">5</li>
+              </ul>
+            </div><!--/.calendar-->
+            <a href="#step-2" class="steps__btn button">Следующий шаг</a>
+          </div><!--/.steps__item-->
+          <div class="steps__item" id="step-2">
+            <div class="steps__item-header">
+              <h3 class="steps__item-title">Шаг 2. Маршрут</h3>
+            </div>
+            <p class="steps__text">
+              Укажите страны, которые вы хотели по посетить.
+              Это может быть одна или сразу несколько.
+            </p>
+            <div class="steps__countries">
+              <ul class="steps__selects-list">
+                <li class="steps__select">
+                  <span class="steps__countrie">Босния и Герцоговина</span>
+                  <button class="steps__select-btn" type="button">^</button>
+                </li>
+                <li class="steps__select">
+                  <span class="steps__countrie">Чехия</span>
+                  <button class="steps__select-btn" type="button">^</button>
+                </li>
+                <li class="steps__select">
+                  <span class="steps__countrie">Выбрать страну</span>
+                  <button class="steps__select-btn" type="button">^</button>
+                </li>
+                <li class="steps__select">
+                  <span class="steps__countrie">Выбрать страну</span>
+                  <button class="steps__select-btn" type="button">+</button>
+                </li>
+              </ul>
+              <ul class="steps__flags">
+                <li class="steps__flags-item">
+                  <span class="steps__flag">Босния и герцоговина</span>
+                  <button class="steps__detate-countrie" type="button">удалить страну</button>
+                </li>
+                <li class="steps__flags-item">
+                  <span class="steps__flag">Чехия</span>
+                  <button class="steps__delate-countrie" type="button">удалить страну</button>
+                </li>
+                <li class="steps__flags-item">
+                  <button class="steps__delate-countrie" type="button">удалить страну</button>
+                </li>
+              </ul>
+            </div>
+            <div class="steps__btn-row">
+              <a href="#step-3" class="steps__btn button">Следующий шаг</a>
+              <a href="#step-1" class="steps__back">На шаг назад</a>
+            </div>
+          </div><!--/.steps__item-->
+          <div class="steps__item" id="step-3">
+            <div class="steps__item-header">
+              <h3 class="steps__item-title">Шаг 3. Развлечения</h3>
+            </div>
+            <p class="steps__text">
+              Наконец, расскажите о своих планах времяпровождения.
+              Можно писать в свободной форме и ставить тэги.
+            </p>
+            <ul class="steps__entertament entertament">
+              <li class="entertament__item">
+                <div class="entertament__countrie">
+                  <span class="entertament__countrie-name">Босния и Герцоговина</span>
+                  <span class="entertament__countrie-flag"></span>
+                </div>
+                <textarea  cols="30" rows="10" class="entertament__plan" aria-label="план действий"></textarea>
+              </li>
+              <li class="entertament__item">
+                <div class="entertament__countrie">
+                  <span class="entertament__countrie-name">Чехия</span>
+                  <span class="entertament__countrie-flag"></span>
+                </div>
+                <textarea  cols="30" rows="10" class="entertament__plan" aria-label="план действий">
+                  Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.
+                </textarea>
+              </li>
+            </ul>
+            <div class="steps__btn-row">
+              <button type="submit" class="steps__btn button">Отправить</button>
+              <a href="#step-2" class="steps__back">На шаг назад</a>
+            </div>
+          </div><!--/.steps__item-->
+        </form><!--/.steps__list-->
+      </div><!--/.steps-->
     </section>
   </main>
   <footer class="footer">
