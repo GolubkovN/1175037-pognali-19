@@ -1,0 +1,8 @@
+.social-list {
+  @include list;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 112px;
+  margin: 0 auto;
+}

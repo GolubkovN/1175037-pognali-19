@@ -1,0 +1,45 @@
+.user-menu {
+  @include list;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 35px;
+}
+
+.user-menu__item {
+  &:first-child {
+    margin-bottom: 45px;
+  }
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.user-menu__link {
+  font-family: "bloggersans-bold", "Arial", sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #161c35;
+  display: flex;
+  align-items: center;
+  &--login {
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    background: #ffd74b;
+    display: flex;
+    justify-content: center;
+    padding: 16px 30px;
+    border-radius: 30px;
+  }
+}
+
+.user-menu__icon {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: #121936;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 16px;
+}
