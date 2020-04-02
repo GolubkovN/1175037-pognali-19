@@ -1,0 +1,16 @@
+.review__text {
+  font-family: "bloggersans-light", "Arial", sans-serif;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 1.38;
+  @include text;
+  margin-bottom: 25px;
+}
+
+.review__author {
+  font-family: "bloggersans-bold", "Arial", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  color: #ffffff;
+  line-height: 1.38;
+}

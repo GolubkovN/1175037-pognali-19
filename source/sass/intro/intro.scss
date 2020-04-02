@@ -1,0 +1,43 @@
+.intro {
+  background-color: #161c36;
+}
+
+.intro__wrapper {
+  width: 320px;
+  padding: 0 25px;
+  margin: 0 auto;
+}
+
+.intro__tagline {
+  font-family: "bloggersans-bold", "Arial", sans-serif;
+  font-size: 36px;
+  line-height: 1.11;
+  color: #ffffff;
+  text-align: center;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 50px 15px 0;
+  margin-bottom: 250px;
+}
+
+.intro__list {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 30px;
+}
+
+.intro__item {
+  flex-basis: 45px;
+  margin: 0;
+  &:last-child {
+    flex-basis: 180px;
+  }
+}
+
+.user-menu__intro-icon {
+  margin: 0;
+  background: #ffbd30;
+  &--phone {
+    background: #ff8d30;
+  }
+}
