@@ -1,5 +1,7 @@
 .intro {
   background-color: #161c36;
+  padding-bottom: 35px;
+
 }
 
 .intro__wrapper {
@@ -40,4 +42,8 @@
   &--phone {
     background: #ff8d30;
   }
+}
+
+.intro-features {
+  width: 100%;
 }
