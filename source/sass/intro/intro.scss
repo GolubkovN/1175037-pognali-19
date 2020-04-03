@@ -1,7 +1,7 @@
 .intro {
   background-color: #161c36;
   padding-bottom: 35px;
-
+  margin-bottom: 60px;
 }
 
 .intro__wrapper {
@@ -11,7 +11,7 @@
 }
 
 .intro__tagline {
-  font-family: "bloggersans-bold", "Arial", sans-serif;
+  font-family: $titles-font;
   font-size: 36px;
   line-height: 1.11;
   color: #ffffff;
