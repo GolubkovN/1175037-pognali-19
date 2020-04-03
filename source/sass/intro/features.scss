@@ -38,7 +38,7 @@
 .features__text {
   @include text;
   width: 152px;
-  font-family: "bloggersans-bold", "Arial", sans-serif;
+  font-family: $titles-font;
   font-size: 18px;
   color: #161c35;
 }
