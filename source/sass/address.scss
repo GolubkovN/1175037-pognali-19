@@ -1,0 +1,27 @@
+.address {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.address__marker {
+  position: relative;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: #121936;
+  margin-right: 16px;
+}
+
+.address__text {
+  font-family: $titles-font;
+  font-style: normal;
+  text-transform: uppercase;
+  color: #192144;
+  font-size: 16px;
+  line-height: 1.38;
+}
+
+.section__btn--border {
+  border: 2px solid #121936;
+}
