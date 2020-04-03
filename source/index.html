@@ -23,18 +23,18 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
-              <a href="about.html" class="site-list__link">О сервисе</a>
+              <a href="#About" class="site-list__link">О сервисе</a>
             </li>
             <li class="site-list__item">
-              <a href="direction.html" class="site-list__link">Направления</a>
+              <a href="directions.html" class="site-list__link">Направления</a>
             </li>
             <li class="site-list__item">
-              <a href="#" class="site-list__link">Попутчики</a>
+              <a href="travelers.html" class="site-list__link">Попутчики</a>
             </li>
           </ul><!--/.site-list-->
           <ul class="main-nav__list user-menu">
             <li class="user-menu__item user-menu__item--login">
-              <a href="form.html" class="user-menu__link user-menu__link--login user-menu__link--login-menu" aria-label="для авторизации нажмите сюда">Авторизоваться</a>
+              <a href="form.html" class="button user-menu__link user-menu__link--login user-menu__link--login-menu" aria-label="для авторизации нажмите сюда">Авторизоваться</a>
             </li>
             <li class="user-menu__item">
               <a href="tel:88005558628" class="user-menu__link user-menu__link">
@@ -111,7 +111,7 @@
             </a>
           </li>
           <li class="intro__item user-menu__item">
-            <a href="form.html" class="user-menu__link user-menu__link--login">Авторизоваться</a>
+            <a href="form.html" class="button user-menu__link user-menu__link--login">Авторизоваться</a>
           </li>
         </ul><!--/.user-menu-->
         <blockquote class="intro__review review">
@@ -144,75 +144,83 @@
         </ul>
       </div>
     </section><!--/.intro-->
-    <section class="about-service">
-      <h2 class="about-service__title">О сервисе</h2>
-      <p class="about-service__text">
+    <section id="About" class="section">
+     <div class="section__wrapper">
+      <h2 class="section__title">О сервисе</h2>
+      <p class="section__text">
         Любое путешествие веселее
         с попутчиками, которые на одной волне с тобой!
         Делитесь своими идеями путешествий и черпайте вдохновение в чужих.
       </p>
-      <p class="about-service__advice">
+      <p class="section__advice">
         А если найдете кого-то
         близкого по духу — скорее
         зовите в совместный трип!
       </p>
-      <a href="#" class="about-service__btn button">Подробнее</a>
-    </section>
-    <section class="countries">
-      <div class="countries__wrapper">
-        <h2 class="countries__title">Направления</h2>
-        <p class="countries__text">
+      <a href="#" class="section__btn button">Подробнее</a>
+     </div>
+    </section><!--/.about-service-->
+    <section class="section section--second">
+      <div class="section__wrapper">
+        <h2 class="section__title">Направления</h2>
+        <p class="section__text section__text--gray">
           Мы не продаем туры
           и ничего не рекламируем.
           Люди сами пишут о странах, куда хотели бы отправиться
           и чем можно там заняться.
         </p>
-        <div class="countries__cards">
+        <div class="section__countries countries">
           <div class="countries__card">
             <div class="countries__pic">
-              <img src="https://via.placeholder.com/200x100">.
+              <img src="https://via.placeholder.com/270x100">.
             </div>
             <div class="countries__desc">
-              <h3 class="countries__name">Таиланд</h3>
-              <p class="countries__tetx">Джунгли зовут!</p>
+              <div class="countries__words">
+                <h3 class="countries__name">Таиланд</h3>
+                <p class="countries__tetx">Джунгли зовут!</p>
+              </div>
               <span class="countries__users">18321</span>
             </div>
           </div>
           <div class="countries__card">
             <div class="countries__pic">
-              <img src="https://via.placeholder.com/200x100">.
+              <img src="https://via.placeholder.com/270x100">.
             </div>
             <div class="countries__desc">
-              <h3 class="countries__name">Франция</h3>
-              <p class="countries__tetx">Трэ бьен, манифик!</p>
+              <div class="countries__words">
+                <h3 class="countries__name">Франция</h3>
+                <p class="countries__tetx">Трэ бьен, манифик!</p>
+              </div>
               <span class="countries__users">12518</span>
             </div>
           </div>
           <div class="countries__card">
             <div class="countries__pic">
-              <img src="https://via.placeholder.com/200x100">
+              <img src="https://via.placeholder.com/270x100">
             </div>
             <div class="countries__desc">
-              <h3 class="countries__name">Чехия</h3>
-              <p class="countries__tetx">Закаулки старой Европпы!</p>
+              <div class="countries__words">
+                <h3 class="countries__name">Чехия</h3>
+                <p class="countries__tetx">Закаулки старой Европпы!</p>
+              </div>
               <span class="countries__users">5326</span>
             </div>
           </div>
-          <a href="#" class="countries__btn button">Показать все</a>
-        </div><!--/.countries__cards-->
-      </div><!--/.countries__wrapper-->
-    </section><!--/.countries-->
-    <section class="travelers">
-      <div class="travelers__wrapper">
-        <h2 class="travelers__title">Попутчики</h2>
-        <p class="travelers__text">
+        </div><!--/.countries-->
+        <a href="#" class="section__btn button">Показать все</a>
+      </div><!--/.section__wrapper-->
+    </section><!--/.section-->
+    <section class="section section--third">
+      <div class="section__wrapper">
+        <h2 class="section__title">Попутчики</h2>
+        <p class="section__text">
           Все мы индивидуальны и у каждого свой взгляд на идеальный отдых.
           Одному нужен пляж и коктейль, а другому маршрут для хайкинга.
         </p>
-        <p class="travelers__advice">
+        <p class="section__advice">
           Теперь можно легко найти единомышленников!
         </p>
-        <div class="travelers__cards">
+        <div class="section__travelers travelers">
           <div class="travelers__card">
             <div class="travelers__level"></div>
             <a href="#" class="travelers__profile-link">
@@ -224,7 +232,7 @@
                 <li class="travalers__desc-item travalers__desc-item--Thailand">Таиланд</li>
                 <li class="travalers__desc-item travalers__desc-item--seychelles">Сейшелы</li>
               </ul>
-              <a href="#" class="travelers__name">Тан Фирсова</a>
+              <a href="#" class="travelers__name">Таня Фирсова</a>
               <div class="travelers__hashtags">
                 <span class="travelers__tag">#ЗОЖ</span>
                 <span class="travelers__tag">#ПП</span>
@@ -283,23 +291,26 @@
               </ul>
             </div>
           </div><!--/.travelers__card-->
-          <a href="#" class="travelers__btn button">Показать всех</a>
-        </div><!--/.travelers__cards-->
-      </div><!--/.travelers__wrapper-->
-    </section><!--/.travelers-->
-    <section class="rates">
+        </div><!--/.travelers-->
+        <a href="#" class="section__btn button">Показать всех</a>
+      </div><!--/.section__wrapper-->
+    </section><!--/.section-->
+    <section class="section section--fourth">
       <h2 class="visually-hidden">Тарифы</h2>
-      <div class="rates__wrapper">
-        <b class="rates__tagline">Добавьте свой профиль</b>
-        <ul class="rates__list">
+      <div class="section__wrapper">
+        <b class="section__title">Добавьте свой профиль</b>
+        <ul class="rates">
           <li class="rates__item">
             <span>Базовое размещение Бесплатно</span>
+            <span class="rates__number">1</span>
           </li>
           <li class="rates__item">
             <span>Вывод на первых позициях 99 руб./мес</span>
+            <span class="rates__number rates__number--light-orange">2</span>
           </li>
           <li class="rates__item">
             <span>Кастомный цвет карточки 59 руб./мес</span>
+            <span class="rates__number rates__number--yellow">3</span>
           </li>
         </ul>
         <a href="#" class="rates__link">Показать тарифы для бизнеса</a>
@@ -316,29 +327,58 @@
           <a href="#" class="feedback__link">авторизуйтесь</a>.
         </p>
         <form action="https://echo.htmlacademy.ru" method="GET" class="feedback__form">
-          <input type="email" name="user-email" id="post" class="feedback__input">
+          <input type="email" name="user-email" id="post" class="feedback__input" required>
           <label for="post" class="feedback__label">E-mail</label>
           <button class="feedback__btn button">отправить</button>
         </form>
-        <p class="feedback__text">
-          Остались вопросы?
-          Мы с радостью на них ответим!
+        <p class="feedback__text feedback__text--under-btn">
+          Остались вопросы? Мы с радостью на них ответим!
         </p>
+        <ul class="feedback__menu user-menu">
+          <li class="user-menu__item user-menu__item--login">
+            <a href="form.html" class="button user-menu__link user-menu__link--login user-menu__link--login-menu" aria-label="для авторизации нажмите сюда">Авторизоваться</a>
+          </li>
+          <li class="user-menu__item">
+            <a href="tel:88005558628" class="user-menu__link user-menu__link">
+              <div class="user-menu__icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36"  width="18" height="18">
+                  <path d="M18 0C11.6 0 5.2 1.1 2.8 3.4.9 5.3.2 8.7 0 10.8v.3c0 .8.7 1.5 1.5 1.5.1 0 3.7-.3 5.9-.5h.2c.8 0 1.5-.7 1.5-1.5v-3C9 6.7 9.7 6 10.7 6h14.7c.8 0 1.6.7 1.6 1.7v3c0 .8.7 1.5 1.5 1.5h.2c2.2.2 5.8.5 5.9.5.8 0 1.5-.7 1.5-1.5v-.3c-.2-2.1-.9-5.5-2.8-7.4C30.8 1.1 24.4 0 18 0zm0 19.5c-1.7 0-3 1.3-3 3s1.3 3 3 3 3-1.3 3-3-1.3-3-3-3zm-2.3-6.8v-1.9c0-1-.8-1.9-1.9-1.9s-1.8.9-1.8 2v1.9L1.9 23.6c-.7.7-1.1 1.6-1.1 2.7v3c0 1.7 1.3 3 3 3h.8v1.9c0 1 .8 1.9 1.9 1.9s1.9-.8 1.9-1.9v-1.9h19.5v1.9a1.9 1.9 0 103.8 0v-1.9h.8c1.7 0 3-1.3 3-3v-3c0-1.1-.4-2-1.1-2.7L24 12.7v-1.9c0-1-.8-1.9-1.9-1.9s-1.9.8-1.9 1.9v1.9h-4.5zm2.3 3.8c3.3 0 6 2.7 6 6s-2.7 6-6 6-6-2.7-6-6 2.7-6 6-6z" fill="#ffd74b">
+                </svg>
+              </div>
+              <span class="user-menu__phone user-menu__phone--feedback">8 800 555-86-28</span>
+            </a>
+          </li>
+          <li class="user-menu__item">
+            <a href="mailto:mail@htmlacademy.ru" class="user-menu__link">
+              <div class="user-menu__icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 26"  width="18" height="18">
+                  <path d="M0 23a3 3 0 003 3h30c1.7 0 3-1.3 3-3V3a3 3 0 00-3-3H3C1.3 0 0 1.3 0 3v20zm11-10L4.2 6.2c-.6-.6-.6-1.5 0-2 .6-.6 1.5-.6 2.1 0l11 10.9c.4.4 1.2.4 1.6 0l11-10.9c.6-.6 1.5-.6 2.1 0 .6.6.6 1.5 0 2L25 13l6.9 6.8c.6.6.6 1.5 0 2-.6.6-1.5.6-2.1 0L22.9 15s-2.1 2.2-2.5 2.5c-.6.6-1.4 1-2.4 1-.9 0-1.8-.4-2.4-1L13.1 15l-6.9 6.8c-.6.6-1.5.6-2.1 0-.6-.6-.6-1.5 0-2L11 13z" fill="#ffd74b"/>
+                </svg>
+              </div>
+              <span class="user-menu__email user-menu__email--feedback">Mail@htmlacademy.ru</span>
+            </a>
+          </li>
+        </ul><!--/.user-menu-->
       </div>
     </section>
-    <section class="route">
+    <section class="section section--rout">
       <h2 class="visually-hidden">Адрес и маршрут</h2>
-      <div class="route__wrapper">
-        <address class="route__address">улю Большая Конюшенная, 19/8</address>
-        <a href="#" class="route__btn button">Проложить маршрут</a>
+      <div class="section__wrapper section__wrapper--rout">
+        <div class="section__addres address">
+          <div class="address__marker"></div>
+          <address class="address__text">ул Большая Конюшенная, 19/8</address>
+        </div>
+        <a href="#" class="section__btn section__btn--border button">Проложить маршрут</a>
       </div>
     </section>
     <section class="map">
     </section>
     <footer class="footer">
       <div class="footer__wrapper">
+        <div class="footer__logo">
+          <img src="./img/logo-mobile-blue@1x.png" class="footer__logo-pic">
+        </div>
         <div class="footer__social social">
-          <span class="socials__title">Погнали?</span>
           <ul class="social__list">
             <li class="social__item">
               <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
@@ -360,10 +400,10 @@
       </div>
     </footer>
   </main>
-  <section class="modal">
+  <section class="modal modal--show">
     <h3 class="modal__title">Бизнес-тарифы</h3>
     <ul class="modal__list">
-      <li class="moda__item">
+      <li class="modal__item">
         <p>Реклама у блогеров 300 000 руб./пост</p>
       </li>
       <li class="modal__item">
@@ -376,7 +416,7 @@
         <p>Ваш продакт-плейсмент Индивидуально</p>
       </li>
     </ul>
-    <a href="#" class="modal__close"></a>
+    <a href="#" class="modal__close">Закрыть окно</a>
   </section>
 </body>
 </html>
