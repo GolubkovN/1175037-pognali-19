@@ -1,0 +1,78 @@
+.calendar {
+  margin-bottom: 30px;
+}
+
+.calendar__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #cbced9;
+  border-bottom: 1px solid #cbced9;
+  padding: 10px 0;
+  margin-bottom: 25px;
+}
+
+.calendar__btn {
+  border: none;
+  background: none;
+}
+
+.calendar__month {
+  font-family: $titles-font;
+  font-size: 20px;
+  color: #1d2e5b;
+}
+
+.calendar__week-list {
+  @include list;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  padding: 0 10px;
+}
+
+.calendar__week-item {
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #444444;
+  &--holyday {
+    color: #ff5c23;
+  }
+}
+
+.calendar__days-list {
+  @include list;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.calendar__days-item {
+  width: 32.25px;
+  height: 32.25px;
+  border: 1px solid #cbced9;
+  border-collapse: collapse;
+  margin-right: -1px;
+  margin-bottom: -1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  &--disabled {
+    color: #cbced9;
+  }
+  &--check {
+    color: #ffffff;
+    background-color: #1d2e5b;
+  }
+  &--used {
+    background-color: #edeff6;
+    color: #444444;
+    &:hover {
+      background-color: #1d2e5b;
+      color: #ffffff;
+    }
+  }
+}
