@@ -1,3 +1,5 @@
+/********************* index.html **********************/
+
 @import "../sass/normalize.scss";
 @import "../sass/fonts.scss";
 @import "../sass/gobal.scss";
@@ -24,4 +26,13 @@
 @import "../sass/footer/copyright.scss";
 @import "../sass/modal.scss";
 
-/************ index.html **********************/
+/********************* index.html end **********************/
+/********************* index.directions.html **************/
+
+@import "../sass/main.scss";
+@import "../sass/profile/profile.scss";
+@import "../sass/plans.scss";
+@import "../sass/steps.scss";
+@import "../sass/calendar.scss";
+
+/********************* index.directions.html end**************/
