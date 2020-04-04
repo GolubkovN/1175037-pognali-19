@@ -1,0 +1,64 @@
+.plans {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  border-radius: 30px 30px 0 0;
+  background-color: #dfe3f0;
+  margin: 0 auto;
+  padding: 30px 0 100px;
+}
+
+.plans__wrapper {
+  width: 320px;
+  padding: 0 25px;
+  margin: 0 auto;
+}
+
+.plans__title {
+  margin: 0;
+  font-family: $titles-font;
+  font-size: 24px;
+  color: #1d2e5b;
+  margin-bottom: 35px;
+}
+
+.plans__list {
+  @include list;
+}
+
+.plans__item {
+  border-radius: 10px;
+  background-color: #ffffff;
+  padding: 20px;
+  margin-bottom: 10px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.plans__text-wrapper {
+  margin-bottom: 25px;
+}
+
+.planes__title {
+  @include text;
+  font-family: $titles-font;
+  font-size: 16px;
+  color: #1d2e5b;
+  margin-bottom: 20px;
+}
+
+.plans__text {
+  @include text;
+  font-weight: 500;
+  color: #1d2e5b;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
+.plans__change {
+  font-weight: 500;
+  color: #1d2e5b;
+  opacity: 30%;
+  text-transform: uppercase;
+}
