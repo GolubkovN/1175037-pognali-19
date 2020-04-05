@@ -26,7 +26,7 @@
               <a href="#" class="site-list__link">О сервисе</a>
             </li>
             <li class="site-list__item">
-              <a href="#" class="site-list__link">Направления</a>
+              <a href="./directions.html" class="site-list__link">Направления</a>
             </li>
             <li class="site-list__item">
               <a href="travelers.html" class="site-list__link">Попутчики</a>
@@ -84,7 +84,12 @@
       </nav>
     </div>
   </header>
-  <main>
+  <main class="main">
+    <div class="main__header">
+      <div class="main__header-wrapper">
+        <h1 class="main__header-title">Направления</h1>
+      </div>
+    </div>
     <div class="countries-filter">
       <div class="countries-filter__wrapper">
         <div class="countries-filter__preview">
@@ -94,8 +99,9 @@
             <button class="countries-filter__btn countries-filter__btn--close" type="button">Закрыть фильтр по странам</button>
           </div><!--/.countries-filter__buttons-->
         </div><!--/.countries-filter__preview-->
+
         <div class="countries-filter__review">
-          <ul class="countries-filter__continents continents">
+          <ul class="countries-fiter__list continents">
             <li class="continents__item">
               <a href="#" class="continents__link continents__link--active">Европа</a>
             </li>
@@ -109,9 +115,9 @@
               <a href="#" class="continents__link">Острова</a>
             </li>
           </ul><!--/.continents-->
-          <ul class="countries-filter__alfabet alfabet">
-            <li class="alfabet__item">
-              <a href="#" class="alfabet__link alfabet__link--active">A</a>
+          <ul class="countries-fiter__list alfabet">
+            <li class="alfabet__item alfabet__item--active">
+              <a href="#" class="alfabet__link">A</a>
             </li>
             <li class="alfabet__item">
               <a href="#" class="alfabet__link">Б</a>
@@ -186,39 +192,39 @@
               <a href="#" class="alfabet__link">Я</a>
             </li>
           </ul><!--/.alfabet-->
-          <ul class="countries-fiter__countries countries">
-            <li class="countries__item">
-              <a href="#" class="countries__link">Австралия</a>
+          <ul class="countries-fiter__list regions">
+            <li class="regions__item">
+              <a href="#" class="regions__link">Австралия</a>
             </li>
-            <li class="countries__item">
-              <a href="#" class="countries__link">Австрия</a>
+            <li class="regions__item">
+              <a href="#" class="regions__link">Австрия</a>
             </li>
-            <li class="countries__item">
-              <a href="#" class="countries__link">Азербайджан</a>
+            <li class="regions__item">
+              <a href="#" class="regions__link">Азербайджан</a>
             </li>
-            <li class="countries__item">
-              <a href="#" class="countries__link">Албания</a>
+            <li class="regions__item">
+              <a href="#" class="regions__link">Албания</a>
             </li>
-            <li class="countries__item">
-              <a href="#" class="countries__link">Алжир</a>
+            <li class="regions__item">
+              <a href="#" class="regions__link">Алжир</a>
             </li>
-            <li class="countries__item">
-              <a href="#" class="countries__link">Ангола</a>
+            <li class="regions__item">
+              <a href="#" class="regions__link">Ангола</a>
             </li>
-            <li class="countries__item">
-              <a href="#" class="countries__link">Андорра</a>
+            <li class="regions__item">
+              <a href="#" class="regions__link">Андорра</a>
             </li>
-            <li class="countries__item">
-              <a href="#" class="countries__link">Антигуа и Барбуда</a>
+            <li class="regions__item">
+              <a href="#" class="regions__link">Антигуа и Барбуда</a>
             </li>
-            <li class="countries__item">
-              <a href="#" class="countries__link">Аргентина</a>
+            <li class="regions__item">
+              <a href="#" class="regions__link">Аргентина</a>
             </li>
-            <li class="countries__item">
-              <a href="#" class="countries__link">Армения</a>
+            <li class="regions__item">
+              <a href="#" class="regions__link">Армения</a>
             </li>
-            <li class="countries__item">
-              <a href="#" class="countries__link">Афганистан</a>
+            <li class="regions__item">
+              <a href="#" class="regions__link">Афганистан</a>
             </li>
           </ul>
           <button class="countries-filter__collapse button" type="button">Свернуть</button>
@@ -226,137 +232,139 @@
       </div><!--/.countries-filter__wrapper-->
     </div><!--/.countries-filter-->
     <div class="travelers-filter">
-      <h3 class="travelers-filter__title">Найдите идеального попутчика</h3>
-      <form action="https://echo.htmlacademy.ru" method="GET" class="travelers-filter__form">
-        <fieldset class="travelers-filter__item">
-          <legend class="travelers-filter__item-name">
-            <a href="#" class="travelers-filter__select">Хобби</a>
-          </legend>
-          <div class="travelers-filter__group">
-            <label class="travelers-filter__check-label">
-              <input type="checkbox" class="visually-hidden travelers-filter__check-input">
-              <span class="travelers-filter__customize"></span>
-              <span class="travelers-filter__check-name">Спортзал</span>
-            </label>
-          </div>
-          <div class="travelers-filter__group">
-            <label class="travelers-filter__check-label">
-              <input type="checkbox" class="visually-hidden travelers-filter__check-input">
-              <span class="travelers-filter__customize"></span>
-              <span class="travelers-filter__check-name">Кальян</span>
-            </label>
-          </div>
-          <div class="travelers-filter__group">
-            <label class="travelers-filter__check-label">
-              <input type="checkbox" class="visually-hidden travelers-filter__check-input">
-              <span class="travelers-filter__customize"></span>
-              <span class="travelers-filter__check-name">Диван</span>
-            </label>
-          </div>
-        </fieldset><!--/.travelers-filter__item-->
-        <fieldset class="travelers-filter__item">
-          <legend class="travelers-filter__item-name">
-            <a href="#" class="travelers-filter__select">Музыка</a>
-          </legend>
-          <div class="travelers-filter__group">
-            <label class="travelers-filter__check-label">
-              <input type="checkbox" class="visually-hidden travelers-filter__check-input">
-              <span class="travelers-filter__customize"></span>
-              <span class="travelers-filter__check-name">Тяжёлый рок</span>
-            </label>
-          </div>
-          <div class="travelers-filter__group">
-            <label class="travelers-filter__check-label">
-              <input type="checkbox" class="visually-hidden travelers-filter__check-input">
-              <span class="travelers-filter__customize"></span>
-              <span class="travelers-filter__check-name">Руский рэп</span>
-            </label>
-          </div>
-          <div class="travelers-filter__group">
-            <label class="travelers-filter__check-label">
-              <input type="checkbox" class="visually-hidden travelers-filter__check-input">
-              <span class="travelers-filter__customize"></span>
-              <span class="travelers-filter__check-name">Евроденс</span>
-            </label>
-          </div>
-        </fieldset><!--/.travelers-filter__item-->
-        <fieldset class="travelers-filter__item">
-          <legend class="travelers-filter__item-name">
-            <a href="#" class="travelers-filter__select">Еда</a>
-          </legend>
-          <div class="travelers-filter__group">
-            <label class="travelers-filter__check-label">
-              <input type="checkbox" class="visually-hidden travelers-filter__check-input">
-              <span class="travelers-filter__customize"></span>
-              <span class="travelers-filter__check-name">Мясоед</span>
-            </label>
-          </div>
-          <div class="travelers-filter__group">
-            <label class="travelers-filter__check-label">
-              <input type="checkbox" class="visually-hidden travelers-filter__check-input">
-              <span class="travelers-filter__customize"></span>
-              <span class="travelers-filter__check-name">Сидит на ПП</span>
-            </label>
-          </div>
-          <div class="travelers-filter__group">
-            <label class="travelers-filter__check-label">
-              <input type="checkbox" class="visually-hidden travelers-filter__check-input">
-              <span class="travelers-filter__customize"></span>
-              <span class="travelers-filter__check-name">Веган</span>
-            </label>
-          </div>
-        </fieldset><!--/.travelers-filter__item-->
-        <fieldset class="travelers-filter__item">
-          <legend class="travelers-filter__item-name">
-            <a href="#" class="travelers-filter__select">Транспорт</a>
-          </legend>
-          <div class="travelers-filter__group">
-            <label class="travelers-filter__check-label">
-              <input type="checkbox" class="visually-hidden travelers-filter__check-input">
-              <span class="travelers-filter__check-name">Авиаперелёты</span>
-            </label>
-          </div>
-          <div class="travelers-filter__group">
-            <label class="travelers-filter__check-label">
-              <input type="checkbox" class="visually-hidden travelers-filter__check-input">
-              <span class="travelers-filter__check-name">Автотранспортом</span>
-            </label>
-          </div>
-          <div class="travelers-filter__group">
-            <label class="travelers-filter__check-label">
-              <input type="checkbox" class="visually-hidden travelers-filter__check-input">
-              <span class="travelers-filter__check-name">Велосипедом</span>
-            </label>
-          </div>
-          <div class="travelers-filter__group">
-            <label class="travelers-filter__check-label">
-              <input type="checkbox" class="visually-hidden travelers-filter__check-input">
-              <span class="travelers-filter__check-name">Пешком</span>
-            </label>
-          </div>
-        </fieldset><!--/.travelers-filter__item-->
-        <fieldset class="travelers-filter__item">
-          <legend class="travelers-filter__item-name">
-            <a href="#" class="travelers-filter__select">Левел</a>
-          </legend>
-          <div class="travelers-filter__range-block">
-            <div class="travelers-filter__range">
-              <div class="travelers-filter__range-between"></div>
-              <button class="travelers-filter__button travelers-filter__button--1" type="button"></button>
-              <button class="travelers-filter__button travelers-filter__button--2" type="button"></button>
+      <div class="traveles-filter__wrapper">
+        <form action="https://echo.htmlacademy.ru" method="GET" class="travelers-filter__form">
+          <h3 class="travelers-filter__title">Подберите идеального попутчика</h3>
+          <fieldset class="travelers-filter__item">
+            <h4 class="travelers-filter__item-name">
+              <a href="#" class="travelers-filter__select">Хобби</a>
+            </h4>
+            <div class="travelers-filter__group">
+              <label class="travelers-filter__check-label">
+                <input type="checkbox" class="visually-hidden travelers-filter__check-input">
+                <span class="travelers-filter__customize"></span>
+                <span class="travelers-filter__check-name">Спортзал</span>
+              </label>
             </div>
-            <div class="travelers-filter__numbers">
-              <input class="range_inpt1" type="number" min="0" max="100" value="30">
-              <input class="range_inpt2" type="number" min="0" max="100" value="100">
+            <div class="travelers-filter__group">
+              <label class="travelers-filter__check-label">
+                <input type="checkbox" class="visually-hidden travelers-filter__check-input">
+                <span class="travelers-filter__customize"></span>
+                <span class="travelers-filter__check-name">Кальян</span>
+              </label>
             </div>
-          </div>
-        </fieldset><!--/.travelers-filter__item-->
-        <button class="travelers-filter__btn button" type="submit">Показать</button>
-      </form><!--/.travelers-filter__form-->
+            <div class="travelers-filter__group">
+              <label class="travelers-filter__check-label">
+                <input type="checkbox" class="visually-hidden travelers-filter__check-input">
+                <span class="travelers-filter__customize"></span>
+                <span class="travelers-filter__check-name">Диван</span>
+              </label>
+            </div>
+          </fieldset><!--/.travelers-filter__item-->
+          <fieldset class="travelers-filter__item">
+            <h4 class="travelers-filter__item-name">
+              <a href="#" class="travelers-filter__select">Музыка</a>
+            </h4>
+            <div class="travelers-filter__group">
+              <label class="travelers-filter__check-label">
+                <input type="checkbox" class="visually-hidden travelers-filter__check-input">
+                <span class="travelers-filter__customize"></span>
+                <span class="travelers-filter__check-name">Тяжёлый рок</span>
+              </label>
+            </div>
+            <div class="travelers-filter__group">
+              <label class="travelers-filter__check-label">
+                <input type="checkbox" class="visually-hidden travelers-filter__check-input">
+                <span class="travelers-filter__customize"></span>
+                <span class="travelers-filter__check-name">Руский рэп</span>
+              </label>
+            </div>
+            <div class="travelers-filter__group">
+              <label class="travelers-filter__check-label">
+                <input type="checkbox" class="visually-hidden travelers-filter__check-input">
+                <span class="travelers-filter__customize"></span>
+                <span class="travelers-filter__check-name">Евроденс</span>
+              </label>
+            </div>
+          </fieldset><!--/.travelers-filter__item-->
+          <fieldset class="travelers-filter__item">
+            <h4 class="travelers-filter__item-name">
+              <a href="#" class="travelers-filter__select">Еда</a>
+            </h4>
+            <div class="travelers-filter__group">
+              <label class="travelers-filter__check-label">
+                <input type="checkbox" class="visually-hidden travelers-filter__check-input">
+                <span class="travelers-filter__customize"></span>
+                <span class="travelers-filter__check-name">Мясоед</span>
+              </label>
+            </div>
+            <div class="travelers-filter__group">
+              <label class="travelers-filter__check-label">
+                <input type="checkbox" class="visually-hidden travelers-filter__check-input">
+                <span class="travelers-filter__customize"></span>
+                <span class="travelers-filter__check-name">Сидит на ПП</span>
+              </label>
+            </div>
+            <div class="travelers-filter__group">
+              <label class="travelers-filter__check-label">
+                <input type="checkbox" class="visually-hidden travelers-filter__check-input">
+                <span class="travelers-filter__customize"></span>
+                <span class="travelers-filter__check-name">Веган</span>
+              </label>
+            </div>
+          </fieldset><!--/.travelers-filter__item-->
+          <fieldset class="travelers-filter__item">
+            <h4 class="travelers-filter__item-name">
+              <a href="#" class="travelers-filter__select">Транспорт</a>
+            </h4>
+            <div class="travelers-filter__group">
+              <label class="travelers-filter__check-label">
+                <input type="checkbox" class="visually-hidden travelers-filter__check-input">
+                <span class="travelers-filter__check-name">Авиаперелёты</span>
+              </label>
+            </div>
+            <div class="travelers-filter__group">
+              <label class="travelers-filter__check-label">
+                <input type="checkbox" class="visually-hidden travelers-filter__check-input">
+                <span class="travelers-filter__check-name">Автотранспортом</span>
+              </label>
+            </div>
+            <div class="travelers-filter__group">
+              <label class="travelers-filter__check-label">
+                <input type="checkbox" class="visually-hidden travelers-filter__check-input">
+                <span class="travelers-filter__check-name">Велосипедом</span>
+              </label>
+            </div>
+            <div class="travelers-filter__group">
+              <label class="travelers-filter__check-label">
+                <input type="checkbox" class="visually-hidden travelers-filter__check-input">
+                <span class="travelers-filter__check-name">Пешком</span>
+              </label>
+            </div>
+          </fieldset><!--/.travelers-filter__item-->
+          <fieldset class="travelers-filter__item">
+            <h4 class="travelers-filter__item-name">
+              <a href="#" class="travelers-filter__select">Левел</a>
+            </h4>
+            <div class="travelers-filter__range-block">
+              <div class="travelers-filter__range">
+                <div class="travelers-filter__range-between"></div>
+                <button class="travelers-filter__button travelers-filter__button--1" type="button"></button>
+                <button class="travelers-filter__button travelers-filter__button--2" type="button"></button>
+              </div>
+              <div class="travelers-filter__numbers">
+                <input class="range_inpt1" type="number" min="0" max="100" value="30">
+                <input class="range_inpt2" type="number" min="0" max="100" value="100">
+              </div>
+            </div>
+          </fieldset><!--/.travelers-filter__item-->
+          <button class="travelers-filter__btn button" type="submit">Показать</button>
+        </form><!--/.travelers-filter__form-->
+      </div><!--/.travelers-filter__wrapper-->
     </div><!--/.travelers-filter-->
-    <div class="travelmates">
-      <div class="travelmates__wrapper">
-        <ul class="travelmates__list">
+    <div class="section section--travelmates">
+      <div class="section__wrapper section__wrapper--travelmates">
+        <ul class="travelmates">
           <li class="travelmates__item">
             <div class="travelmates__main-info">
               <a href="#" class="travelmates__photo">

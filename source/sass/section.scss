@@ -7,17 +7,17 @@
   background-color: #192144;
   padding-bottom: 35px;
   margin: -60px auto 0;
-  &--second {
+  &--directions {
     background-color: #edeff6;
     padding-top: 100px;
     position: relative;
     z-index: 6;
   }
-  &--third {
+  &--travelers {
     z-index: 5;
     padding-top: 100px;
   }
-  &--fourth {
+  &--rates {
     z-index: 4;
     background-color: #edeff6;
     padding-top: 100px;
@@ -27,6 +27,11 @@
     padding-top: 100px;
     background-color: #ffd74b;
   }
+  &--travelmates {
+    background-color: #edeff6;
+    margin: 0 auto;
+    padding: 0;
+  }
 }
 
 .section__wrapper {
@@ -34,6 +39,9 @@
   margin: 0 auto;
   padding: 0 50px 0 45px;
   &--rout {
+    padding: 0 25px;
+  }
+  &--travelmates {
     padding: 0 25px;
   }
 }
