@@ -5,7 +5,7 @@
 }
 
 .intro__wrapper {
-  width: 320px;
+  width: auto;
   padding: 0 25px;
   margin: 0 auto;
 }
@@ -25,6 +25,7 @@
 .intro__list {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   margin-bottom: 30px;
 }
 
@@ -33,14 +34,6 @@
   margin: 0;
   &:last-child {
     flex-basis: 180px;
-  }
-}
-
-.user-menu__intro-icon {
-  margin: 0;
-  background: #ffbd30;
-  &--phone {
-    background: #ff8d30;
   }
 }
 

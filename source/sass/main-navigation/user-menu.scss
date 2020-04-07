@@ -2,6 +2,7 @@
   @include list;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 .user-menu__item {
@@ -10,6 +11,7 @@
   }
   &:last-child {
     margin-bottom: 0;
+    flex-grow: 1;
   }
 }
 
@@ -23,6 +25,7 @@
   &--login {
     display: inline-block;
     vertical-align: middle;
+    width: 100%;
     text-transform: uppercase;
     text-align: center;
     padding: 16px 30px;
@@ -53,5 +56,13 @@
 .user-menu__email {
   &--feedback {
     color: #ffd74b;
+  }
+}
+
+.user-menu__intro-icon {
+  margin: 0;
+  background: #ffbd30;
+  &--phone {
+    background: #ff8d30;
   }
 }
