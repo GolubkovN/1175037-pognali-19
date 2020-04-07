@@ -1,0 +1,21 @@
+.continents {
+  display: flex;
+  flex-direction: column;
+}
+
+.continents__item {
+  margin-bottom: 15px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.continents__link {
+  font-family: $titles-font;
+  text-transform: uppercase;
+  font-size: 16px;
+  color: rgba(25, 33, 68, 0.3);
+  &--active {
+    color: #192144;
+  }
+}

@@ -1,0 +1,27 @@
+.travelers {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.travelers__card {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  width: 270px;
+}
+
+.travelers__desc {
+  background-color: #ffffff;
+  margin-top: -5px;
+  width: 100%;
+}
+
+.travalers__desc-list {
+  @include list;
+}
+
+.travelers__transport-list {
+  @include list;
+}

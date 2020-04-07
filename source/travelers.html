@@ -4,53 +4,92 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Погнали?: Попутчики</title>
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
   <header class="header">
-    <div class="header__logo">
-      <img src="https://via.placeholder.com/100x19" class="header__logo-pic">
-    </div>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a href="about.html" class="site-list__link">О сервисе</a>
-          </li>
-          <li class="site-list__item">
-            <a href="direction.html" class="site-list__link">Направления</a>
-          </li>
-          <li class="site-list__item">
-            <a href="#" class="site-list__link">Попутчики</a>
-          </li>
-        </ul><!--/.site-list-->
-        <ul class="main-nav__list user-menu">
-          <li class="user-menu__item">
-            <a href="form.html" class="user-menu__link user-menu__link--login">Авторизоваться</a>
-          </li>
-          <li class="user-menu__item">
-            <a href="tel:88005558628" class="user-menu__link user-menu__link--phone">8 800 555-86-28</a>
-          </li>
-          <li class="user-menu__item">
-            <a href="mailto:mail@htmlacademy.ru" class="user-menu__link user-menu__link--mail">Mail@htmlacademy.ru</a>
-          </li>
-        </ul><!--/.user-menu-->
-        <ul class="main-nav__list social-list">
-          <li class="social-list__item">
-            <a class="social-list__link" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
-          </li>
-          <li class="social-list__item">
-            <a class="social-list__link" href="https://vk.com/htmlacademy">Мы Вконтакте</a>
-          </li>
-          <li class="social-list__item">
-            <a class="social-list__link" href="https://www.instagram.com/htmlacademy">Мы в Инстаграм</a>
-          </li>
-        </ul><!--/.social-list-->
+    <div class="header__inner">
+      <div class="header__top">
+        <a href="./index.html" class="header__logo">
+          <img src="./img/logo-mobile-blue@1x.png" class="header__logo-pic">
+        </a>
+        <button class="header__toggle open-menu" type="button" aria-label="открыть меню">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 11" class="main-nav__icon" width="25" height="11">
+            <path d="M1.5 3h22c.8 0 1.5-.7 1.5-1.5S24.3 0 23.5 0h-22C.7 0 0 .7 0 1.5S.7 3 1.5 3zM23.5 8h-22C.7 8 0 8.7 0 9.5S.7 11 1.5 11h22c.8 0 1.5-.7 1.5-1.5S24.3 8 23.5 8z"/>
+          </svg>
+        </button>
       </div>
-    </nav>
-    <h1 class="header__title page-title">Попутчики</h1>
+      <nav class="main-nav">
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a href="#" class="site-list__link">О сервисе</a>
+            </li>
+            <li class="site-list__item">
+              <a href="./directions.html" class="site-list__link">Направления</a>
+            </li>
+            <li class="site-list__item">
+              <a href="travelers.html" class="site-list__link">Попутчики</a>
+            </li>
+          </ul><!--/.site-list-->
+          <ul class="main-nav__list user-menu">
+            <li class="user-menu__item user-menu__item--login">
+              <a href="form.html" class="button user-menu__link user-menu__link--login user-menu__link--login-menu" aria-label="для авторизации нажмите сюда">Авторизоваться</a>
+            </li>
+            <li class="user-menu__item">
+              <a href="tel:88005558628" class="user-menu__link user-menu__link">
+                <div class="user-menu__icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36"  width="18" height="18">
+                    <path d="M18 0C11.6 0 5.2 1.1 2.8 3.4.9 5.3.2 8.7 0 10.8v.3c0 .8.7 1.5 1.5 1.5.1 0 3.7-.3 5.9-.5h.2c.8 0 1.5-.7 1.5-1.5v-3C9 6.7 9.7 6 10.7 6h14.7c.8 0 1.6.7 1.6 1.7v3c0 .8.7 1.5 1.5 1.5h.2c2.2.2 5.8.5 5.9.5.8 0 1.5-.7 1.5-1.5v-.3c-.2-2.1-.9-5.5-2.8-7.4C30.8 1.1 24.4 0 18 0zm0 19.5c-1.7 0-3 1.3-3 3s1.3 3 3 3 3-1.3 3-3-1.3-3-3-3zm-2.3-6.8v-1.9c0-1-.8-1.9-1.9-1.9s-1.8.9-1.8 2v1.9L1.9 23.6c-.7.7-1.1 1.6-1.1 2.7v3c0 1.7 1.3 3 3 3h.8v1.9c0 1 .8 1.9 1.9 1.9s1.9-.8 1.9-1.9v-1.9h19.5v1.9a1.9 1.9 0 103.8 0v-1.9h.8c1.7 0 3-1.3 3-3v-3c0-1.1-.4-2-1.1-2.7L24 12.7v-1.9c0-1-.8-1.9-1.9-1.9s-1.9.8-1.9 1.9v1.9h-4.5zm2.3 3.8c3.3 0 6 2.7 6 6s-2.7 6-6 6-6-2.7-6-6 2.7-6 6-6z" fill="#ffd74b">
+                  </svg>
+                </div>
+                <span class="user-menu__phone">8 800 555-86-28</span>
+              </a>
+            </li>
+            <li class="user-menu__item">
+              <a href="mailto:mail@htmlacademy.ru" class="user-menu__link">
+                <div class="user-menu__icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 26"  width="18" height="18">
+                    <path d="M0 23a3 3 0 003 3h30c1.7 0 3-1.3 3-3V3a3 3 0 00-3-3H3C1.3 0 0 1.3 0 3v20zm11-10L4.2 6.2c-.6-.6-.6-1.5 0-2 .6-.6 1.5-.6 2.1 0l11 10.9c.4.4 1.2.4 1.6 0l11-10.9c.6-.6 1.5-.6 2.1 0 .6.6.6 1.5 0 2L25 13l6.9 6.8c.6.6.6 1.5 0 2-.6.6-1.5.6-2.1 0L22.9 15s-2.1 2.2-2.5 2.5c-.6.6-1.4 1-2.4 1-.9 0-1.8-.4-2.4-1L13.1 15l-6.9 6.8c-.6.6-1.5.6-2.1 0-.6-.6-.6-1.5 0-2L11 13z" fill="#ffd74b"/>
+                  </svg>
+                </div>
+                <span class="user-menu__phone">Mail@htmlacademy.ru</span>
+              </a>
+            </li>
+          </ul><!--/.user-menu-->
+          <ul class="main-nav__list social-list">
+            <li class="social-list__item">
+              <a class="social-list__link" href="https://www.facebook.com/htmlacademy" aria-label="Мы в Фейсбуке">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 21" width="11" height="21">
+                  <path d="M7.8 21H2.2v-9.8H0V6.4h2.1c-.1-2.2.3-3.8 1.3-4.9C4.2.6 5.5.1 7.1 0H11v4.7H7.9c-.1.2-.2.8-.2 1.7H11v4.8H7.8V21zm-4.4-1.1h3.1v-9.8h3.2V7.5H6.5v-.6c0-1.5 0-2.9.8-3.4l.2-.1h2.3V1.1H7.1c-1.2.1-2.2.5-2.8 1.2-.8.9-1.1 2.5-.9 4.6l.1.6H1.2v2.6h2.2v9.8z"/>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a class="social-list__link" href="https://vk.com/htmlacademy" aria-label="Мы Вконтакте">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 15.8" width="23" height="12">
+                  <path d="M23.9 15.8c-.4 0-1.2-.1-2.1-.6-.6-.4-1.2-1-1.8-1.5-.4-.4-1.2-1.2-1.4-1.2-.3.1-.5.9-.5 1.6 0 .1 0 .8-.5 1.2-.4.4-1.1.5-1.2.5h-1.9c-1 0-4.4-.2-7.4-3C3.4 9.4.3 3 .1 2.7 0 2.2-.1 1.5.3 1.1.7.7 1.4.6 1.7.6H5.9c.1 0 .6.1 1 .3.4.2.6.7.6.7S8.1 3 9 4.3c1.3 2 1.9 2.5 2.1 2.6.2-.4.3-1.7.2-2.9 0-.5-.1-1.1-.3-1.3-.1-.1-.4-.3-.8-.3l-.7-.6c-.1-.7.6-1.2 1.1-1.4.7-.3 1.8-.4 3.1-.4h.7c1.2 0 1.6.1 2.1.2 1.7.4 1.6 1.7 1.6 3.3v2.1c0 .4 0 1 .1 1.3.2-.1.9-.7 2.1-2.5.8-1.2 1.4-2.5 1.5-2.8.2-.4.6-.9 1.6-.9h4.7c1 0 1.6.3 1.8.9.3.6.2 1.7-2.4 4.6-.4.4-.7.8-1 1.1-.6.7-1.2 1.4-1.2 1.6.1.1.7.6 1.3 1.1 1.5 1.2 2.5 2.3 3 3.1.5.8.4 1.3.3 1.7-.4.9-1.6 1-1.9 1h-4.1zm-5.3-4.9c.9 0 1.7.8 2.5 1.6.5.5 1 1 1.5 1.3.7.4 1.3.4 1.4.4h3.9c.2 0 .4-.1.5-.1 0 0 0-.1-.1-.2-.4-.7-1.4-1.7-2.7-2.7-1.2-1-1.8-1.5-1.9-2.2-.1-.8.5-1.4 1.6-2.7.3-.3.6-.7 1-1.1 1.6-1.8 2-2.6 2.1-3H23.1c-.2.4-.8 1.8-1.6 3-1.9 2.8-2.8 3.2-3.4 3.2-.2 0-.4 0-.6-.1-1-.6-1-1.8-.9-2.8v-.4-1.7c.1-1.7 0-1.7-.4-1.8-.4-.1-.7-.1-1.9-.2h-.7c-.6 0-1.3 0-1.9.1l.3.3c.6.7.6 2 .6 2.2.1 1.6.1 3.8-1 4.3-.2.1-.4.1-.6.1-.9 0-1.9-.9-3.4-3.3-.8-1.2-1.5-2.7-1.5-2.8L6 2.2c-.1 0-.2-.1-.3-.1h-4-.1c.6 1.2 3.4 6.6 6.5 9.5 2.7 2.5 5.8 2.6 6.4 2.6h1.9s.2-.1.3-.1V14c0-.3 0-2.6 1.6-3 .1-.1.2-.1.3-.1z"/>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a class="social-list__link" href="https://www.instagram.com/htmlacademy" aria-label="Мы в Инстаграм">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 23 23" xml:space="preserve" width="18" height="18">
+                  <path class="st0" d="M17 1.5c2.5 0 4.5 2 4.5 4.5v11c0 2.5-2 4.5-4.5 4.5H6c-2.5 0-4.5-2-4.5-4.5V6c0-2.5 2-4.5 4.5-4.5h11M17 0H6C2.7 0 0 2.7 0 6v11c0 3.3 2.7 6 6 6h11c3.3 0 6-2.7 6-6V6c0-3.3-2.7-6-6-6z"/><path class="st0" d="M11.5 7.1c2.4 0 4.4 2 4.4 4.4 0 2.4-2 4.4-4.4 4.4-2.4 0-4.4-2-4.4-4.4 0-2.4 2-4.4 4.4-4.4m0-1.5c-3.3 0-5.9 2.7-5.9 5.9s2.7 5.9 5.9 5.9 5.9-2.7 5.9-5.9-2.6-5.9-5.9-5.9z"/><circle class="st0" cx="17.6" cy="5.4" r="1.3"/>
+                </svg>
+              </a>
+            </li>
+          </ul><!--/.social-list-->
+        </div>
+      </nav>
+    </div>
   </header>
-  <main>
+  <main class="main">
+    <div class="main__header">
+      <div class="main__header-wrapper">
+        <h1 class="main__header-title">Направления</h1>
+      </div>
+    </div>
     <div class="countries-filter">
       <div class="countries-filter__wrapper">
         <div class="countries-filter__preview">
@@ -60,8 +99,9 @@
             <button class="countries-filter__btn countries-filter__btn--close" type="button">Закрыть фильтр по странам</button>
           </div><!--/.countries-filter__buttons-->
         </div><!--/.countries-filter__preview-->
+
         <div class="countries-filter__review">
-          <ul class="countries-filter__continents continents">
+          <ul class="countries-fiter__list continents">
             <li class="continents__item">
               <a href="#" class="continents__link continents__link--active">Европа</a>
             </li>
@@ -75,9 +115,9 @@
               <a href="#" class="continents__link">Острова</a>
             </li>
           </ul><!--/.continents-->
-          <ul class="countries-filter__alfabet alfabet">
-            <li class="alfabet__item">
-              <a href="#" class="alfabet__link alfabet__link--active">A</a>
+          <ul class="countries-fiter__list alfabet">
+            <li class="alfabet__item alfabet__item--active">
+              <a href="#" class="alfabet__link">A</a>
             </li>
             <li class="alfabet__item">
               <a href="#" class="alfabet__link">Б</a>
@@ -152,39 +192,39 @@
               <a href="#" class="alfabet__link">Я</a>
             </li>
           </ul><!--/.alfabet-->
-          <ul class="countries-fiter__countries countries">
-            <li class="countries__item">
-              <a href="#" class="countries__link">Австралия</a>
+          <ul class="countries-fiter__list regions">
+            <li class="regions__item">
+              <a href="#" class="regions__link">Австралия</a>
             </li>
-            <li class="countries__item">
-              <a href="#" class="countries__link">Австрия</a>
+            <li class="regions__item">
+              <a href="#" class="regions__link">Австрия</a>
             </li>
-            <li class="countries__item">
-              <a href="#" class="countries__link">Азербайджан</a>
+            <li class="regions__item">
+              <a href="#" class="regions__link">Азербайджан</a>
             </li>
-            <li class="countries__item">
-              <a href="#" class="countries__link">Албания</a>
+            <li class="regions__item">
+              <a href="#" class="regions__link">Албания</a>
             </li>
-            <li class="countries__item">
-              <a href="#" class="countries__link">Алжир</a>
+            <li class="regions__item">
+              <a href="#" class="regions__link">Алжир</a>
             </li>
-            <li class="countries__item">
-              <a href="#" class="countries__link">Ангола</a>
+            <li class="regions__item">
+              <a href="#" class="regions__link">Ангола</a>
             </li>
-            <li class="countries__item">
-              <a href="#" class="countries__link">Андорра</a>
+            <li class="regions__item">
+              <a href="#" class="regions__link">Андорра</a>
             </li>
-            <li class="countries__item">
-              <a href="#" class="countries__link">Антигуа и Барбуда</a>
+            <li class="regions__item">
+              <a href="#" class="regions__link">Антигуа и Барбуда</a>
             </li>
-            <li class="countries__item">
-              <a href="#" class="countries__link">Аргентина</a>
+            <li class="regions__item">
+              <a href="#" class="regions__link">Аргентина</a>
             </li>
-            <li class="countries__item">
-              <a href="#" class="countries__link">Армения</a>
+            <li class="regions__item">
+              <a href="#" class="regions__link">Армения</a>
             </li>
-            <li class="countries__item">
-              <a href="#" class="countries__link">Афганистан</a>
+            <li class="regions__item">
+              <a href="#" class="regions__link">Афганистан</a>
             </li>
           </ul>
           <button class="countries-filter__collapse button" type="button">Свернуть</button>
@@ -192,137 +232,139 @@
       </div><!--/.countries-filter__wrapper-->
     </div><!--/.countries-filter-->
     <div class="travelers-filter">
-      <h3 class="travelers-filter__title">Найдите идеального попутчика</h3>
-      <form action="https://echo.htmlacademy.ru" method="GET" class="travelers-filter__form">
-        <fieldset class="travelers-filter__item">
-          <legend class="travelers-filter__item-name">
-            <a href="#" class="travelers-filter__select">Хобби</a>
-          </legend>
-          <div class="travelers-filter__group">
-            <label class="travelers-filter__check-label">
-              <input type="checkbox" class="visually-hidden travelers-filter__check-input">
-              <span class="travelers-filter__customize"></span>
-              <span class="travelers-filter__check-name">Спортзал</span>
-            </label>
-          </div>
-          <div class="travelers-filter__group">
-            <label class="travelers-filter__check-label">
-              <input type="checkbox" class="visually-hidden travelers-filter__check-input">
-              <span class="travelers-filter__customize"></span>
-              <span class="travelers-filter__check-name">Кальян</span>
-            </label>
-          </div>
-          <div class="travelers-filter__group">
-            <label class="travelers-filter__check-label">
-              <input type="checkbox" class="visually-hidden travelers-filter__check-input">
-              <span class="travelers-filter__customize"></span>
-              <span class="travelers-filter__check-name">Диван</span>
-            </label>
-          </div>
-        </fieldset><!--/.travelers-filter__item-->
-        <fieldset class="travelers-filter__item">
-          <legend class="travelers-filter__item-name">
-            <a href="#" class="travelers-filter__select">Музыка</a>
-          </legend>
-          <div class="travelers-filter__group">
-            <label class="travelers-filter__check-label">
-              <input type="checkbox" class="visually-hidden travelers-filter__check-input">
-              <span class="travelers-filter__customize"></span>
-              <span class="travelers-filter__check-name">Тяжёлый рок</span>
-            </label>
-          </div>
-          <div class="travelers-filter__group">
-            <label class="travelers-filter__check-label">
-              <input type="checkbox" class="visually-hidden travelers-filter__check-input">
-              <span class="travelers-filter__customize"></span>
-              <span class="travelers-filter__check-name">Руский рэп</span>
-            </label>
-          </div>
-          <div class="travelers-filter__group">
-            <label class="travelers-filter__check-label">
-              <input type="checkbox" class="visually-hidden travelers-filter__check-input">
-              <span class="travelers-filter__customize"></span>
-              <span class="travelers-filter__check-name">Евроденс</span>
-            </label>
-          </div>
-        </fieldset><!--/.travelers-filter__item-->
-        <fieldset class="travelers-filter__item">
-          <legend class="travelers-filter__item-name">
-            <a href="#" class="travelers-filter__select">Еда</a>
-          </legend>
-          <div class="travelers-filter__group">
-            <label class="travelers-filter__check-label">
-              <input type="checkbox" class="visually-hidden travelers-filter__check-input">
-              <span class="travelers-filter__customize"></span>
-              <span class="travelers-filter__check-name">Мясоед</span>
-            </label>
-          </div>
-          <div class="travelers-filter__group">
-            <label class="travelers-filter__check-label">
-              <input type="checkbox" class="visually-hidden travelers-filter__check-input">
-              <span class="travelers-filter__customize"></span>
-              <span class="travelers-filter__check-name">Сидит на ПП</span>
-            </label>
-          </div>
-          <div class="travelers-filter__group">
-            <label class="travelers-filter__check-label">
-              <input type="checkbox" class="visually-hidden travelers-filter__check-input">
-              <span class="travelers-filter__customize"></span>
-              <span class="travelers-filter__check-name">Веган</span>
-            </label>
-          </div>
-        </fieldset><!--/.travelers-filter__item-->
-        <fieldset class="travelers-filter__item">
-          <legend class="travelers-filter__item-name">
-            <a href="#" class="travelers-filter__select">Транспорт</a>
-          </legend>
-          <div class="travelers-filter__group">
-            <label class="travelers-filter__check-label">
-              <input type="checkbox" class="visually-hidden travelers-filter__check-input">
-              <span class="travelers-filter__check-name">Авиаперелёты</span>
-            </label>
-          </div>
-          <div class="travelers-filter__group">
-            <label class="travelers-filter__check-label">
-              <input type="checkbox" class="visually-hidden travelers-filter__check-input">
-              <span class="travelers-filter__check-name">Автотранспортом</span>
-            </label>
-          </div>
-          <div class="travelers-filter__group">
-            <label class="travelers-filter__check-label">
-              <input type="checkbox" class="visually-hidden travelers-filter__check-input">
-              <span class="travelers-filter__check-name">Велосипедом</span>
-            </label>
-          </div>
-          <div class="travelers-filter__group">
-            <label class="travelers-filter__check-label">
-              <input type="checkbox" class="visually-hidden travelers-filter__check-input">
-              <span class="travelers-filter__check-name">Пешком</span>
-            </label>
-          </div>
-        </fieldset><!--/.travelers-filter__item-->
-        <fieldset class="travelers-filter__item">
-          <legend class="travelers-filter__item-name">
-            <a href="#" class="travelers-filter__select">Левел</a>
-          </legend>
-          <div class="travelers-filter__range-block">
-            <div class="travelers-filter__range">
-              <div class="travelers-filter__range-between"></div>
-              <button class="travelers-filter__button travelers-filter__button--1" type="button"></button>
-              <button class="travelers-filter__button travelers-filter__button--2" type="button"></button>
+      <div class="traveles-filter__wrapper">
+        <form action="https://echo.htmlacademy.ru" method="GET" class="travelers-filter__form">
+          <h3 class="travelers-filter__title">Подберите идеального попутчика</h3>
+          <fieldset class="travelers-filter__item">
+            <h4 class="travelers-filter__item-name">
+              <a href="#" class="travelers-filter__select">Хобби</a>
+            </h4>
+            <div class="travelers-filter__group">
+              <label class="travelers-filter__check-label">
+                <input type="checkbox" class="visually-hidden travelers-filter__check-input">
+                <span class="travelers-filter__customize"></span>
+                <span class="travelers-filter__check-name">Спортзал</span>
+              </label>
             </div>
-            <div class="travelers-filter__numbers">
-              <input class="range_inpt1" type="number" min="0" max="100" value="30">
-              <input class="range_inpt2" type="number" min="0" max="100" value="100">
+            <div class="travelers-filter__group">
+              <label class="travelers-filter__check-label">
+                <input type="checkbox" class="visually-hidden travelers-filter__check-input">
+                <span class="travelers-filter__customize"></span>
+                <span class="travelers-filter__check-name">Кальян</span>
+              </label>
             </div>
-          </div>
-        </fieldset><!--/.travelers-filter__item-->
-        <button class="travelers-filter__btn button" type="submit">Показать</button>
-      </form><!--/.travelers-filter__form-->
+            <div class="travelers-filter__group">
+              <label class="travelers-filter__check-label">
+                <input type="checkbox" class="visually-hidden travelers-filter__check-input">
+                <span class="travelers-filter__customize"></span>
+                <span class="travelers-filter__check-name">Диван</span>
+              </label>
+            </div>
+          </fieldset><!--/.travelers-filter__item-->
+          <fieldset class="travelers-filter__item">
+            <h4 class="travelers-filter__item-name">
+              <a href="#" class="travelers-filter__select">Музыка</a>
+            </h4>
+            <div class="travelers-filter__group">
+              <label class="travelers-filter__check-label">
+                <input type="checkbox" class="visually-hidden travelers-filter__check-input">
+                <span class="travelers-filter__customize"></span>
+                <span class="travelers-filter__check-name">Тяжёлый рок</span>
+              </label>
+            </div>
+            <div class="travelers-filter__group">
+              <label class="travelers-filter__check-label">
+                <input type="checkbox" class="visually-hidden travelers-filter__check-input">
+                <span class="travelers-filter__customize"></span>
+                <span class="travelers-filter__check-name">Руский рэп</span>
+              </label>
+            </div>
+            <div class="travelers-filter__group">
+              <label class="travelers-filter__check-label">
+                <input type="checkbox" class="visually-hidden travelers-filter__check-input">
+                <span class="travelers-filter__customize"></span>
+                <span class="travelers-filter__check-name">Евроденс</span>
+              </label>
+            </div>
+          </fieldset><!--/.travelers-filter__item-->
+          <fieldset class="travelers-filter__item">
+            <h4 class="travelers-filter__item-name">
+              <a href="#" class="travelers-filter__select">Еда</a>
+            </h4>
+            <div class="travelers-filter__group">
+              <label class="travelers-filter__check-label">
+                <input type="checkbox" class="visually-hidden travelers-filter__check-input">
+                <span class="travelers-filter__customize"></span>
+                <span class="travelers-filter__check-name">Мясоед</span>
+              </label>
+            </div>
+            <div class="travelers-filter__group">
+              <label class="travelers-filter__check-label">
+                <input type="checkbox" class="visually-hidden travelers-filter__check-input">
+                <span class="travelers-filter__customize"></span>
+                <span class="travelers-filter__check-name">Сидит на ПП</span>
+              </label>
+            </div>
+            <div class="travelers-filter__group">
+              <label class="travelers-filter__check-label">
+                <input type="checkbox" class="visually-hidden travelers-filter__check-input">
+                <span class="travelers-filter__customize"></span>
+                <span class="travelers-filter__check-name">Веган</span>
+              </label>
+            </div>
+          </fieldset><!--/.travelers-filter__item-->
+          <fieldset class="travelers-filter__item">
+            <h4 class="travelers-filter__item-name">
+              <a href="#" class="travelers-filter__select">Транспорт</a>
+            </h4>
+            <div class="travelers-filter__group">
+              <label class="travelers-filter__check-label">
+                <input type="checkbox" class="visually-hidden travelers-filter__check-input">
+                <span class="travelers-filter__check-name">Авиаперелёты</span>
+              </label>
+            </div>
+            <div class="travelers-filter__group">
+              <label class="travelers-filter__check-label">
+                <input type="checkbox" class="visually-hidden travelers-filter__check-input">
+                <span class="travelers-filter__check-name">Автотранспортом</span>
+              </label>
+            </div>
+            <div class="travelers-filter__group">
+              <label class="travelers-filter__check-label">
+                <input type="checkbox" class="visually-hidden travelers-filter__check-input">
+                <span class="travelers-filter__check-name">Велосипедом</span>
+              </label>
+            </div>
+            <div class="travelers-filter__group">
+              <label class="travelers-filter__check-label">
+                <input type="checkbox" class="visually-hidden travelers-filter__check-input">
+                <span class="travelers-filter__check-name">Пешком</span>
+              </label>
+            </div>
+          </fieldset><!--/.travelers-filter__item-->
+          <fieldset class="travelers-filter__item">
+            <h4 class="travelers-filter__item-name">
+              <a href="#" class="travelers-filter__select">Левел</a>
+            </h4>
+            <div class="travelers-filter__range-block">
+              <div class="travelers-filter__range">
+                <div class="travelers-filter__range-between"></div>
+                <button class="travelers-filter__button travelers-filter__button--1" type="button"></button>
+                <button class="travelers-filter__button travelers-filter__button--2" type="button"></button>
+              </div>
+              <div class="travelers-filter__numbers">
+                <input class="range_inpt1" type="number" min="0" max="100" value="30">
+                <input class="range_inpt2" type="number" min="0" max="100" value="100">
+              </div>
+            </div>
+          </fieldset><!--/.travelers-filter__item-->
+          <button class="travelers-filter__btn button" type="submit">Показать</button>
+        </form><!--/.travelers-filter__form-->
+      </div><!--/.travelers-filter__wrapper-->
     </div><!--/.travelers-filter-->
-    <div class="travelmates">
-      <div class="travelmates__wrapper">
-        <ul class="travelmates__list">
+    <div class="section section--travelmates">
+      <div class="section__wrapper section__wrapper--travelmates">
+        <ul class="travelmates">
           <li class="travelmates__item">
             <div class="travelmates__main-info">
               <a href="#" class="travelmates__photo">

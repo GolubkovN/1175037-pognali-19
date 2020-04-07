@@ -1,0 +1,12 @@
+.site-list {
+  @include list;
+ 
+}
+
+.site-list__link {
+  font-family: "bloggersans-medium", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 30px;
+  color: #192144;
+  line-height: 1.2;
+}

@@ -1,0 +1,52 @@
+.modal {
+  width: 270px;
+  border-radius: 30px;
+  background: #ffffff;
+  border: 1px solid lightblue;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding: 35px 0 0 0;
+}
+
+.modal__title {
+  margin: 0;
+  padding: 0;
+  font-family: $titles-font;
+  color: #ff8d30;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.modal__list {
+  @include list;
+  margin: 0 25px 30px;
+}
+
+.modal__item {
+  font-family: $text-font;
+  font-size: 16px;
+  font-weight: 300;
+  color: #444444;
+  border-top: 1px solid #eeeeee;
+  &:last-child {
+    border-bottom: 1px solid #eeeeee;;
+  }
+  p {
+    width: 165px;
+  }
+}
+
+.modal__close {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f3f4f8;
+  width: 100%;
+  padding: 20px 78px;
+  border-radius: 0 0 30px 30px;
+  font-family: $titles-font;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #1d2e5b;
+}

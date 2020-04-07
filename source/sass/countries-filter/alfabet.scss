@@ -1,0 +1,26 @@
+.alfabet {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.alfabet__item {
+  width: 45px;
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #cbced9;
+  color: #1d2e5b;
+  &--active {
+    background-color: #1d2e5b;
+    color: #ffffff;
+  }
+}
+
+.alfabet__link {
+  font-family: $titles-font;
+  font-size: 14px;
+  font-weight: 500;
+  color: inherit;
+}
