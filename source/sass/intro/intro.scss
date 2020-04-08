@@ -1,13 +1,18 @@
 .intro {
-  background-color: #161c36;
   padding-bottom: 35px;
-  margin-bottom: 60px;
+  position: relative;
+  z-index: 8;
+  border-radius: 0 0 30px 30px;
+  background: #161c36;
+  background-image: url("../../img/traveller-illustration-mobile@1x.png"), url("../../img/globe-back-mobile@1x.jpg"), linear-gradient(to bottom, #161c36 74%, #192144 74%);
+  background-repeat: no-repeat;
+  background-position: 85px 181px, center -16px, center center;
+  background-size: 64% 30%, 100% 50%, cover;
 }
 
 .intro__wrapper {
   width: auto;
   padding: 0 25px;
-  margin: 0 auto;
 }
 
 .intro__tagline {
@@ -19,13 +24,12 @@
   display: inline-block;
   vertical-align: middle;
   padding: 50px 15px 0;
-  margin-bottom: 250px;
+  margin-bottom: 295px;
 }
 
 .intro__list {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   margin-bottom: 30px;
 }
 

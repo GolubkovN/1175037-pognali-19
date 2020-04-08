@@ -15,8 +15,9 @@
 }
 
 .header__logo {
-  width: 100px;
-  height: 19px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .header__toggle {
@@ -25,3 +26,4 @@
   padding: 0;
   outline: none;
 }
+
