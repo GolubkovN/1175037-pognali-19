@@ -9,13 +9,14 @@
 }
 
 .countries-filter__wrapper {
-  width: auto;
+  width: 320px;
   margin: 0 auto;
   padding: 0 25px;
 }
 
 .countries-filter__preview {
   margin-bottom: 30px;
+  display: flex;
 }
 
 .countries-filter__title {
