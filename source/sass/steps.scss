@@ -116,7 +116,7 @@
 }
 
 .steps__check-input {
-  &:checked ~  .steps__custom::before{
+  &:checked ~ .steps__custom::before {
     opacity: 1;
   }
 }
@@ -165,7 +165,143 @@
   align-items: center;
 }
 
+.steps__countries {
+  display: flex;
+  margin-bottom: 25px;
+}
+
+.steps__selects-list {
+  @include list;
+  display: flex;
+  flex-direction: column;
+  width: 168px;
+}
+
+.steps__select {
+  display: flex;
+  position: relative;
+  margin-bottom: 20px;
+  &--full {
+    width: 220px;
+  }
+}
+
+.steps__countrie {
+  display: inline-block;
+  vertical-align: middle;
+  flex-grow: 1;
+  padding: 14px 10px 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 14px;
+  font-family: $medium-font;
+  font-style: normal;
+  line-height: 1.29;
+  letter-spacing: 1.4px;
+  color: #1d2e5b;
+  text-transform: uppercase;
+  border-radius: 4px;
+  border: 1px solid #cbced9;
+  background-color: #ffffff;
+  &--added {
+    background-color: #edeff6;
+    border: none;
+  }
+}
+
+.steps__flags {
+  @include list;
+  display: flex;
+  flex-direction: column;
+}
+
+.steps__flags-item {
+  position: relative;
+}
+
+.steps__flag {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0;
+  margin-bottom: 20px;
+  width: 53px;
+  height: 44px;
+  border-radius: 4px;
+  border: 1px solid #cbced9;
+  background-color: #ffffff;
+  font-size: 0;
+  line-height: 0;
+  color: transparent;
+}
+
+.steps__delate-countrie {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  width: 21px;
+  height: 21px;
+  border-radius: 10.5px;
+  border: none;
+  cursor: pointer;
+  background-color: #edeff6;
+}
+
+.steps__select-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  height: 100%;
+  padding: 0 15px;
+  border: 1px solid #cbced9;
+  border-left: none;
+  border-radius: 0 4px 4px 0;
+  background: #ffffff;
+  cursor: pointer;
+  &--plus {
+    background-color: #edeff6;
+    border: none;
+  }
+}
+
 .steps__entertament-list {
   @include list;
   margin-bottom: 30px;
 }
+
+.steps__entertament-item {
+  margin-bottom: 25px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.steps__group {
+  margin-bottom: 15px;
+}
+
+.steps__countrie-name {
+  font-weight: 500;
+  font-size: 18px;
+  white-space: nowrap;
+  overflow: hidden;
+  color: #1d2e5b;
+}
+
+.steps__plan {
+  width: 100%;
+  resize: none;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.38;
+  letter-spacing: normal;
+  text-align: left;
+  color: #444444;
+  border-radius: 4px;
+  border: solid 1px #cbced9;
+  background-color: #ffffff;
+  padding: 13px 21px 13px 15px;
+}
+

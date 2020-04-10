@@ -83,3 +83,95 @@
   border: none;
   text-transform: uppercase;
 }
+
+.travelers-filter__range-block {
+  margin-bottom: 20px;
+}
+
+.travelers-filter__numbers {
+  width: 100%;
+  margin-bottom: 20px;
+  display: flex;
+  position: relative;
+  &::before {
+    content: "";
+    width: 18px;
+    height: 11px;
+    background-color: #ffffff;
+    position: absolute;
+    left: 106px;
+    top: 13px;
+  }
+  &::after {
+    content: "";
+    width: 18px;
+    height: 1px;
+    background-color: #9ba9db;
+    position: absolute;
+    left: 106px;
+    top: 17.5px;
+  }
+}
+
+.travelers-filter__range-input {
+  width: 50%;
+  text-align: center;
+  border: 1px solid #9ba9db;
+  padding: 8px 10px;
+  font-family: $medium-font;
+  color: #1d2e5b;
+  &--1 {
+    border-radius: 5px 0 0 5px;
+  }
+  &--2 {
+    border-radius: 0 5px 5px 0;
+  }
+}
+
+.travelers-filter__range {
+  width: 100%;
+  height: 2px;
+  margin: 0 auto;
+  background-color: #d2b54e;
+  position: relative;
+}
+
+.travelers-filter__range-between {
+  width: 145px;
+  height: 2px;
+  background-color: #1d2e5b;
+  position: absolute;
+  right: 0;
+}
+
+.travelers-filter__button {
+  width: 11px;
+  height: 11px;
+  border: none;
+  position: absolute;
+  background: none;
+  top: -5px;
+  &:hover {
+    width: 25px;
+    height: 25px;
+    top: -12px;
+  }
+  &:hover .travelers-filter__button-inner {
+    width: 25px;
+    height: 25px;
+  }
+  &--1 {
+    right: 148px;
+  }
+  &--2 {
+    right: 0;
+  }
+}
+/* Решает проблему скругления для кнопок в IE-11 и safari */
+.travelers-filter__button-inner {
+  display: block;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background-color: #1d2e5b;
+}

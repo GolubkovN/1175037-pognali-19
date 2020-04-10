@@ -3,8 +3,7 @@
 }
 
 .header__inner {
-  width: 100%;
-  max-width: 320px;
+  width: auto;
   padding: 0 25px 0;
   margin: 0 auto;
   padding-top: 25px;
@@ -16,8 +15,9 @@
 }
 
 .header__logo {
-  width: 100px;
-  height: 19px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .header__toggle {
@@ -26,3 +26,4 @@
   padding: 0;
   outline: none;
 }
+

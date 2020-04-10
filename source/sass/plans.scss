@@ -9,9 +9,8 @@
 }
 
 .plans__wrapper {
-  width: 320px;
+  width: auto;
   padding: 0 25px;
-  margin: 0 auto;
 }
 
 .plans__title {
@@ -58,7 +57,12 @@
 
 .plans__change {
   font-weight: 500;
-  color: #1d2e5b;
-  opacity: 30%;
+  color: #b2b2b2;
   text-transform: uppercase;
+  &:hover {
+    color: #1d2e5b;
+  }
+  &:focus {
+    color: #1d2e5b;
+  }
 }

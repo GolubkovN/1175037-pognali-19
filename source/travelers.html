@@ -95,11 +95,8 @@
         <div class="countries-filter__preview">
           <h3 class="countries-filter__title">Фильтрация по странам</h3>
           <div class="countries-filter__buttons">
-            <button class="countries-filter__btn countries-filter__btn--open" type="button">Открыть фильтр по странам</button>
-            <button class="countries-filter__btn countries-filter__btn--close" type="button">Закрыть фильтр по странам</button>
           </div><!--/.countries-filter__buttons-->
         </div><!--/.countries-filter__preview-->
-
         <div class="countries-filter__review">
           <ul class="countries-fiter__list continents">
             <li class="continents__item">
@@ -347,14 +344,18 @@
               <a href="#" class="travelers-filter__select">Левел</a>
             </h4>
             <div class="travelers-filter__range-block">
+              <div class="travelers-filter__numbers">
+                <input class="travelers-filter__range-input travelers-filter__range-input--1" type="number" min="0" max="100" value="30">
+                <input class="travelers-filter__range-input travelers-filter__range-input--2" type="number" min="0" max="100" value="100">
+              </div>
               <div class="travelers-filter__range">
                 <div class="travelers-filter__range-between"></div>
-                <button class="travelers-filter__button travelers-filter__button--1" type="button"></button>
-                <button class="travelers-filter__button travelers-filter__button--2" type="button"></button>
-              </div>
-              <div class="travelers-filter__numbers">
-                <input class="range_inpt1" type="number" min="0" max="100" value="30">
-                <input class="range_inpt2" type="number" min="0" max="100" value="100">
+                <button class="travelers-filter__button travelers-filter__button--1" type="button">
+                  <span class="travelers-filter__button-inner"></span>
+                </button>
+                <button class="travelers-filter__button travelers-filter__button--2" type="button">
+                  <span class="travelers-filter__button-inner"></span>
+                </button>
               </div>
             </div>
           </fieldset><!--/.travelers-filter__item-->
@@ -367,23 +368,28 @@
         <ul class="travelmates">
           <li class="travelmates__item">
             <div class="travelmates__main-info">
-              <a href="#" class="travelmates__photo">
-                <img src="https://via.placeholder.com/150x150">
-              </a>
+              <div class="travelmates__links">
+                <a href="#" class="travelmates__photo">
+                  <img src="./img/firsova-mobile@1x.jpg" alt="Таня Фирсова" width="71" height="71">
+                </a>
+                <div class="travelmates__status">
+                  <a href="#" class="travelmates__name">Таня Фирсова</a>
+                  <span class="travelmates__followers">1,5 м</span>
+                </div>
+              </div>
               <div class="travelmates__info-block">
-                <a href="#" class="travelmates__name">Таня Фирсовам</a>
                 <div class="travelmates__hashtags">
-                  <span class="travelmates__tag">#ЗОЖ</span>
-                  <span class="travelmates__tag">#ПП</span>
-                  <span class="travelmates__tag">#Фитнес</span>
-                  <span class="travelmates__tag">#пляж</span>
-                  <span class="travelmates__tag">#авокадо</span>
-                  <span class="travelmates__tag">#смузи</span>
+                  <span>#ЗОЖ</span>
+                  <span>#ПП</span>
+                  <span>#Фитнес</span>
+                  <span>#пляж</span>
+                  <span>#авокадо</span>
+                  <span>#смузи</span>
                 </div>
               </div>
             </div>
             <div class="travelmates__countries">
-              <b class="travelmates__countries-item">Хочет посетить:</b>
+              <b class="travelmates__countries-title">Хочет посетить:</b>
               <ul class="travelmates__countries-list">
                 <li class="travelmates__countries-item">
                   Шри-Ланка
@@ -397,21 +403,23 @@
               </ul>
             </div>
             <div class="travelmates__transport-block">
-              <b class="travelmates__transport-title">Транспорт:</b>
-              <ul class="travelmates__transport-list">
-                <li class="travelmates__transport-item">
-                  Авиаперелёты
-                </li>
-                <li class="travelmates__transport-item">
-                  Автотранспорт
-                </li>
-                <li class="travelmates__transport-item">
-                  Велосипедом
-                </li>
-                <li class="travelmates__transport-item">
-                  Пешком
-                </li>
-              </ul>
+              <div class="travelmates___transport-wrapper">
+                <b class="travelmates__transport-title">Транспорт:</b>
+                <ul class="travelmates__transport-list">
+                  <li class="travelmates__transport-item">
+                    Авиаперелёты
+                  </li>
+                  <li class="travelmates__transport-item">
+                    Автотранспорт
+                  </li>
+                  <li class="travelmates__transport-item">
+                    Велосипедом
+                  </li>
+                  <li class="travelmates__transport-item">
+                    Пешком
+                  </li>
+                </ul>
+              </div>
               <div class="travelmates__level">
                 <b class="travelmates__level-title">Левел:</b>
                 <img src="https://via.placeholder.com/50x50">
@@ -421,21 +429,26 @@
           </li><!--/.travelmates__item-->
           <li class="travelmates__item">
             <div class="travelmates__main-info">
-              <a href="#" class="travelmates__photo">
-                <img src="https://via.placeholder.com/150x150">
-              </a>
+              <div class="travelmates__links">
+                <a href="#" class="travelmates__photo">
+                  <img src="./img/demin-mobile@1x.jpg" alt="Петя Демин" width="71" height="71">
+                </a>
+                <div class="travelmates__status">
+                  <a href="#" class="travelmates__name">Петя Демин</a>
+                  <span class="travelmates__followers">1500</span>
+                </div>
+              </div>
               <div class="travelmates__info-block">
-                <a href="#" class="travelmates__name">Петя Демин</a>
                 <div class="travelmates__hashtags">
-                  <span class="travelmates__tag">#бургер</span>
-                  <span class="travelmates__tag">#бар</span>
-                  <span class="travelmates__tag">#футбол</span>
-                  <span class="travelmates__tag">#концерт</span>
+                  <span>#бургер</span>
+                  <span>#бар</span>
+                  <span>#футбол</span>
+                  <span>#концерт</span>
                 </div>
               </div>
             </div>
             <div class="travelmates__countries">
-              <b class="travelmates__countries-item">Хочет посетить:</b>
+              <b class="travelmates__countries-title">Хочет посетить:</b>
               <ul class="travelmates__countries-list">
                 <li class="travelmates__countries-item">
                   Бельгия
@@ -446,21 +459,23 @@
               </ul>
             </div>
             <div class="travelmates__transport-block">
-              <b class="travelmates__transport-title">Транспорт:</b>
-              <ul class="travelmates__transport-list">
-                <li class="travelmates__transport-item">
-                  Авиаперелёты
-                </li>
-                <li class="travelmates__transport-item">
-                  Автотранспорт
-                </li>
-                <li class="travelmates__transport-item">
-                  Велосипедом
-                </li>
-                <li class="travelmates__transport-item">
-                  Пешком
-                </li>
-              </ul>
+              <div class="travelmates___transport-wrapper">
+                <b class="travelmates__transport-title">Транспорт:</b>
+                <ul class="travelmates__transport-list">
+                  <li class="travelmates__transport-item">
+                    Авиаперелёты
+                  </li>
+                  <li class="travelmates__transport-item">
+                    Автотранспорт
+                  </li>
+                  <li class="travelmates__transport-item">
+                    Велосипедом
+                  </li>
+                  <li class="travelmates__transport-item">
+                    Пешком
+                  </li>
+                </ul>
+              </div>
               <div class="travelmates__level">
                 <b class="travelmates__level-title">Левел:</b>
                 <img src="https://via.placeholder.com/50x50">
@@ -470,21 +485,27 @@
           </li><!--/.travelmates__item-->
           <li class="travelmates__item">
             <div class="travelmates__main-info">
-              <a href="#" class="travelmates__photo">
-                <img src="https://via.placeholder.com/150x150">
-              </a>
+              <div class="travelmates__links">
+                <a href="#" class="travelmates__photo">
+                  <img src="./img/smolov-mobile@1x.jpg" alt="Марк Смолов" width="71" height="71">
+                </a>
+                <div class="travelmates__status">
+                  <a href="#" class="travelmates__name">Марк Смолов</a>
+                  <span class="travelmates__followers">179</span>
+                </div>
+              </div>
               <div class="travelmates__info-block">
-                <a href="#" class="travelmates__name">Марк Смолов</a>
                 <div class="travelmates__hashtags">
-                  <span class="travelmates__tag">#рэп</span>
-                  <span class="travelmates__tag">#тату</span>
-                  <span class="travelmates__tag">#хайпбист</span>
-                  <span class="travelmates__tag">#кроссовки</span>
-                  <span class="travelmates__tag">#суприм</span>                </div>
+                  <span>#рэп</span>
+                  <span>#тату</span>
+                  <span>#хайпбист</span>
+                  <span>#кроссовки</span>
+                  <span>#суприм</span>
+                </div>
               </div>
             </div>
             <div class="travelmates__countries">
-              <b class="travelmates__countries-item">Хочет посетить:</b>
+              <b class="travelmates__countries-title">Хочет посетить:</b>
               <ul class="travelmates__countries-list">
                 <li class="travelmates__countries-item">
                   США
@@ -498,21 +519,23 @@
               </ul>
             </div>
             <div class="travelmates__transport-block">
-              <b class="travelmates__transport-title">Транспорт:</b>
-              <ul class="travelmates__transport-list">
-                <li class="travelmates__transport-item">
-                  Авиаперелёты
-                </li>
-                <li class="travelmates__transport-item">
-                  Автотранспорт
-                </li>
-                <li class="travelmates__transport-item">
-                  Велосипедом
-                </li>
-                <li class="travelmates__transport-item">
-                  Пешком
-                </li>
-              </ul>
+              <div class="travelmates___transport-wrapper">
+                <b class="travelmates__transport-title">Транспорт:</b>
+                <ul class="travelmates__transport-list">
+                  <li class="travelmates__transport-item">
+                    Авиаперелёты
+                  </li>
+                  <li class="travelmates__transport-item">
+                    Автотранспорт
+                  </li>
+                  <li class="travelmates__transport-item">
+                    Велосипедом
+                  </li>
+                  <li class="travelmates__transport-item">
+                    Пешком
+                  </li>
+                </ul>
+              </div>
               <div class="travelmates__level">
                 <b class="travelmates__level-title">Левел:</b>
                 <img src="https://via.placeholder.com/50x50">
@@ -522,21 +545,26 @@
           </li><!--/.travelmates__item-->
           <li class="travelmates__item">
             <div class="travelmates__main-info">
-              <a href="#" class="travelmates__photo">
-                <img src="https://via.placeholder.com/150x150">
-              </a>
+              <div class="travelmates__links">
+                <a href="#" class="travelmates__photo">
+                  <img src="./img/rogovaya-mobile@1x.jpg" alt="Лариса Роговая" width="71" height="71">
+                </a>
+                <div class="travelmates__status">
+                  <a href="#" class="travelmates__name">Лариса Роговая</a>
+                  <span class="travelmates__followers">23</span>
+                </div>
+              </div>
               <div class="travelmates__info-block">
-                <a href="#" class="travelmates__name">Лариса Роговая</a>
                 <div class="travelmates__hashtags">
-                  <span class="travelmates__tag">#оброзование</span>
-                  <span class="travelmates__tag">#карьера</span>
-                  <span class="travelmates__tag">#учёба</span>
-                  <span class="travelmates__tag">#линкедин</span>
+                  <span>#оброзование</span>
+                  <span>#карьера</span>
+                  <span>#учёба</span>
+                  <span>#линкедин</span>
                 </div>
               </div>
             </div>
             <div class="travelmates__countries">
-              <b class="travelmates__countries-item">Хочет посетить:</b>
+              <b class="travelmates__countries-title">Хочет посетить:</b>
               <ul class="travelmates__countries-list">
                 <li class="travelmates__countries-item">
                   Шри-Ланка
@@ -550,21 +578,23 @@
               </ul>
             </div>
             <div class="travelmates__transport-block">
-              <b class="travelmates__transport-title">Транспорт:</b>
-              <ul class="travelmates__transport-list">
-                <li class="travelmates__transport-item">
-                  Авиаперелёты
-                </li>
-                <li class="travelmates__transport-item">
-                  Автотранспорт
-                </li>
-                <li class="travelmates__transport-item">
-                  Велосипедом
-                </li>
-                <li class="travelmates__transport-item">
-                  Пешком
-                </li>
-              </ul>
+              <div class="travelmates___transport-wrapper">
+                <b class="travelmates__transport-title">Транспорт:</b>
+                <ul class="travelmates__transport-list">
+                  <li class="travelmates__transport-item">
+                    Авиаперелёты
+                  </li>
+                  <li class="travelmates__transport-item">
+                    Автотранспорт
+                  </li>
+                  <li class="travelmates__transport-item">
+                    Велосипедом
+                  </li>
+                  <li class="travelmates__transport-item">
+                    Пешком
+                  </li>
+                </ul>
+              </div>
               <div class="travelmates__level">
                 <b class="travelmates__level-title">Левел:</b>
                 <img src="https://via.placeholder.com/50x50">

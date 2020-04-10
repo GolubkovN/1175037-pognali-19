@@ -8,6 +8,7 @@
 
 .countries__card {
   flex-basis: 100%;
+  max-width: 320px;
   margin-bottom: 15px;
   &:last-child {
     margin-bottom: 0;
@@ -15,8 +16,13 @@
 }
 
 .countries__pic {
+  width: 100%;
+}
+
+.countries__pic img {
+  display: block;
+  width: 100%;
   border-radius: 10px 10px 0 0;
-  border: 1px solid black;
 }
 
 .countries__desc {
@@ -36,6 +42,25 @@
   font-family: $titles-font;
   font-size: 21px;
   color: #161c35;
+  margin-bottom: 5px;
+  position: relative;
+  &::before {
+    content: "";
+    width: 35px;
+    height: 24px;
+    position: absolute;
+    top: -42px;
+    left: 0;
+  }
+  &--thailand::before {
+    background: lightblue;
+  }
+  &--frace::before {
+    background: lightblue;
+  }
+  &--czech::before {
+    background: lightblue;
+  }
 }
 
 .countries__tetx {
@@ -52,6 +77,17 @@
   top: 26px;
   line-height: 1.88;
   color: rgba(68, 68, 68, 0.3);
+  display: flex;
+  align-items: center;
+  &::before {
+    content: "";
+    display: block;
+    width: 12px;
+    height: 12px;
+    background: url("../img/user.svg") center center / contain no-repeat;
+    opacity: 0.1;
+    margin-right: 5px;
+  }
 }
 
 
