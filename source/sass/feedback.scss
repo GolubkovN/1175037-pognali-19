@@ -33,10 +33,15 @@
   font-size: 16px;
   margin-bottom: 20px;
   padding: 0 30px;
+
   &--under-btn {
     margin: 0 25px 15px;
     width: auto;
   }
+}
+
+.feedback__text br {
+  display: none;
 }
 
 .feedback__link {
@@ -64,10 +69,12 @@
   font-size: 18px;
   color: #192144;
   border-radius: 10px 0 0 10px;
+
   &:focus ~ .feedback__label {
     font-size: 10px;
     top: 10px;
   }
+
   &:valid ~ .feedback__label {
     font-size: 10px;
     top: 10px;
@@ -90,7 +97,119 @@
   background-color: #ffd74b;
   border: none;
   border-radius: 10px;
-  padding: 16px 15px;
+  padding: 16px 5px;
 }
 
+.feedback__menu .user-menu__phone {
+  color: #e0bf4a;
+}
 
+.feedback__menu .user-menu__email {
+  color: #e0bf4a;
+}
+
+/* Tablet */
+
+@media (min-width: 768px) {
+  .feedback {
+    padding-top: 150px;
+  }
+
+  .feedback__wrapper {
+    width: 768px;
+    padding: 0 74px 60px;
+  }
+
+  .feedback__tagline {
+    font-size: 45px;
+    margin-bottom: 60px;
+  }
+
+  .feedback__text {
+    font-size: 28px;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 60px;
+  }
+
+  .feedback__text br {
+    display: block;
+  }
+
+  .feedback__form {
+    border-radius: 20px;
+    margin-bottom: 60px;
+  }
+
+  .feedback__input {
+    padding: 25px 45px;
+    border-radius: 20px 0 20px 0;
+    font-size: 28px;
+  }
+
+  .feedback__label {
+    font-size: 28px;
+  }
+
+  .feedback__btn {
+    border-radius: 0 20px 20px 0;
+  }
+
+  .feedback__text--under-btn {
+    margin-bottom: 0;
+  }
+
+  .feedback__menu {
+    width: 100%;
+  }
+
+  .feedback__menu .user-menu__link--login-menu {
+    display: none;
+  }
+
+  .feedback__menu .user-menu__icon {
+    width: 65px;
+    height: 65px;
+  }
+
+  .feedback__menu .user-menu__phone {
+    font-size: 28px;
+    color: #e0bf4a;
+  }
+
+  .feedback__menu .user-menu__email {
+    font-size: 28px;
+    color: #e0bf4a;
+  }
+}
+
+@media (min-width: 1440px) {
+  .feedback__wrapper {
+    width: 1320px;
+  }
+
+  .feedback__btn {
+    padding: 25px 150px 25px 35px;
+    font-size: 28px;
+  }
+
+  .feedback__text--under-btn {
+    margin-bottom: 40px;
+  }
+
+  .feedback__menu {
+    width: 875px;
+    margin: 0 auto;
+    flex-direction: row;
+  }
+
+  .feedback__menu .user-menu__item:last-child {
+    margin-left: 104px;
+  }
+
+  .feedback__menu .user-menu__icon {
+    width: 85px;
+    height: 85px;
+    margin-right: 35px;
+  }
+}

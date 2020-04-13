@@ -1,7 +1,5 @@
 .user-menu {
   @include list;
-  width: 270px;
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
 }
@@ -23,6 +21,7 @@
   color: #161c35;
   display: flex;
   align-items: center;
+
   &--login {
     display: inline-block;
     vertical-align: middle;
@@ -32,6 +31,7 @@
     padding: 16px 30px;
     border-radius: 30px;
   }
+
   &--login-menu {
     width: 100%;
   }
@@ -63,7 +63,59 @@
 .user-menu__intro-icon {
   margin: 0;
   background: #ffbd30;
+
   &--phone {
     background: #ff8d30;
+  }
+}
+
+/* Tablet */
+
+@media (min-width: 768px) {
+  .user-menu__link {
+    font-size: 28px;
+
+    &--login {
+      display: none;
+    }
+  }
+
+  .user-menu__icon {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+/* Desktop */
+
+@media (min-width: 1440px) {
+  .user-menu__item {
+    &--login {
+      order: 3;
+      margin: 0;
+    }
+  }
+
+  .user-menu__link {
+    &--login {
+      display: block;
+    }
+  }
+
+  .user-menu__icon {
+    margin: 0;
+    width: 60px;
+    height: 60px;
+    &--orange {
+      background-color: #ff8d30;
+    }
+
+    &--light-orange {
+      background-color: #ffbd30;
+    }
+  }
+
+  .user-menu__link span {
+    display: none;
   }
 }

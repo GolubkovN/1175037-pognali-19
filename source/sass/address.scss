@@ -10,7 +10,7 @@
   height: 45px;
   border-radius: 50%;
   background-color: #121936;
-  margin-right: 16px;
+  margin-right: 15px;
 }
 
 .address__text {
@@ -23,6 +23,28 @@
   width: 153px;
 }
 
-.section__btn--border {
-  border: 2px solid #121936;
+/* Tablet */
+
+@media (min-width: 768px) {
+  .address__text {
+    width: 436px;
+    font-size: 28px;
+    margin-left: 20px;
+  }
+
+  .address__marker {
+    width: 70px;
+    height: 70px;
+    margin: 0;
+  }
+}
+
+/* Desktop */
+
+@media (min-width: 1440px) {
+  .address__marker {
+    width: 90px;
+    height: 90px;
+    margin: 0;
+  }
 }

@@ -1,6 +1,5 @@
 .site-list {
   @include list;
- 
 }
 
 .site-list__link {
@@ -9,4 +8,29 @@
   font-size: 30px;
   color: #192144;
   line-height: 1.2;
+}
+
+/* Tablet */
+
+@media (min-width: 768px) {
+  .site-list__link {
+    font-size: 60px;
+  }
+}
+
+/* Desktop */
+
+@media (min-width: 1440px) {
+  .site-list__link {
+    font-size: 20px;
+    color: #ffffff;
+  }
+
+  .site-list__item {
+    margin-right: 33px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
 }
