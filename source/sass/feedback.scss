@@ -12,6 +12,7 @@
 .feedback__wrapper {
   width: 320px;
   margin: 0 auto;
+  padding: 0 25px;
   text-align: center;
 }
 
@@ -33,11 +34,6 @@
   font-size: 16px;
   margin-bottom: 20px;
   padding: 0 30px;
-
-  &--under-btn {
-    margin: 0 25px 15px;
-    width: auto;
-  }
 }
 
 .feedback__text br {
@@ -62,6 +58,7 @@
 }
 
 .feedback__input {
+  width: 80%;
   padding: 0 20px;
   background: transparent;
   border: none;
@@ -97,15 +94,45 @@
   background-color: #ffd74b;
   border: none;
   border-radius: 10px;
-  padding: 16px 5px;
+  padding: 16px 23px;
 }
 
-.feedback__menu .user-menu__phone {
+.feedback__btn-icon {
+  width: 14px;
+  height: 14px;
+  fill: #1d2e5b;
+}
+
+.feedback__btn span {
+  display: none;
+}
+
+.feedback__contacts {
+  @include list;
+}
+
+.feedback__group {
+  display: flex;
+  align-items: center;
+  font-family: $titles-font;
+  font-size: 16px;
   color: #e0bf4a;
 }
 
-.feedback__menu .user-menu__email {
-  color: #e0bf4a;
+.feedback__icon-wrapper {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: #121936;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 17px;
+}
+
+.feedback__contacts-icon {
+  width: 32px;
+  height: 32px;
 }
 
 /* Tablet */
@@ -153,33 +180,28 @@
 
   .feedback__btn {
     border-radius: 0 20px 20px 0;
+    padding: 35px;
   }
 
   .feedback__text--under-btn {
-    margin-bottom: 0;
+    margin-bottom: 40px;
   }
 
-  .feedback__menu {
-    width: 100%;
-  }
-
-  .feedback__menu .user-menu__link--login-menu {
+  .feedback__text--under-btn br {
     display: none;
   }
 
-  .feedback__menu .user-menu__icon {
-    width: 65px;
-    height: 65px;
+  .feedback__contacts {
+    width: 100%;
   }
 
-  .feedback__menu .user-menu__phone {
-    font-size: 28px;
-    color: #e0bf4a;
+  .feedback__icon-wrapper {
+    width: 70px;
+    height: 70px;
   }
 
-  .feedback__menu .user-menu__email {
+  .feedback__group {
     font-size: 28px;
-    color: #e0bf4a;
   }
 }
 
@@ -189,27 +211,30 @@
   }
 
   .feedback__btn {
-    padding: 25px 150px 25px 35px;
+    width: 30%;
     font-size: 28px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .feedback__btn span {
+    display: block;
   }
 
   .feedback__text--under-btn {
     margin-bottom: 40px;
   }
 
-  .feedback__menu {
+  .feedback__contacts {
     width: 875px;
     margin: 0 auto;
-    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
   }
 
-  .feedback__menu .user-menu__item:last-child {
-    margin-left: 104px;
-  }
-
-  .feedback__menu .user-menu__icon {
-    width: 85px;
-    height: 85px;
-    margin-right: 35px;
+  .feedback__icon-wrapper {
+    width: 90px;
+    height: 90px;
   }
 }

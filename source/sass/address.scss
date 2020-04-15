@@ -11,6 +11,15 @@
   border-radius: 50%;
   background-color: #121936;
   margin-right: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.addres__icon {
+  width: 15px;
+  height: 23px;
+  fill: #ffd74b;
 }
 
 .address__text {
@@ -37,6 +46,11 @@
     height: 70px;
     margin: 0;
   }
+
+  .addres__icon {
+    width: 23px;
+    height: 33px;
+  }
 }
 
 /* Desktop */
@@ -46,5 +60,10 @@
     width: 90px;
     height: 90px;
     margin: 0;
+  }
+
+  .addres__icon {
+    width: 33px;
+    height: 43px;
   }
 }
