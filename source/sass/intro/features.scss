@@ -1,5 +1,4 @@
 .features {
-  width: 100%;
   @include list;
   display: flex;
   flex-wrap: wrap;
@@ -11,24 +10,26 @@
   justify-content: space-between;
   padding: 20px 20px 25px 22px;
   margin-top: -10px;
-  &:first-child {
-    margin-top: 0;
-  }
+
   &--orange {
+    margin-top: 0;
     background-color: #ff8d30;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
   }
+
   &--light-orange {
     background-color: #ffa530;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
   }
+
   &--yellow {
     background-color: #ffbd30;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
   }
+
   &--light-yellow {
     background-color: #ffd74b;
     border-radius: 10px;
@@ -44,7 +45,90 @@
 }
 
 .features__number {
-  font-family: "bloggersans-bold", "Arial", sans-serif;
+  font-family: $titles-font;
   font-size: 18px;
   color: #ffffff;
+}
+
+/* tablet */
+
+@media (min-width: 768px) {
+  .features__item {
+    flex-basis: 50%;
+    flex-direction: column;
+    margin-top: 0;
+
+    &--orange {
+      background-color: #ff8d30;
+      border-top-right-radius: 10px;
+      border-top-left-radius: 10px;
+      flex-grow: 1;
+    }
+
+    &--light-orange {
+      background-color: #ffa530;
+      border-top-right-radius: 10px;
+      border-top-left-radius: 10px;
+      margin-left: -17px;
+    }
+
+    &--yellow {
+      background-color: #ffbd30;
+      border-radius: 0 0 10px 10px;
+      flex-grow: 1;
+    }
+
+    &--light-yellow {
+      background-color: #ffd74b;
+      border-radius: 0 0 10px 10px;
+      margin-left: -17px;
+    }
+  }
+
+  .features__text {
+    font-size: 24px;
+    width: 208px;
+    margin-bottom: 15px;
+  }
+
+  .features__number {
+    font-size: 24px;
+  }
+}
+
+/* Desktop */
+
+@media (min-width: 1440px) {
+  .features__item {
+    flex-basis: 25%;
+    flex-direction: row;
+    margin-left: -17px;
+    padding-right: 25px + 17px;
+
+    &--orange {
+      background-color: #ff8d30;
+      border-radius: 20px 0 0 20px;
+      flex-grow: 1;
+      margin-left: 0;
+    }
+
+    &--light-orange {
+      background-color: #ffa530;
+      border-radius: 20px 0 0 20px;
+      margin-left: -17px;
+    }
+
+    &--yellow {
+      background-color: #ffbd30;
+      border-radius: 20px 0 0 20px;
+      flex-grow: 1;
+    }
+
+    &--light-yellow {
+      background-color: #ffd74b;
+      border-radius: 20px;
+      margin-left: -17px;
+      padding-right: 25px;
+    }
+  }
 }

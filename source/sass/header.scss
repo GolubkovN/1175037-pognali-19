@@ -4,12 +4,14 @@
 
 .header__inner {
   width: auto;
-  padding: 0 25px 0;
+  padding: 0 25px;
   margin: 0 auto;
   padding-top: 25px;
 }
 
 .header__top {
+  width: auto;
+  padding: 15px 25px;
   display: flex;
   justify-content: space-between;
 }
@@ -27,3 +29,60 @@
   outline: none;
 }
 
+.header__register {
+  display: none;
+}
+
+/* Tablet */
+
+@media (min-width: 768px) {
+  .header__top {
+    max-width: 768px;
+    margin: 0 auto;
+  }
+
+  .header__register {
+    display: block;
+    font-size: 20px;
+  }
+
+  .header__logo {
+    width: 165px;
+  }
+}
+
+/* Desktop */
+
+@media (min-width: 1440px) {
+  .header {
+    background-color: #161c35;
+    display: flex;
+    align-items: center;
+    padding: 50px 60px 0;
+  }
+
+  .header__logo {
+    position: relative;
+
+    &::after {
+      content: "";
+      width: 68px;
+      height: 2px;
+      background-color: #ffffff;
+      position: absolute;
+      right: -100px;
+    }
+  }
+
+  .header__top {
+    margin-right: 140px;
+  }
+
+  .header__toggle {
+    display: none;
+  }
+
+  .header__register {
+    display: none;
+  }
+}

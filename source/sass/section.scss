@@ -5,21 +5,23 @@
   padding-top: 30px;
   border-radius: 0 0 30px 30px;
   background-color: #192144;
-  padding-bottom: 35px;
   margin: -60px auto 0;
+
   &--about {
-    padding-top: 80px;
-    background: url("../img/about-mobile@1x.png") center 96% / 80% 85% no-repeat, #192144;
+    padding-bottom: 0;
   }
-  &--directions {
+
+  &--direction {
     background-color: #edeff6;
     padding-top: 100px;
     position: relative;
     z-index: 6;
   }
+
   &--travelers {
     z-index: 5;
     padding-top: 160px;
+
     &::before {
       content: "";
       width: 113px;
@@ -31,6 +33,7 @@
       border-radius: 0 20px 20px 0;
       z-index: 1;
     }
+
     &::after {
       content: "";
       width: 153px;
@@ -42,16 +45,19 @@
       right: 25px;
     }
   }
+
   &--rates {
     z-index: 4;
     padding-top: 100px;
-    background: url("../img/rates@1x.png") 230px 82px / 101px 107px no-repeat, #edeff6;
+    background-color: #edeff6;
   }
+
   &--rout {
     z-index: 2;
     padding-top: 100px;
     background-color: #ffd74b;
   }
+
   &--travelmates {
     background-color: #edeff6;
     margin: 0 auto;
@@ -63,21 +69,31 @@
   display: none;
 }
 
-.section--rates .section__title {
-  margin-left: 0;
-  margin-right: 0;
-  width: 105px;
-}
-
 .section__wrapper {
   width: auto;
-  padding: 0 25px;
+  padding: 0 25px 35px;
   margin: 0 auto;
-  &--rates {
-    padding: 0 60px 0 48px;
+
+  &--about {
+    padding-top: 80px;
+    padding-bottom: 35px;
+    background-image: url("../img/about-mobile@1x.png");
+    background-repeat: no-repeat;
+    background-size: 282px 370px;
+    background-position: 50% 96%;
   }
+
+  &--rates {
+    padding: 0 45px 35px;
+  }
+
+
   &--travelmates {
     width: 320px;
+  }
+
+  &--rout {
+    padding-bottom: 30px;
   }
 }
 
@@ -93,6 +109,20 @@
   z-index: 2;
 }
 
+.section__title--rates {
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 100px;
+    height: 102px;
+    background: url("../img/rates@1x.png") center center / contain no-repeat;
+    position: absolute;
+    top: -20px;
+    right: -144px;
+  }
+}
+
 .section__text {
   @include text;
   font-family: $text-font;
@@ -102,7 +132,9 @@
   margin: 0 25px 20px;
   position: relative;
   z-index: 2;
-  &--gray  {
+  max-width: 440px;
+
+  &--gray {
     color: #444444;
     margin-bottom: 65px;
   }
@@ -115,6 +147,9 @@
   font-size: 16px;
   color: #ffffff;
   margin: 0 25px 65px;
+  max-width: 270px;
+  position: relative;
+  z-index: 2;
 }
 
 .section__btn {
@@ -123,8 +158,375 @@
   font-size: 18px;
   justify-content: start;
   padding: 16px 20px;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+
+  &--border {
+    border: 3px solid #121936;
+  }
+
+  &--top {
+    display: none;
+  }
+}
+
+.section__btn-icon {
+  width: 14px;
+  height: 14px;
+  fill: #1d2e5b;
+  margin-left: auto;
+}
+
+.section__countries {
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.section__travelers {
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+
+  &::before {
+    content: "";
+    width: 71px;
+    height: 81px;
+    border-radius: 5px;
+    background: url("../img/rogovaya-back-mobile@1x.png") 0 0 / cover no-repeat;
+    position: absolute;
+    top: -45px;
+    left: -23px;
+  }
+}
+
+.section--rates .section__title {
+  margin-left: 0;
+  margin-right: 0;
+  width: 105px;
+}
+
+.section__rates {
+  @include list;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 35px;
 }
 
 .section__address {
   width: 100%;
+}
+
+/* Tablet */
+
+@media (min-width: 768px) {
+  .section {
+    &--about {
+      padding-top: 100px;
+      background-color: #192144;
+
+      &::before {
+        content: "";
+        height: 212px;
+        background-color: #141b3b;
+        border-radius: 20px;
+        position: absolute;
+        top: 125px;
+        left: 40px;
+        right: 40px;
+      }
+    }
+
+    &--travelers {
+      &::before {
+        top: 100px;
+        left: 40px;
+        width: 215px;
+        height: 215px;
+        border-radius: 20px;
+      }
+
+      &::after {
+        top: 93px;
+        width: 281px;
+        height: 281px;
+        background-image: url("../img/rogovaya-back-desktop@1x.png");
+      }
+    }
+  }
+
+  .section__wrapper {
+    width: 768px;
+
+    &--about {
+      padding-bottom: 90px;
+      padding-right: 393px;
+      padding-left: 73px;
+      position: relative;
+      background-image: url("../img/about-tablet@1x.png");
+      background-repeat: no-repeat;
+      background-position: 376px 121px;
+      background-size: 50%;
+    }
+
+    &--direction {
+      padding: 0 73px 80px;
+      background-image: url("../img/flags-back@1x.png");
+      background-repeat: no-repeat;
+      background-size: 290px 586px;
+      background-position: 94% 0;
+    }
+
+    &--travelers {
+      padding: 0 73px 80px;
+    }
+
+    &--rout {
+      padding: 0 74px 80px;
+    }
+  }
+
+  .section__wrapper--travelers .section__text {
+    width: 440px;
+  }
+
+  .section__title {
+    margin-left: 0;
+    font-size: 45px;
+    margin-bottom: 40px;
+  }
+
+  .section__title--rates {
+    &::before {
+      top: 327px;
+      right: 75px;
+      z-index: 2;
+    }
+
+    &::after {
+      content: "";
+      width: 197px;
+      height: 280px;
+      border-radius: 20px;
+      background-color: rgba(#e2e5f2, 0.6);
+      position: absolute;
+      top: 84px;
+      right: 20px;
+      z-index: 1;
+    }
+  }
+
+  .section__text {
+    margin: 0 0 30px;
+    font-size: 28px;
+
+
+    &--gray {
+      width: 345px;
+      margin-bottom: 100px;
+    }
+  }
+
+  .section__advice {
+    margin: 0 0 49px;
+    font-size: 21px;
+  }
+
+  .section--about .section__btn {
+    display: flex;
+    width: 270px;
+    padding: 30px;
+  }
+
+  .section__btn {
+    font-size: 24px;
+    border-radius: 20px;
+    padding: 30px;
+  }
+
+  .section__countries {
+    margin-bottom: 50px;
+    max-width: 630px;
+    position: relative;
+
+    &::before {
+      content: "";
+      width: 140px;
+      height: 140px;
+      border-radius: 20px;
+      background-color: #e2e5f2;
+      position: absolute;
+      top: -60px;
+      left: -45px;
+    }
+  }
+
+  .section__travelers {
+    &::before {
+      width: 143px;
+      height: 143px;
+      background-image: url("../img/smolov-back-desktop@1x.png");
+      top: -94px;
+      left: -28px;
+    }
+  }
+
+  .section--rates .section__title {
+    margin-bottom: 75px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .section__rates {
+    padding-left: 90px;
+    position: relative;
+    z-index: 2;
+  }
+
+  .section__address {
+    margin-bottom: 60px;
+  }
+}
+
+/* Desktop */
+
+@media (min-width: 1440px) {
+  .section {
+    &--about {
+      &::before {
+        width: 222px;
+      }
+    }
+
+    &--travelers {
+      &::before {
+        top: 229px;
+      }
+
+      &::after {
+        top: 530px;
+        left: 185px;
+      }
+    }
+
+    &--rates {
+      padding-top: 160px;
+
+      &::after {
+        width: 446px;
+        height: 295px;
+        bottom: 123px;
+        right: 268px;
+      }
+    }
+  }
+
+  .section__wrapper {
+    width: 1320px;
+
+    &--about {
+      padding-bottom: 160px;
+      padding-right: 630px;
+      padding-left: 60px;
+      position: relative;
+      background-image: url("../img/about-desktop@1x.png");
+      background-repeat: no-repeat;
+      background-position: 100% 53px;
+      background-size: 46%;
+    }
+
+    &--direction {
+      padding-top: 80px;
+      display: flex;
+      background-position: 94% 23px;
+    }
+
+    &--travelers {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 120px;
+      padding-right: 0;
+    }
+
+    &--rout {
+      display: flex;
+      align-items: center;
+      padding: 0 74px 30px 225px;
+    }
+  }
+
+  .section__wrapper--about .section__advice {
+    max-width: 410px;
+    margin-bottom: 85px;
+  }
+
+  .section__content {
+    order: 2;
+  }
+
+  .section__title {
+    margin-bottom: 60px;
+  }
+
+  .section__title--rates {
+    margin-bottom: 130px;
+
+    &::before {
+      width: 200px;
+      height: 200px;
+      top: 123px;
+      right: 49px;
+      z-index: 2;
+    }
+
+    &::after {
+      content: "";
+      width: 445px;
+      height: 300px;
+      border-radius: 20px;
+      background-color: rgba(#e2e5f2, 0.6);
+      position: absolute;
+      top: 72px;
+      right: 160px;
+      z-index: 1;
+    }
+  }
+
+  .section__advice {
+    margin-bottom: 80px;
+  }
+
+  .section__btn {
+    &--down {
+      display: none;
+    }
+
+    &--top {
+      display: block;
+      width: 270px;
+    }
+  }
+
+  .section--rout .section__btn {
+    width: 325px;
+  }
+
+  .section__travelers {
+    margin: 0;
+    order: 2;
+    width: 630px;
+  }
+
+  .section__rates {
+    margin: 0;
+    margin-bottom: 30px;
+    padding-left: 165px;
+  }
+
+  .section__address {
+    width: 560px;
+    margin-bottom: 0;
+    margin-right: 140px;
+  }
 }

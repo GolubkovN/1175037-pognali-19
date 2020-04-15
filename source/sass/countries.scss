@@ -1,15 +1,15 @@
 
 .countries {
   width: 100%;
+  max-width: 350px;
   display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 20px;
+  flex-direction: column;
 }
 
 .countries__card {
   flex-basis: 100%;
-  max-width: 320px;
   margin-bottom: 15px;
+
   &:last-child {
     margin-bottom: 0;
   }
@@ -27,8 +27,6 @@
 
 .countries__desc {
   background-color: #ffffff;
-  display: flex;
-  justify-content: space-between;
   border-radius: 10px;
   margin-top: -15px;
   position: relative;
@@ -44,20 +42,25 @@
   color: #161c35;
   margin-bottom: 5px;
   position: relative;
+
   &::before {
     content: "";
     width: 35px;
     height: 24px;
+    border-radius: 4px;
     position: absolute;
     top: -42px;
     left: 0;
   }
+
   &--thailand::before {
     background: lightblue;
   }
+
   &--frace::before {
     background: lightblue;
   }
+
   &--czech::before {
     background: lightblue;
   }
@@ -79,6 +82,7 @@
   color: rgba(68, 68, 68, 0.3);
   display: flex;
   align-items: center;
+
   &::before {
     content: "";
     display: block;
@@ -90,4 +94,73 @@
   }
 }
 
+/* Tablet */
 
+@media (min-width: 768px) {
+  .countries {
+    max-width: 630px;
+  }
+
+  .countries__card {
+    flex-basis: 100%;
+    max-width: 620px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .countries__pic {
+    order: 2;
+    width: 186px;
+  }
+
+  .countries__pic img {
+    border-radius: 0 10px 10px 0;
+    height: 100%;
+  }
+
+  .countries__desc {
+    flex-grow: 1;
+    margin-top: 0;
+    border-radius: 10px 0 0 10px;
+    justify-content: flex-start;
+  }
+
+  .countries__words {
+    margin-bottom: 15px;
+  }
+
+  .countries__name {
+    font-size: 24px;
+    position: relative;
+
+    &::before {
+      content: "";
+      width: 70px;
+      height: 47px;
+      border-radius: 10px;
+      position: absolute;
+      top: -17px;
+      left: 380px;
+    }
+  }
+
+  .countries__users {
+    position: static;
+  }
+}
+
+/* Desktop */
+
+@media (min-width: 1440px) {
+  .countries {
+    max-width: 565px;
+    margin: 0;
+    margin-right: 170px;
+  }
+
+  .countries__name {
+    &::before {
+      left: 330px;
+    }
+  }
+}

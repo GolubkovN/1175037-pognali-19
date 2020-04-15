@@ -1,28 +1,14 @@
 .travelers {
-  width: 100%;
-  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin-bottom: 20px;
   position: relative;
-  &::before {
-    content: "";
-    width: 71px;
-    height: 81px;
-    border-radius: 5px;
-    background: url("../img/rogovaya-back-mobile@1x.png") 0 0 / cover no-repeat;
-    position: absolute;
-    top: -45px;
-    left: -23px;
-  }
 }
 
 .travelers__card {
   display: flex;
   flex-direction: column;
   width: 270px;
-  min-height: 427px;
   margin: 0 auto;
   margin-bottom: 10px;
   position: relative;
@@ -36,7 +22,7 @@
 .travelers__profile-link img {
   display: block;
   width: 100%;
-  border-radius: 20px 20px 0 0;
+  border-radius: 10px 10px 0 0;
 }
 
 .travelers__desc {
@@ -45,7 +31,7 @@
   width: 100%;
   height: auto;
   padding: 27px 40px 20px;
-  border-radius: 0 0 20px 20px;
+  border-radius: 0 0 10px 10px;
 }
 
 .travalers__desc-list {
@@ -61,6 +47,7 @@
   align-items: center;
   justify-content: center;
   margin-bottom: 15px;
+
   &::before {
     content: "";
     width: 5px;
@@ -96,4 +83,25 @@
 
 .travelers__transport-title {
   display: none;
+}
+
+/* Tablet */
+
+@media (min-width: 768px) {
+  .travelers__card {
+    width: 290px;
+    min-height: 483px;
+    margin: 0;
+  }
+}
+
+/* Desktop */
+
+@media (min-width: 1440px) {
+  .travelers {
+    &::before {
+      top: 0;
+      left: -200px;
+    }
+  }
 }

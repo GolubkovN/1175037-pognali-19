@@ -1,3 +1,35 @@
 .social__list {
   @include list;
+  display: flex;
+  width: 137px;
+  margin: 0 auto;
+}
+
+.social__item {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: #ffd74b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social__icon {
+  fill: #1d2e5b;
+
+  &--fb {
+    width: 12px;
+    height: 22px;
+  }
+
+  &--vk {
+    width: 24px;
+    height: 13px;
+  }
+
+  &--inst {
+    width: 18px;
+    height: 18px;
+  }
 }
