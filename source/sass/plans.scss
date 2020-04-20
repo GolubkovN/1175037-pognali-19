@@ -13,7 +13,7 @@
   padding: 0 25px;
 }
 
-.plans__title {
+.plans__main-title {
   margin: 0;
   font-family: $titles-font;
   font-size: 24px;
@@ -30,6 +30,7 @@
   background-color: #ffffff;
   padding: 20px;
   margin-bottom: 10px;
+
   &:last-child {
     margin-bottom: 0;
   }
@@ -39,7 +40,7 @@
   margin-bottom: 25px;
 }
 
-.planes__title {
+.plans__title {
   @include text;
   font-family: $titles-font;
   font-size: 16px;
@@ -59,10 +60,92 @@
   font-weight: 500;
   color: #b2b2b2;
   text-transform: uppercase;
+
   &:hover {
     color: #1d2e5b;
   }
+
   &:focus {
     color: #1d2e5b;
+  }
+}
+
+/* Tablet */
+
+@media (min-width: 768px) {
+  .plans__wrapper {
+    width: 768px;
+    margin: 0 auto;
+    padding: 0 74px;
+  }
+
+  .plans__main-title {
+    font-size: 35px;
+  }
+
+  .plans__item {
+    padding-bottom: 10px;
+  }
+
+  .plans__title {
+    display: flex;
+    justify-content: space-between;
+    font-size: 24px;
+    margin-bottom: 50px;
+  }
+
+  .plans__number {
+    order: 2;
+  }
+
+  .plans__text-wrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+  }
+
+  .plans__text {
+    font-size: 20px;
+
+    &:first-child {
+      margin-right: 45px;
+    }
+  }
+
+  .plans__change {
+    margin-left: auto;
+    font-size: 20px;
+  }
+}
+
+/* Desktop */
+
+@media (min-width: 1440px) {
+  .plans__wrapper {
+    width: 1320px;
+    padding: 0;
+    padding-left: 64px;
+  }
+
+  .plans__item {
+    display: flex;
+    align-items: center;
+    padding: 35px;
+  }
+
+  .plans__title {
+    margin-bottom: 0;
+    width: 281px;
+    justify-content: flex-start;
+    margin-right: 304px;
+  }
+
+  .plans__number {
+    order: -1;
+    margin-right: 34px;
+  }
+
+  .plans__text-wrapper {
+    flex-grow: 1;
   }
 }

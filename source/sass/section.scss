@@ -433,7 +433,7 @@
       background-image: url("../img/about-desktop@1x.png");
       background-repeat: no-repeat;
       background-position: 100% 53px;
-      background-size: 46%;
+      background-size: 48%;
     }
 
     &--direction {
@@ -491,6 +491,10 @@
       right: 160px;
       z-index: 1;
     }
+  }
+
+  .section__text {
+    max-width: 623px;
   }
 
   .section__advice {

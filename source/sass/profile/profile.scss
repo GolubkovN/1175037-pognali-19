@@ -78,9 +78,50 @@
 .profile__transport {
   position: relative;
   margin: 0;
-  padding: 25px;
+  padding: 15px;
   border-radius: 10px;
   border: 1px solid #cbced9;
+}
+
+.profile__transport-wrapper {
+  width: 133px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.profile__group {
+  &::before {
+    content: "";
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    position: absolute;
+  }
+}
+
+.profile__check-input:checked ~ .profile__custom {
+  opacity: 1;
+}
+
+.profile__custom {
+  width: 33px;
+  height: 33px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  opacity: 0.3;
+}
+
+.profile__transport-icon {
+  fill: #1d2e5b;
+  position: relative;
+}
+
+.profile__check-name {
+  display: none;
 }
 
 /* Tablet */
@@ -106,20 +147,66 @@
   }
 
   .profile__transport {
-    width: 315px;
+    width: 308px;
+    height: 94px;
     position: relative;
     top: -316px;
     left: 141px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .profile__transport-wrapper {
+    width: 172px;
+  }
+
+  .profile__group {
+    &::before {
+      width: 43px;
+      height: 43px;
+    }
+  }
+
+  .profile__custom {
+    width: 43px;
+    height: 43px;
+  }
+
+  .profile__transport-icon {
+    height: 21px;
+
+    &--plane {
+      width: 19px;
+    }
+
+    &--bus {
+      width: 17px;
+    }
+
+    &--bike {
+      width: 24px;
+    }
+
+    &--run {
+      width: 20px;
+    }
   }
 
   .profile__legend {
     top: 80px;
     left: 276px;
+    font-size: 20px;
+    text-transform: uppercase;
 
     &--transport {
-      top: 104px;
+      top: 82px;
       left: 112px;
     }
+  }
+
+  .profile__textarea {
+    font-size: 20px;
   }
 }
 
@@ -173,5 +260,13 @@
     width: 388px;
     top: 0;
     left: 0;
+  }
+
+  .profile__legend {
+    left: 26px;
+
+    &--transport {
+      left: 145px;
+    }
   }
 }
