@@ -17,12 +17,14 @@
 
 .travelers__profile-link {
   display: block;
+  overflow: hidden;
 }
 
-.travelers__profile-link img {
+.travelers__profile-img {
   display: block;
   width: 100%;
   border-radius: 10px 10px 0 0;
+  transition: transform 0.3s ease-in-out;
 }
 
 .travelers__desc {
@@ -58,6 +60,10 @@
   }
 }
 
+.travelers__name--green::before {
+  background-color: #81e31e;
+}
+
 .travelers__hashtags {
   width: 180px;
   margin: 0 auto;
@@ -73,6 +79,27 @@
   justify-content: space-between;
 }
 
+.travelers__transport-item {
+  position: relative;
+
+  &::after {
+    content: "";
+    width: 8px;
+    height: 8px;
+    background-color: #101d41;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 25px;
+    left: 5px;
+    opacity: 0;
+    transition: opacity 0.1s;
+  }
+}
+
+.travelers__transport-item:hover::after {
+  opacity: 1;
+}
+
 .travelers__transport-item svg {
   fill: #d9d9d9;
 }
@@ -81,17 +108,65 @@
   fill: #1d2e5b;
 }
 
+.travelers__transport-item:hover .travelers__transport-title {
+  padding: 10px 21px;
+  background-color: #101d41;
+  color: #ffffff;
+  font-size: 20px;
+  line-height: 1.5;
+  z-index: 3;
+}
+
 .travelers__transport-title {
-  display: none;
+  font-size: 0;
+  line-height: 0;
+  color: transparent;
+  position: absolute;
+  top: 29px;
+  left: -33px;
+  transition: all 0.3s;
+  border-radius: 5px;
 }
 
 /* Tablet */
 
 @media (min-width: 768px) {
   .travelers__card {
-    width: 290px;
-    min-height: 483px;
+    border-radius: 20px;
+    width: 285px;
     margin: 0;
+    overflow: hidden;
+  }
+
+  .travelers__card:hover,
+  .travelers__card:focus,
+  .travelers__card:active {
+    box-shadow: 0 6px 21px 0 rgba(73, 73, 73, 0.8);
+  }
+
+  .travelers__card:hover .travelers__profile-img,
+  .travelers__card:focus .travelers__profile-img,
+  .travelers__card:active .travelers__profile-img {
+    transform: scale(1.1);
+  }
+
+  .travelers__profile-link {
+    width: 285px;
+    height: 285px;
+  }
+
+  .travelers__profile-img {
+    height: 283px;
+    border-radius: 20px 20px 0 0;
+  }
+
+  .travelers__desc {
+    height: 198px;
+    border-radius: 0 0 20px 20px;
+  }
+
+  .travelers__transport-title {
+
   }
 }
 
@@ -99,9 +174,16 @@
 
 @media (min-width: 1440px) {
   .travelers {
+    left: 615px;
+    top: -421px;
+
     &::before {
       top: 0;
       left: -200px;
     }
+  }
+
+  .travelers__btn {
+    margin-top: -500px;
   }
 }

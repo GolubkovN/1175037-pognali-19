@@ -6,6 +6,11 @@
   margin-top: 40px;
   margin-bottom: 40px;
   padding: 35px 0 0 0;
+  display: none;
+}
+
+.modal--show {
+  display: block;
 }
 
 .modal__title {
@@ -29,9 +34,11 @@
   font-weight: 300;
   color: #444444;
   border-top: 1px solid #eeeeee;
+
   &:last-child {
-    border-bottom: 1px solid #eeeeee;;
+    border-bottom: 1px solid #eeeeee;
   }
+
   p {
     width: 165px;
   }
@@ -49,4 +56,37 @@
   font-size: 16px;
   text-transform: uppercase;
   color: #1d2e5b;
+}
+
+/* Tablet */
+
+@media (min-width: 768px) {
+  .modal {
+    width: 688px;
+    margin: 0 auto;
+  }
+
+  .modal__title {
+    font-size: 45px;
+    margin-top: 50px;
+  }
+
+  .modal__item {
+    display: flex;
+    justify-content: space-between;
+    font-size: 22px;
+  }
+
+  .modal__list {
+    margin: 0 90px 50px;
+  }
+
+  .modal__item p {
+    width: auto;
+  }
+
+  .modal__close {
+    font-size: 24px;
+    padding: 40px 78px;
+  }
 }

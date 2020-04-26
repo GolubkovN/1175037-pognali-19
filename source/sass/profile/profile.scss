@@ -89,41 +89,6 @@
   display: flex;
 }
 
-.profile__group {
-  &::before {
-    content: "";
-    width: 33px;
-    height: 33px;
-    border-radius: 50%;
-    background-color: #ffffff;
-    position: absolute;
-  }
-}
-
-.profile__check-input:checked ~ .profile__custom {
-  opacity: 1;
-}
-
-.profile__custom {
-  width: 33px;
-  height: 33px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  position: relative;
-  opacity: 0.3;
-}
-
-.profile__transport-icon {
-  fill: #1d2e5b;
-  position: relative;
-}
-
-.profile__check-name {
-  display: none;
-}
-
 /* Tablet */
 
 @media (min-width: 768px) {
@@ -159,38 +124,6 @@
 
   .profile__transport-wrapper {
     width: 172px;
-  }
-
-  .profile__group {
-    &::before {
-      width: 43px;
-      height: 43px;
-    }
-  }
-
-  .profile__custom {
-    width: 43px;
-    height: 43px;
-  }
-
-  .profile__transport-icon {
-    height: 21px;
-
-    &--plane {
-      width: 19px;
-    }
-
-    &--bus {
-      width: 17px;
-    }
-
-    &--bike {
-      width: 24px;
-    }
-
-    &--run {
-      width: 20px;
-    }
   }
 
   .profile__legend {

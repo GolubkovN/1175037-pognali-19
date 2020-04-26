@@ -2,7 +2,7 @@
 
 @import "../sass/normalize.scss";
 @import "../sass/fonts.scss";
-@import "../sass/gobal.scss";
+@import "../sass/global.scss";
 @import "../sass/mixins.scss";
 @import "../sass/variables.scss";
 @import "../sass/button.scss";
@@ -33,12 +33,14 @@
 @import "../sass/plans.scss";
 @import "../sass/steps.scss";
 @import "../sass/calendar.scss";
+@import "../sass/check-transport.scss";
 
 /********************* directions.html end**************/
 
 @import "../sass/countries-filter/countries-filter.scss";
 @import "../sass/countries-filter/continents.scss";
-@import "../sass/countries-filter/alfabet.scss";
+@import "../sass/countries-filter/alphabet.scss";
 @import "../sass/countries-filter/regions.scss";
 @import "../sass/travelers-filter.scss";
 @import "../sass/travelmates.scss";
+@import "../sass/pagination.scss";

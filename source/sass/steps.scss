@@ -262,6 +262,71 @@
   display: none;
 }
 
+/* Dropdown alphabet start */
+
+.steps__alphabet-wrapper {
+  position: absolute;
+  top: 43px;
+  z-index: 3;
+  height: 475px;
+  background-color: #ffffff;
+  border: 1px solid #cbced9;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0 20px 50px 0 rgba(29, 46, 91, 0.1);
+  display: none;
+}
+
+.steps__alphabet {
+  @include list;
+  display: flex;
+  flex-wrap: wrap;
+  width: 220px;
+}
+
+.steps__letter {
+  width: 44px;
+  height: 44px;
+  background-color: #ffffff;
+  border: 0.5px solid #cbced9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &--check {
+    background-color: #edeff6;
+  }
+}
+
+.steps__letter-link {
+  font-family: $medium-font;
+  font-size: 14px;
+  color: #1d2e5b;
+}
+
+.steps__lands {
+  @include list;
+  display: none;
+
+  &--select {
+    display: block;
+    position: absolute;
+    top: 235px;
+    left: 15px;
+  }
+}
+
+.steps__land:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.steps__land-link {
+  font-family: "bloggersans", "Arial", sans-serif;
+  font-size: 16px;
+  color: #444444;
+}
+
+/* Dropdown alphabet end */
+
 .steps__countrie {
   display: inline-block;
   vertical-align: middle;
@@ -614,6 +679,59 @@
     width: 100%;
   }
 
+  /* Dropdown alphabet start */
+
+  .steps__alphabet-wrapper {
+    top: 77px;
+    width: 575px;
+    height: 417px;
+    padding: 35px 30px;
+  }
+
+  .steps__alphabet {
+    width: 261px;
+    position: relative;
+
+    &::after {
+      content: "";
+      width: 1px;
+      height: 417px;
+      background-color: #eaecf2;
+      position: absolute;
+      top: -36px;
+      right: -81px;
+    }
+  }
+
+  .steps__letter {
+    width: 52px;
+    height: 70px;
+
+    &--check {
+      background-color: #1d2e5b;
+    }
+  }
+
+  .steps__letter--check .steps__letter-link {
+    color: #ffffff;
+  }
+
+  .steps__letter-link {
+    font-size: 20px;
+  }
+
+  .steps__lands--select {
+    width: 165px;
+    left: 360px;
+    top: 0;
+  }
+
+  .steps__land-link {
+    font-size: 20px;
+  }
+
+  /* Dropdown alphabet end */
+
   .steps__countrie {
     font-size: 20px;
     padding: 25px;
@@ -818,6 +936,42 @@
       right: -48px;
     }
   }
+
+  /* Dropdown alphabet start */
+
+  .steps__alphabet-wrapper {
+    width: 730px;
+    height: 480px;
+  }
+
+  .steps__alphabet {
+    width: 366px;
+
+    &::after {
+      content: "";
+      width: 1px;
+      height: 417px;
+      background-color: #eaecf2;
+      position: absolute;
+      top: -36px;
+      right: -81px;
+    }
+  }
+
+  .steps__letter {
+    border-radius: 4px;
+  }
+
+  .steps__letter:not(:last-child) {
+    margin-right: 15px;
+    margin-bottom: 15px;
+  }
+
+  .steps__lands--select {
+    left: 488px;
+  }
+
+  /* Dropdown alphabet end */
 
   .steps__flags {
     width: 185px;

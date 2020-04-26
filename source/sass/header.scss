@@ -49,6 +49,11 @@
   .header__logo {
     width: 165px;
   }
+
+  .header__logo-pic {
+    width: 165px;
+    height: 42px;
+  }
 }
 
 /* Desktop */
@@ -63,6 +68,7 @@
 
   .header__logo {
     position: relative;
+    width: 200px;
 
     &::after {
       content: "";
@@ -74,8 +80,15 @@
     }
   }
 
+  .header__logo-pic {
+    width: 200px;
+    height: 52px;
+  }
+
   .header__top {
     margin-right: 140px;
+    padding: 0;
+    margin-left: 0;
   }
 
   .header__toggle {
