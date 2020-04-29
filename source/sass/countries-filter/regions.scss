@@ -1,10 +1,12 @@
-.regions {
-  display: flex;
-  flex-direction: column;
-}
-
 .regions__link {
   font: inherit;
   line-height: 1.38;
   color: #444444;
+}
+
+/* tablet */
+@media (min-width: 768px) {
+  .regions__link {
+    font-size: 20px;
+  }
 }

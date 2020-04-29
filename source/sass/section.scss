@@ -285,6 +285,11 @@
     &--rout {
       padding: 0 74px 80px;
     }
+
+    &--travelmates {
+      width: 768px;
+      padding: 0 40px;
+    }
   }
 
   .section__wrapper--travelers .section__text {
@@ -399,6 +404,10 @@
       }
     }
 
+    &--direction {
+      padding-top: 130px;
+    }
+
     &--travelers {
       &::before {
         top: 229px;
@@ -433,18 +442,15 @@
       background-image: url("../img/about-desktop@1x.png");
       background-repeat: no-repeat;
       background-position: 100% 53px;
-      background-size: 46%;
+      background-size: 48%;
     }
 
     &--direction {
-      padding-top: 80px;
-      display: flex;
-      background-position: 94% 23px;
+      padding: 80px 0;
+      background-position: 100% 5px;
     }
 
     &--travelers {
-      display: flex;
-      justify-content: space-between;
       padding-top: 120px;
       padding-right: 0;
     }
@@ -453,6 +459,13 @@
       display: flex;
       align-items: center;
       padding: 0 74px 30px 225px;
+    }
+
+    &--travelmates {
+      width: 1440px;
+      padding: 0 60px;
+      display: flex;
+      justify-content: space-between;
     }
   }
 
@@ -463,6 +476,11 @@
 
   .section__content {
     order: 2;
+    margin-left: 800px;
+
+    &--travelers {
+      margin-left: 0;
+    }
   }
 
   .section__title {
@@ -493,20 +511,14 @@
     }
   }
 
+  .section__text {
+    max-width: 623px;
+  }
+
   .section__advice {
     margin-bottom: 80px;
   }
 
-  .section__btn {
-    &--down {
-      display: none;
-    }
-
-    &--top {
-      display: block;
-      width: 270px;
-    }
-  }
 
   .section--rout .section__btn {
     width: 325px;
@@ -514,7 +526,6 @@
 
   .section__travelers {
     margin: 0;
-    order: 2;
     width: 630px;
   }
 
@@ -528,5 +539,9 @@
     width: 560px;
     margin-bottom: 0;
     margin-right: 140px;
+  }
+
+  .section__btn {
+    max-width: 275px;
   }
 }

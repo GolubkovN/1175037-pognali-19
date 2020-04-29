@@ -1,0 +1,70 @@
+.check-transport__group {
+  &::before {
+    content: "";
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    position: absolute;
+  }
+}
+
+.check-transport__input:checked ~ .check-transport__custom {
+  opacity: 1;
+}
+
+.check-transport__custom {
+  width: 33px;
+  height: 33px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  opacity: 0.3;
+}
+
+.check-transport__icon {
+  fill: #1d2e5b;
+  position: relative;
+}
+
+.check-transport__name {
+  display: none;
+}
+
+/* Tablet */
+
+@media (min-width: 768px) {
+  .check-transport__group {
+    &::before {
+      width: 43px;
+      height: 43px;
+    }
+  }
+
+  .check-transport__custom {
+    width: 43px;
+    height: 43px;
+  }
+
+  .check-transport__icon {
+    height: 21px;
+
+    &--plane {
+      width: 19px;
+    }
+
+    &--bus {
+      width: 17px;
+    }
+
+    &--bike {
+      width: 24px;
+    }
+
+    &--run {
+      width: 20px;
+    }
+  }
+}

@@ -1,0 +1,74 @@
+.contacts {
+  @include list;
+}
+
+.contacts__link {
+  font-family: $titles-font;
+  font-size: 16px;
+  color: #192144;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+}
+
+.contacts__icon-wrapper {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: #121936;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 15px;
+}
+
+.contacts__icon {
+  width: 20px;
+  height: 20px;
+  fill: #ffd74b;
+}
+
+/* Tablet */
+
+@media (min-width: 768px) {
+  .contacts__link {
+    font-size: 28px;
+  }
+
+  .contacts__icon-wrapper {
+    width: 70px;
+    height: 70px;
+  }
+
+  .contacts__icon {
+    width: 27px;
+    height: 27px;
+  }
+}
+
+/* Desktop */
+
+@media (min-width: 1440px) {
+  .contacts__link span {
+    display: none;
+  }
+
+  .contacts__btn {
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+
+  .contacts__icon-wrapper {
+    width: 55px;
+    height: 55px;
+    background-color: #ff8d30;
+
+    &--yellow {
+      background-color: #ffbd30;
+    }
+  }
+
+  .contacts__icon {
+    fill: #161c35;
+  }
+}

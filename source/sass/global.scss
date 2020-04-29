@@ -13,6 +13,7 @@ body {
   line-height: 1;
   font-size: 16px;
   min-width: 320px;
+  background-color: #121936;
 }
 
 a {
@@ -23,7 +24,7 @@ img {
   max-width: 100%;
 }
 
-.visually-hidden:not(:focus):not(:active) {
+.visually-hidden {
   position: absolute;
 
   width: 1px;

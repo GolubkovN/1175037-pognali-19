@@ -78,9 +78,15 @@
 .profile__transport {
   position: relative;
   margin: 0;
-  padding: 25px;
+  padding: 15px;
   border-radius: 10px;
   border: 1px solid #cbced9;
+}
+
+.profile__transport-wrapper {
+  width: 133px;
+  margin: 0 auto;
+  display: flex;
 }
 
 /* Tablet */
@@ -106,20 +112,34 @@
   }
 
   .profile__transport {
-    width: 315px;
+    width: 308px;
+    height: 94px;
     position: relative;
     top: -316px;
     left: 141px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .profile__transport-wrapper {
+    width: 172px;
   }
 
   .profile__legend {
     top: 80px;
     left: 276px;
+    font-size: 20px;
+    text-transform: uppercase;
 
     &--transport {
-      top: 104px;
+      top: 82px;
       left: 112px;
     }
+  }
+
+  .profile__textarea {
+    font-size: 20px;
   }
 }
 
@@ -173,5 +193,13 @@
     width: 388px;
     top: 0;
     left: 0;
+  }
+
+  .profile__legend {
+    left: 26px;
+
+    &--transport {
+      left: 145px;
+    }
   }
 }
