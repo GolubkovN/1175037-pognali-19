@@ -1,0 +1,128 @@
+.container {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 25px;
+  padding-bottom: 35px;
+  position: relative;
+
+  &--about {
+    padding-top: 80px;
+    padding-bottom: 35px;
+    background-image: url("../img/about-mobile@1x.png");
+    background-repeat: no-repeat;
+    background-size: 282px 370px;
+    background-position: 50% 96%;
+    position: relative;
+    z-index: 2;
+  }
+
+  &--rates {
+    padding: 0 45px 35px;
+  }
+
+  &--travelmates {
+    width: 320px;
+  }
+
+  &--rout {
+    padding-bottom: 30px;
+  }
+}
+
+/* Tablet */
+
+@media (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding: 0 74px;
+    padding-bottom: 60px;
+
+    &--about {
+      padding-top: 147px;
+      padding-bottom: 90px;
+      padding-right: 393px;
+      padding-left: 73px;
+      position: relative;
+      background-image: url("../img/about-tablet@1x.png");
+      background-repeat: no-repeat;
+      background-position: 366px 160px;
+      background-size: 52%;
+    }
+
+    &--direction {
+      padding: 0 73px 80px;
+      background-image: url("../img/flags-back@1x.png");
+      background-repeat: no-repeat;
+      background-size: 290px 586px;
+      background-position: 94% 0;
+    }
+
+    &--travelers {
+      padding: 0 73px 80px;
+    }
+
+    &--rout {
+      padding: 0 74px 80px;
+    }
+
+    &--travelmates {
+      width: 768px;
+      padding: 0 40px;
+    }
+  }
+}
+
+/* Desktop */
+
+@media (min-width: 1440px) {
+  .container {
+    width: 1320px;
+    margin: 0 auto;
+
+    &--about {
+      padding-bottom: 160px;
+      padding-right: 630px;
+      padding-left: 60px;
+      position: relative;
+      background-image: url("../img/about-desktop@1x.png");
+      background-repeat: no-repeat;
+      background-position: 100% 111px;
+      background-size: 48%;
+    }
+
+    &--direction {
+      padding: 80px 0;
+      background-position: 100% 5px;
+    }
+
+    &--travelers {
+      padding-top: 120px;
+      padding-right: 0;
+    }
+
+    &--rates {
+      padding-bottom: 165px;
+    }
+
+    &--rout {
+      display: flex;
+      align-items: center;
+      padding: 0 74px 50px 225px;
+    }
+
+    &--travelmates {
+      width: 1440px;
+      padding: 0 60px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &--steps {
+      padding: 0;
+    }
+
+    &--form {
+      padding-right: 0;
+    }
+  }
+}

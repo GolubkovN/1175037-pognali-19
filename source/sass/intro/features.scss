@@ -5,10 +5,13 @@
 }
 
 .features__item {
-  flex-basis: 100%;
+  width: 100%;
+  height: 1px;
+  min-height: 81px;
   display: flex;
   justify-content: space-between;
-  padding: 20px 20px 25px 22px;
+  align-items: center;
+  padding: 10px 23px;
   margin-top: -10px;
 
   &--orange {
@@ -42,6 +45,7 @@
   font-family: $titles-font;
   font-size: 18px;
   color: #161c35;
+  margin-right: 65px;
 }
 
 .features__number {
@@ -54,40 +58,45 @@
 
 @media (min-width: 768px) {
   .features__item {
-    flex-basis: 50%;
+    width: 50%;
+    height: 1px;
+    min-height: 140px;
+    align-items: flex-start;
+    justify-content: center;
     flex-direction: column;
     margin-top: 0;
+    padding: 0 30px;
 
     &--orange {
       background-color: #ff8d30;
-      border-top-right-radius: 10px;
-      border-top-left-radius: 10px;
-      flex-grow: 1;
+      border-top-left-radius: 20px;
     }
 
     &--light-orange {
       background-color: #ffa530;
-      border-top-right-radius: 10px;
-      border-top-left-radius: 10px;
-      margin-left: -17px;
+      border-top-right-radius: 20px;
+      border-top-left-radius: 20px;
+      margin-left: -20px;
+      flex-grow: 1;
     }
 
     &--yellow {
       background-color: #ffbd30;
-      border-radius: 0 0 10px 10px;
-      flex-grow: 1;
+      border-radius: 0 0 0 20px;
     }
 
     &--light-yellow {
       background-color: #ffd74b;
-      border-radius: 0 0 10px 10px;
-      margin-left: -17px;
+      border-radius: 0 0 20px 20px;
+      margin-left: -20px;
+      flex-grow: 1;
     }
   }
 
   .features__text {
     font-size: 24px;
-    width: 208px;
+    width: 188px;
+    margin-right: 0;
     margin-bottom: 15px;
   }
 
@@ -100,15 +109,15 @@
 
 @media (min-width: 1440px) {
   .features__item {
-    flex-basis: 25%;
+    width: 25%;
+    min-height: 107px;
     flex-direction: row;
+    align-items: center;
     margin-left: -17px;
-    padding-right: 25px + 17px;
 
     &--orange {
       background-color: #ff8d30;
       border-radius: 20px 0 0 20px;
-      flex-grow: 1;
       margin-left: 0;
     }
 
@@ -129,6 +138,16 @@
       border-radius: 20px;
       margin-left: -17px;
       padding-right: 25px;
+      flex-grow: 1;
     }
+  }
+
+  .features__text {
+    margin-right: 85px;
+    margin-bottom: 0;
+  }
+
+  .features__number {
+    margin-top: -15px;
   }
 }

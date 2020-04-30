@@ -9,6 +9,18 @@
 
   &--about {
     padding-bottom: 0;
+
+    &::before {
+      content: "";
+      width: 110px;
+      height: 132px;
+      background-color: #141b3b;
+      border-radius: 0 20px 20px 0;
+      position: absolute;
+      top: 90px;
+      left: 0;
+      z-index: 0;
+    }
   }
 
   &--direction {
@@ -69,34 +81,6 @@
   display: none;
 }
 
-.section__wrapper {
-  width: auto;
-  padding: 0 25px 35px;
-  margin: 0 auto;
-
-  &--about {
-    padding-top: 80px;
-    padding-bottom: 35px;
-    background-image: url("../img/about-mobile@1x.png");
-    background-repeat: no-repeat;
-    background-size: 282px 370px;
-    background-position: 50% 96%;
-  }
-
-  &--rates {
-    padding: 0 45px 35px;
-  }
-
-
-  &--travelmates {
-    width: 320px;
-  }
-
-  &--rout {
-    padding-bottom: 30px;
-  }
-}
-
 .section__title {
   font-family: $titles-font;
   color: #ff8d30;
@@ -107,20 +91,6 @@
   display: block;
   position: relative;
   z-index: 2;
-}
-
-.section__title--rates {
-  position: relative;
-
-  &::before {
-    content: "";
-    width: 100px;
-    height: 102px;
-    background: url("../img/rates@1x.png") center center / contain no-repeat;
-    position: absolute;
-    top: -20px;
-    right: -144px;
-  }
 }
 
 .section__text {
@@ -154,17 +124,19 @@
 
 .section__btn {
   width: 100%;
+  min-height: 60px;
   border-radius: 10px;
   font-size: 18px;
+  line-height: 1;
   justify-content: start;
-  padding: 16px 20px;
+  padding: 5px 24px;
   position: relative;
   z-index: 2;
   display: flex;
   align-items: center;
 
-  &--border {
-    border: 3px solid #121936;
+  &--outline {
+    border: 2px solid #121936;
   }
 
   &--top {
@@ -196,8 +168,8 @@
     border-radius: 5px;
     background: url("../img/rogovaya-back-mobile@1x.png") 0 0 / cover no-repeat;
     position: absolute;
-    top: -45px;
-    left: -23px;
+    top: -41px;
+    left: -37px;
   }
 }
 
@@ -205,6 +177,17 @@
   margin-left: 0;
   margin-right: 0;
   width: 105px;
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 100px;
+    height: 102px;
+    background: url("../img/rates@1x.png") center center / contain no-repeat;
+    position: absolute;
+    top: -20px;
+    right: -144px;
+  }
 }
 
 .section__rates {
@@ -223,24 +206,23 @@
 @media (min-width: 768px) {
   .section {
     &--about {
-      padding-top: 100px;
       background-color: #192144;
 
       &::before {
-        content: "";
         height: 212px;
-        background-color: #141b3b;
+        width: 688px;
         border-radius: 20px;
-        position: absolute;
         top: 125px;
-        left: 40px;
+        left: 59px;
         right: 40px;
       }
     }
 
     &--travelers {
+      padding-top: 200px;
+
       &::before {
-        top: 100px;
+        top: 130px;
         left: 40px;
         width: 215px;
         height: 215px;
@@ -248,7 +230,7 @@
       }
 
       &::after {
-        top: 93px;
+        top: 130px;
         width: 281px;
         height: 281px;
         background-image: url("../img/rogovaya-back-desktop@1x.png");
@@ -256,43 +238,7 @@
     }
   }
 
-  .section__wrapper {
-    width: 768px;
-
-    &--about {
-      padding-bottom: 90px;
-      padding-right: 393px;
-      padding-left: 73px;
-      position: relative;
-      background-image: url("../img/about-tablet@1x.png");
-      background-repeat: no-repeat;
-      background-position: 376px 121px;
-      background-size: 50%;
-    }
-
-    &--direction {
-      padding: 0 73px 80px;
-      background-image: url("../img/flags-back@1x.png");
-      background-repeat: no-repeat;
-      background-size: 290px 586px;
-      background-position: 94% 0;
-    }
-
-    &--travelers {
-      padding: 0 73px 80px;
-    }
-
-    &--rout {
-      padding: 0 74px 80px;
-    }
-
-    &--travelmates {
-      width: 768px;
-      padding: 0 40px;
-    }
-  }
-
-  .section__wrapper--travelers .section__text {
+  .section--travelers .section__text {
     width: 440px;
   }
 
@@ -300,26 +246,6 @@
     margin-left: 0;
     font-size: 45px;
     margin-bottom: 40px;
-  }
-
-  .section__title--rates {
-    &::before {
-      top: 327px;
-      right: 75px;
-      z-index: 2;
-    }
-
-    &::after {
-      content: "";
-      width: 197px;
-      height: 280px;
-      border-radius: 20px;
-      background-color: rgba(#e2e5f2, 0.6);
-      position: absolute;
-      top: 84px;
-      right: 20px;
-      z-index: 1;
-    }
   }
 
   .section__text {
@@ -341,13 +267,14 @@
   .section--about .section__btn {
     display: flex;
     width: 270px;
-    padding: 30px;
+    min-height: 81px;
   }
 
   .section__btn {
     font-size: 24px;
     border-radius: 20px;
-    padding: 30px;
+    min-height: 81px;
+    padding: 5px 35px;
   }
 
   .section__countries {
@@ -381,6 +308,24 @@
     margin-bottom: 75px;
     width: 100%;
     text-align: center;
+
+    &::before {
+      top: 327px;
+      right: 75px;
+      z-index: 2;
+    }
+
+    &::after {
+      content: "";
+      width: 197px;
+      height: 280px;
+      border-radius: 20px;
+      background-color: rgba(#e2e5f2, 0.6);
+      position: absolute;
+      top: 84px;
+      right: 20px;
+      z-index: 1;
+    }
   }
 
   .section__rates {
@@ -431,45 +376,7 @@
     }
   }
 
-  .section__wrapper {
-    width: 1320px;
-
-    &--about {
-      padding-bottom: 160px;
-      padding-right: 630px;
-      padding-left: 60px;
-      position: relative;
-      background-image: url("../img/about-desktop@1x.png");
-      background-repeat: no-repeat;
-      background-position: 100% 53px;
-      background-size: 48%;
-    }
-
-    &--direction {
-      padding: 80px 0;
-      background-position: 100% 5px;
-    }
-
-    &--travelers {
-      padding-top: 120px;
-      padding-right: 0;
-    }
-
-    &--rout {
-      display: flex;
-      align-items: center;
-      padding: 0 74px 30px 225px;
-    }
-
-    &--travelmates {
-      width: 1440px;
-      padding: 0 60px;
-      display: flex;
-      justify-content: space-between;
-    }
-  }
-
-  .section__wrapper--about .section__advice {
+  .section--about .section__advice {
     max-width: 410px;
     margin-bottom: 85px;
   }
@@ -487,14 +394,14 @@
     margin-bottom: 60px;
   }
 
-  .section__title--rates {
+  .section--rates .section__title {
     margin-bottom: 130px;
 
     &::before {
       width: 200px;
       height: 200px;
-      top: 123px;
-      right: 49px;
+      top: 174px;
+      right: 23px;
       z-index: 2;
     }
 
@@ -505,8 +412,8 @@
       border-radius: 20px;
       background-color: rgba(#e2e5f2, 0.6);
       position: absolute;
-      top: 72px;
-      right: 160px;
+      top: 123px;
+      right: 123px;
       z-index: 1;
     }
   }
@@ -543,5 +450,10 @@
 
   .section__btn {
     max-width: 275px;
+
+    &--outline {
+      min-width: 322px;
+      border-width: 3px;
+    }
   }
 }

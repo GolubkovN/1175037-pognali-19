@@ -94,7 +94,8 @@
   background-color: #ffd74b;
   border: none;
   border-radius: 10px;
-  padding: 16px 23px;
+  height: 100%;
+  width: 60px;
 }
 
 .feedback__btn-icon {
@@ -181,6 +182,7 @@
   .feedback__btn {
     border-radius: 0 20px 20px 0;
     padding: 35px;
+    width: auto;
   }
 
   .feedback__text--under-btn {

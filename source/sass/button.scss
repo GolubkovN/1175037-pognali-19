@@ -4,7 +4,10 @@
   color: #161c35;
   display: flex;
   justify-content: center;
+  align-items: center;
   background: #ffd74b;
-  padding: 16px 20px;
+  height: 1px;
+  min-height: 50px;
+  padding: 10px;
   border-radius: 30px;
 }
