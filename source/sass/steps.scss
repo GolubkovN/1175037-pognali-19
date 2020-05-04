@@ -176,6 +176,7 @@
 
 .steps__btn {
   width: 100%;
+  min-height: 40px;
   border: none;
   margin-bottom: 20px;
   text-transform: uppercase;
@@ -184,17 +185,19 @@
 .steps__back {
   font-family: $titles-font;
   font-size: 17px;
-  font-weight: bold;
   color: #161c35;
   text-transform: uppercase;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+}
+
+.steps__btn-icon {
+  display: none;
 }
 
 .steps__back-icon {
-  margin-left: 0;
-  margin-right: 10px;
+  display: none;
 }
 
 .steps__countries {
@@ -626,9 +629,23 @@
 
   .steps__btn {
     font-size: 24px;
-    align-items: center;
+    justify-content: center;
     margin-bottom: 0;
     text-transform: none;
+    width: 284px;
+    min-height: 81px;
+    border-radius: 20px;
+  }
+
+  .steps__btn span {
+    margin-right: 33px;
+  }
+
+  .steps__btn-icon {
+    display: inline-block;
+    vertical-align: middle;
+    width: 11px;
+    height: 15px;
   }
 
   .steps__back {
@@ -637,6 +654,10 @@
   }
 
   .steps__back-icon {
+    display: inline-block;
+    vertical-align: middle;
+    width: 11px;
+    height: 15px;
     margin-right: 10px;
   }
 

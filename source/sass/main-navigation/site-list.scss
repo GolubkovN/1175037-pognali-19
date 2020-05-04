@@ -2,12 +2,17 @@
   @include list;
 }
 
+.site-list__item:not(:last-child) {
+  margin-bottom: 15px;
+}
+
 .site-list__link {
   font-family: "bloggersans-medium", "Arial", sans-serif;
   font-weight: 500;
   font-size: 30px;
   color: #192144;
-  line-height: 1.2;
+  line-height: 1;
+  text-transform: uppercase;
 }
 
 /* Tablet */
@@ -27,11 +32,8 @@
     text-transform: uppercase;
   }
 
-  .site-list__item {
+  .site-list__item:not(:last-child) {
     margin-right: 33px;
-
-    &:last-child {
-      margin-right: 0;
-    }
+    margin-bottom: 0;
   }
 }

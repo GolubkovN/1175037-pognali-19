@@ -1,19 +1,26 @@
 .header {
+  position: relative;
+}
+
+.header--closed {
+  background: #161c36;
+}
+
+.header--opened {
   background: #ffffff;
 }
 
-.header__inner {
-  width: auto;
-  padding: 0 25px;
-  margin: 0 auto;
-  padding-top: 25px;
+.header--nojs {
+  background-color: #ffffff;
 }
 
 .header__top {
-  width: auto;
-  padding: 15px 25px;
+  height: 1px;
+  min-height: 74px;
+  padding: 0 25px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .header__logo {
@@ -23,27 +30,74 @@
 }
 
 .header__toggle {
-  background: none;
   border: none;
   padding: 0;
   outline: none;
+  width: 26px;
+  height: 13px;
+  background: url("../img/menu.svg") center center / cover no-repeat;
+  background-color: none;
 }
+
 
 .header__register {
   display: none;
 }
 
+/* mobile / tablet only */
+
+@media (max-width: 1439px) {
+  .header--opened .header__toggle {
+    width: 24px;
+    height: 24px;
+    background: url("../img/menu-close.svg") center center / cover no-repeat;
+    opacity: 0.3;
+  }
+
+  .header--nojs .header__toggle {
+    display: none;
+  }
+
+  .header--opened .main-nav {
+    position: absolute;
+    top: 74px;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    min-height: 498px;
+  }
+
+  .header--closed .main-nav {
+    height: 0;
+    padding: 0;
+  }
+
+  .header--nojs .main-nav {
+    position: static;
+    min-height: 0;
+  }
+}
+
 /* Tablet */
 
 @media (min-width: 768px) {
+  .header--closed {
+    background-color: #182044;
+  }
+
   .header__top {
     max-width: 768px;
     margin: 0 auto;
+    align-items: center;
+    border: none;
   }
 
   .header__register {
-    display: block;
+    display: flex;
     font-size: 20px;
+    min-width: 190px;
+    height: 1px;
+    min-height: 50px;
   }
 
   .header__logo {
@@ -61,9 +115,13 @@
 @media (min-width: 1440px) {
   .header {
     background-color: #161c35;
+  }
+
+  .header__inner {
+    width: 1320px;
+    margin: 0 auto;
     display: flex;
     align-items: center;
-    padding: 50px 60px 0;
   }
 
   .header__logo {
@@ -86,7 +144,7 @@
   }
 
   .header__top {
-    margin-right: 140px;
+    margin-right: 144px;
     padding: 0;
     margin-left: 0;
   }

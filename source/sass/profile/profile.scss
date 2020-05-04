@@ -1,17 +1,8 @@
-.profile__wrapper {
-  width: auto;
-  padding: 0 25px 60px;
-}
-
-.profile__form {
-  width: 100%;
-  position: relative;
-}
-
 .profile__avatar {
   display: flex;
   justify-content: space-between;
   margin-bottom: 15px;
+  padding: 0 20px;
 }
 
 .profile__level {
@@ -92,14 +83,9 @@
 /* Tablet */
 
 @media (min-width: 768px) {
-  .profile__wrapper {
-    width: 768px;
-    margin: 0 auto;
-    padding: 0 74px 50px;
-  }
-
   .profile__avatar {
     margin-bottom: 30px;
+    padding: 0;
   }
 
   .profile__photo img {
@@ -146,16 +132,12 @@
 /* Desktop */
 
 @media (min-width: 1440px) {
-  .profile__wrapper {
-    width: 1320px;
-  }
-
   .profile__avatar {
     width: 335px;
     height: 245px;
     position: absolute;
     top: -254px;
-    right: 0;
+    right: 95px;
     z-index: 3;
   }
 
@@ -178,6 +160,7 @@
 
   .profile__change-pic-top {
     border-radius: 0 0 10px 10px;
+    font-size: 20px;
   }
 
   .profile__field-line {

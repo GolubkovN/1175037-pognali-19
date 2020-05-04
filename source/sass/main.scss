@@ -88,6 +88,10 @@
 
   .main__header-title {
     font-size: 60px;
+
+    &::after {
+      width: 100%;
+    }
   }
 
   .main__back-to-index {
