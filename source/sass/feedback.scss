@@ -96,12 +96,22 @@
   border-radius: 10px;
   height: 100%;
   width: 60px;
+
+  &:hover .feedback__btn-icon,
+  &:focus .feedback__btn-icon {
+    opacity: 0.7;
+  }
+
+  &:active .feedback__btn-icon {
+    opacity: 0.3;
+  }
 }
 
 .feedback__btn-icon {
   width: 14px;
   height: 14px;
   fill: #1d2e5b;
+  transition: all 0.3s;
 }
 
 .feedback__btn span {

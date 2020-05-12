@@ -24,6 +24,17 @@
 .travelers-filter__item-name {
   margin: 0;
   margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &::after {
+    content: "";
+    width: 8px;
+    height: 4px;
+    background: url("../img/dropdown.svg") center center / contain no-repeat;
+    transform: rotate(180deg);
+  }
 }
 
 .travelers-filter__select {

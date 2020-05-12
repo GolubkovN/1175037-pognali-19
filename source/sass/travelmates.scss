@@ -37,9 +37,10 @@
   width: 71px;
   height: 71px;
   margin-right: 15px;
+  overflow: hidden;
 }
 
-.travelmates__photo img {
+.travelmates__img {
   width: 100%;
   border-radius: 50%;
 }
@@ -59,6 +60,7 @@
   height: 30px;
   border-radius: 50%;
   background-color: #f9eaea;
+  border: none;
   margin-right: 5px;
 }
 
@@ -95,6 +97,10 @@
     position: absolute;
     top: 7px;
     left: 138px;
+  }
+
+  &--rogovaya::before {
+    background-color: #81e31e;
   }
 }
 
@@ -141,6 +147,59 @@
   text-transform: uppercase;
   color: #1d2e5b;
   margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+
+  &::before {
+    content: "";
+    width: 26px;
+    height: 18px;
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 15px;
+  }
+
+  &--sri-lanka::before {
+    background-image: url("../img/flag-sri-lanka.svg");
+  }
+
+  &--thailand::before {
+    background-image: url("../img/flag-thailand.svg");
+  }
+
+  &--seychelles::before {
+    background-image: url("../img/flag-seychelles.svg");
+  }
+
+  &--belgium::before {
+    background-image: url("../img/flag-belgium.svg");
+  }
+
+  &--czech::before {
+    background-image: url("../img/flag-czech.svg");
+  }
+
+  &--usa::before {
+    background-image: url("../img/flag-usa.svg");
+  }
+
+  &--australia::before {
+    background-image: url("../img/flag-australia.svg");
+  }
+
+  &--dominica::before {
+    background-image: url("../img/flag-dominica.svg");
+  }
+
+  &--uk::before {
+    background-image: url("../img/flag-united-kingdom.svg");
+  }
+
+  &--germany::before {
+    background-image: url("../img/flag-germany.svg");
+    background-size: cover;
+  }
 }
 
 .travelmates__transport-block {
@@ -160,6 +219,10 @@
   left: -3px;
 }
 
+.travelmates__level {
+  margin-top: -7px;
+}
+
 .travelmates__level-title {
   display: block;
   font-size: 15px;
@@ -169,6 +232,24 @@
   position: absolute;
   top: -28px;
   right: -3px;
+}
+
+.travelmates__level--smolov .progressbar__progress {
+  transform: rotate(-81deg);
+}
+
+.travelmates__level .progressbar__content {
+  top: 25%;
+  left: 22%;
+}
+
+.travelmates__level .progressbar__figure {
+  color: #1d2e5b;
+  border: none;
+}
+
+.travelmates__level .progressbar__word {
+  display: none;
 }
 
 .travelmates__transport-list {
@@ -195,12 +276,12 @@
     content: "";
     width: 8px;
     height: 8px;
-    background-color: #101d41;
-    transform: rotate(45deg);
+    background-image: linear-gradient(45deg, #101d41 60%, transparent 50%);
+    transform: rotate(135deg);
     position: absolute;
     top: 25px;
     opacity: 0;
-    transition: opacity 0.1s;
+    transition: opacity 0.3s;
   }
 }
 
@@ -270,6 +351,17 @@
     position: relative;
   }
 
+  .travelmates__item:hover,
+  .travelmates__item:focus,
+  .travelmates__item:active {
+    box-shadow: 0 6px 21px 0 rgba(73, 73, 73, 0.8);
+  }
+
+  .travelmates__item:hover .travelmates__img {
+    transform: scale(1.04);
+    border-radius: 20px;
+  }
+
   .travelmates__main-info {
     padding-bottom: 30px;
     margin-bottom: 25px;
@@ -285,12 +377,14 @@
     width: 190px;
     height: 190px;
     margin-right: 30px;
+    overflow: hidden;
   }
 
-  .travelmates__photo img {
+  .travelmates__img {
     width: 190px;
     height: 190px;
     border-radius: 10px;
+    transition: all 0.3s;
   }
 
   .travelnmates__info-block {
@@ -306,6 +400,10 @@
     &::before {
       top: 13px;
       left: 210px;
+    }
+
+    &--rogovaya::before {
+      left: 230px;
     }
   }
 
@@ -353,10 +451,15 @@
 
   .travelmates__countries-item {
     font-size: 20px;
+    margin-bottom: 0;
 
     &:not(:last-child) {
       margin-right: 28px;
-      margin-bottom: 0;
+    }
+
+    &::before {
+      width: 35px;
+      height: 24px;
     }
   }
 
@@ -392,6 +495,29 @@
 
   .travelmates__level-title {
     display: none;
+  }
+
+  .travelmates__level {
+    margin-top: 0;
+  }
+
+  .travelmates__level .progressbar__progress {
+    width: 60px;
+    height: 60px;
+  }
+
+  .travelmates__level .progressbar__content {
+    top: 19%;
+    left: 28%;
+  }
+
+  .travelmates__level .progressbar__figure {
+    border-bottom: 1px solid rgba(68, 68, 68, 0.4);
+  }
+
+  .travelmates__level .progressbar__word {
+    display: block;
+    color: rgba(68, 68, 68, 0.4);
   }
 
   .travelmates__btn {
@@ -444,9 +570,10 @@
     width: 285px;
     height: 100%;
     margin-right: 60px;
+    border-radius: 20px 0 0 20px;
   }
 
-  .travelmates__photo img {
+  .travelmates__img {
     width: 285px;
     height: 100%;
     border-radius: 20px 0 0 20px;

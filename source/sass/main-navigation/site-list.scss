@@ -26,10 +26,41 @@
 /* Desktop */
 
 @media (min-width: 1440px) {
+  .site-list {
+    max-height: 55px;
+  }
+
+  .site-list__item {
+    overflow: hidden;
+  }
+
   .site-list__link {
     font-size: 20px;
     color: #ffffff;
     text-transform: uppercase;
+    position: relative;
+    display: block;
+    transition: transform 0.3s;
+
+    &:hover,
+    &:focus {
+      transform: translateY(-100%);
+      opacity: 1;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+
+    &::before {
+      position: absolute;
+      top: 100%;
+      content: attr(data-hover);
+
+      color: #ffd74b;
+
+      transform: translate3d(0, 0, 0);
+    }
   }
 
   .site-list__item:not(:last-child) {

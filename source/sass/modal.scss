@@ -1,11 +1,16 @@
 .modal {
   width: 270px;
-  border-radius: 30px;
+  height: 1px;
+  min-height: 443px;
+  border-radius: 20px;
   background: #ffffff;
-  border: 1px solid lightblue;
-  margin-top: 40px;
-  margin-bottom: 40px;
-  padding: 35px 0 0 0;
+  padding-top: 33px;
+  position: fixed;
+  top: 5%;
+  left: 8%;
+  transform: translate(0%, 0%);
+  z-index: 10;
+  box-shadow: 0 6px 21px 0 rgba(73, 73, 73, 0.8);
   display: none;
 }
 
@@ -20,12 +25,13 @@
   color: #ff8d30;
   font-size: 24px;
   text-align: center;
-  margin-bottom: 45px;
+  margin-bottom: 29px;
 }
 
 .modal__list {
   @include list;
-  margin: 0 25px 30px;
+  padding: 0 25px;
+  margin-bottom: 30px;
 }
 
 .modal__item {
@@ -34,6 +40,7 @@
   font-weight: 300;
   color: #444444;
   border-top: 1px solid #eeeeee;
+  padding: 15px 0;
 
   &:last-child {
     border-bottom: 1px solid #eeeeee;
@@ -41,6 +48,8 @@
 
   p {
     width: 165px;
+    margin: 0;
+    line-height: 1.38;
   }
 }
 
@@ -48,10 +57,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   background-color: #f3f4f8;
   width: 100%;
-  padding: 20px 78px;
-  border-radius: 0 0 30px 30px;
+  min-height: 60px;
+  padding: 5px;
+  border-radius: 0 0 20px 20px;
   font-family: $titles-font;
   font-size: 16px;
   text-transform: uppercase;
@@ -63,12 +74,13 @@
 @media (min-width: 768px) {
   .modal {
     width: 688px;
-    margin: 0 auto;
+    min-height: 526px;
+    padding-top: 52px;
+    left: 5%;
   }
 
   .modal__title {
     font-size: 45px;
-    margin-top: 50px;
   }
 
   .modal__item {
@@ -87,6 +99,15 @@
 
   .modal__close {
     font-size: 24px;
-    padding: 40px 78px;
+    min-height: 108px;
+    padding: 5px 10px;
+  }
+}
+
+/* Desktop */
+
+@media (min-width: 1440px) {
+  .modal {
+    left: 27%;
   }
 }

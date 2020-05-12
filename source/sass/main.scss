@@ -1,13 +1,15 @@
 .main {
   background-color: #edeff6;
   padding-bottom: 100px;
+  position: relative;
+  z-index: 2;
 }
 
 .main__header {
   padding-top: 30px;
   border-radius: 0 0 30px 30px;
   background-color: #161c35;
-  margin: 0 auto 25px;
+  margin: 0 auto;
   position: relative;
   z-index: 2;
 }
@@ -42,6 +44,10 @@
 /* Tablet */
 
 @media (min-width: 768px) {
+  .main__header {
+    background-color: #182044;
+  }
+
   .main__header-wrapper {
     width: 768px;
     margin: 0 auto;
@@ -80,10 +86,13 @@
 /* Desktop */
 
 @media (min-width: 1440px) {
+  .main__header {
+    background-color: #161c35;
+  }
+
   .main__header-wrapper {
     width: 1320px;
     padding: 120px 70px 0;
-    margin-bottom: 65px;
   }
 
   .main__header-title {

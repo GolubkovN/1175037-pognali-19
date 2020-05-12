@@ -213,9 +213,11 @@
 }
 
 .steps__select {
+  height: 44px;
   display: flex;
   position: relative;
   margin-bottom: 20px;
+  border-radius: 4px;
 
   &::before {
     content: "";
@@ -265,6 +267,54 @@
   display: none;
 }
 
+.steps__select-btn {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  padding-left: 10px;
+  padding-right: 12px;
+  border: 1px solid #cbced9;
+  border-radius: 4px;
+  background: #ffffff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &::after {
+    content: "";
+    width: 12px;
+    height: 7px;
+    background: url("../img/dropdown-form.svg") center center / contain no-repeat;
+    opacity: 0.3;
+  }
+
+  &--plus {
+    background-color: #edeff6;
+    border: none;
+  }
+
+  &--plus::after {
+    width: 14px;
+    height: 14px;
+    background: url("../img/qty-plus-mobile.svg") center center / cover no-repeat;
+  }
+}
+
+.steps__countrie {
+  display: inline-block;
+  vertical-align: middle;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 14px;
+  font-family: $medium-font;
+  font-style: normal;
+  letter-spacing: 1.4px;
+  color: #1d2e5b;
+  text-transform: uppercase;
+  border-radius: 4px;
+}
+
 /* Dropdown alphabet start */
 
 .steps__alphabet-wrapper {
@@ -277,6 +327,10 @@
   border-radius: 0 0 10px 10px;
   box-shadow: 0 20px 50px 0 rgba(29, 46, 91, 0.1);
   display: none;
+}
+
+.steps__alphabet-wrapper.is-show {
+  display: block;
 }
 
 .steps__alphabet {
@@ -330,36 +384,6 @@
 
 /* Dropdown alphabet end */
 
-.steps__countrie {
-  display: inline-block;
-  vertical-align: middle;
-  flex-grow: 1;
-  padding: 14px 10px 10px;
-  white-space: nowrap;
-  overflow: hidden;
-  font-size: 14px;
-  font-family: $medium-font;
-  font-style: normal;
-  line-height: 1.29;
-  letter-spacing: 1.4px;
-  color: #1d2e5b;
-  text-transform: uppercase;
-  border-radius: 4px;
-  border: 1px solid #cbced9;
-  background-color: #ffffff;
-
-  &--added {
-    background-color: #edeff6;
-    border: none;
-  }
-}
-
-.steps__select-icon {
-  width: 15px;
-  height: 15px;
-  fill: #d0d0d0;
-}
-
 .steps__flags {
   @include list;
   display: flex;
@@ -371,6 +395,7 @@
 }
 
 .steps__flag {
+  position: relative;
   display: inline-block;
   vertical-align: middle;
   padding: 0;
@@ -383,6 +408,24 @@
   font-size: 0;
   line-height: 0;
   color: transparent;
+
+  &::before {
+    content: "";
+    width: 35px;
+    height: 24px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(8px, 9px);
+  }
+
+  &--bosnia::before {
+    background: url("../img/flag-bosnia.svg") center center / cover no-repeat;
+  }
+
+  &--czech::before {
+    background: url("../img/flag-czech.svg") center center / cover no-repeat;
+  }
 }
 
 .steps__delate-countrie {
@@ -406,27 +449,6 @@
   fill: #cccdd3;
 }
 
-.steps__select-btn {
-  position: absolute;
-  top: 0;
-  right: 0;
-  height: 100%;
-  padding: 0 15px;
-  border: 1px solid #cbced9;
-  border-left: none;
-  border-radius: 0 4px 4px 0;
-  background: #ffffff;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  &--plus {
-    background-color: #edeff6;
-    border: none;
-  }
-}
-
 .steps__entertament-list {
   @include list;
   margin-bottom: 30px;
@@ -435,12 +457,12 @@
   &::before {
     content: "";
     width: 12px;
-    height: 312px;
+    height: 319px;
     border: 2px solid #1d2e5b;
     border-right: none;
     position: absolute;
     left: -12px;
-    top: 7px;
+    top: 10px;
   }
 }
 
@@ -470,11 +492,38 @@
 }
 
 .steps__countrie-name {
+  position: relative;
+  width: 100%;
+  height: 24px;
   font-weight: 500;
   font-size: 18px;
   white-space: nowrap;
   overflow: hidden;
   color: #1d2e5b;
+
+  &::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to left, #ffffff 33%, transparent 40% 100%);
+    position: absolute;
+  }
+
+  &::after {
+    content: "";
+    width: 35px;
+    height: 24px;
+    position: absolute;
+    right: 0;
+  }
+
+  &--bosnia::after {
+    background: url("../img/flag-bosnia.svg") center center / cover no-repeat;
+  }
+
+  &--czech::after {
+    background: url("../img/flag-czech.svg") center center / cover no-repeat;
+  }
 }
 
 .steps__plan {
@@ -685,6 +734,8 @@
   }
 
   .steps__select {
+    height: 70px;
+
     &::before {
       display: none;
     }
@@ -755,12 +806,6 @@
 
   .steps__countrie {
     font-size: 20px;
-    padding: 25px;
-  }
-
-  .steps__select-icon {
-    width: 20px;
-    height: 20px;
   }
 
   .steps__flags {
@@ -782,6 +827,13 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 0;
+    border: none;
+
+    &::before {
+      width: 100%;
+      height: 100%;
+      transform: translate(0, 0);
+    }
   }
 
   .steps__delate-countrie {
@@ -804,7 +856,7 @@
       border: none;
       background-color: #1d2e5b;
       left: 535px;
-      top: 9px;
+      top: 24px;
     }
   }
 
@@ -825,6 +877,18 @@
   .steps__countrie-name {
     font-family: $titles-font;
     font-size: 30px;
+    height: 47px;
+    display: flex;
+    align-items: center;
+
+    &::before {
+      display: none;
+    }
+
+    &::after {
+      width: 70px;
+      height: 47px;
+    }
   }
 
   .steps__plan {

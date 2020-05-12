@@ -1,6 +1,7 @@
 .main-nav {
   padding-top: 65px;
   background: #ffffff;
+  overflow: hidden;
 }
 
 .main-nav__wrapper {
@@ -39,7 +40,7 @@
   .main-nav__wrapper {
     width: 688px;
     margin: 0 auto;
-    padding: 0 60px 80px;
+    padding: 0 60px 30px;
   }
 
   .main-nav__list {

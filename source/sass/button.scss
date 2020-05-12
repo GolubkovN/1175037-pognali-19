@@ -10,4 +10,14 @@
   min-height: 50px;
   padding: 10px;
   border-radius: 30px;
+  transition: all 0.3s;
+
+  &:hover,
+  &:focus {
+    background-color: #ffbd30;
+  }
+
+  &:active {
+    color: rgba(29, 46, 91, 0.3);
+  }
 }
