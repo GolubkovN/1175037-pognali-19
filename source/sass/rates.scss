@@ -1,15 +1,15 @@
 .rates__item {
-  width: 90%;
+  height: 1px;
+  min-height: 65px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   font-family: $text-font;
   font-size: 16px;
   color: #444444;
   line-height: 1.38;
   position: relative;
-  margin-bottom: 20px;
   border-top: 1px solid #d6d9e6;
-  padding-top: 10px;
 
   &:last-child {
     margin-bottom: 0;
@@ -44,16 +44,14 @@
   }
 }
 
-.rates__icon-wrapper {
-  display: none;
-}
-
 .rates__link {
   font-family: $titles-font;
   color: #192144;
   display: block;
   text-align: center;
   font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s;
 }
 
 /* Tablet */
@@ -80,49 +78,37 @@
     left: -91px;
   }
 
-  .rates__group {
-    display: flex;
-  }
-
-  .rates__icon-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    background-color: #e2e5f2;
-    margin-right: 22px;
-  }
-
-
-  .rates__icon {
-    width: 18px;
-    height: 22px;
-    fill: #132576;
-  }
-
   .rates__link {
     font-size: 20px;
     text-align: left;
     display: flex;
     align-items: center;
+    justify-content: flex-start;
+
+    &::before {
+      content: "";
+      width: 65px;
+      height: 65px;
+      border-radius: 50%;
+      background: url("../img/user.svg") center center / 17px 21px no-repeat, #e2e5f2;
+      margin-right: 23px;
+    }
+
+    &:hover,
+    &:focus {
+      opacity: 0.7;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 }
 
 /*Desktop */
 
 @media (min-width: 1440px) {
-  .rates {
-    width: 975px;
-  }
-
-  .rates__group {
-    margin-left: 73px;
-  }
-
-  .rates__icon {
-    width: 22px;
-    height: 32px;
+  .rates__link {
+    padding: 0 74px;
   }
 }

@@ -1,3 +1,7 @@
+.profile {
+  padding-top: 20px;
+}
+
 .profile__avatar {
   display: flex;
   justify-content: space-between;
@@ -8,6 +12,18 @@
 .profile__level {
   width: 100px;
   height: 100px;
+}
+
+.profile__level .progressbar__figure {
+  color: #161c35;
+  font-size: 38px;
+  border-color: #cbced9;
+  margin-bottom: 5px;
+}
+
+.profile__level .progressbar__word {
+  color: #444444;
+  font-size: 18px;
 }
 
 .profile__photo {
@@ -83,6 +99,10 @@
 /* Tablet */
 
 @media (min-width: 768px) {
+  .profile {
+    padding-top: 64px;
+  }
+
   .profile__avatar {
     margin-bottom: 30px;
     padding: 0;
@@ -161,6 +181,18 @@
   .profile__change-pic-top {
     border-radius: 0 0 10px 10px;
     font-size: 20px;
+  }
+
+  .profile__level {
+    padding-top: 45px;
+  }
+
+  .profile__level .progressbar__figure {
+    color: #ffffff;
+  }
+
+  .profile__level .progressbar__word {
+    color: #ffffff;
   }
 
   .profile__field-line {

@@ -23,11 +23,13 @@
 
 .footer__social {
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 35px;
 }
 
 .footer__copyright {
   width: 100%;
+  padding-top: 15px;
+  border-top: 1px solid #eeeeee;
 }
 
 /* tablet */
@@ -58,6 +60,7 @@
 
   .footer__copyright {
     width: 157px;
+    border: none;
   }
 }
 

@@ -55,12 +55,16 @@
       position: absolute;
       top: 115px;
       right: 25px;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/smolov-back-desktop@2x.png");
+      }
     }
   }
 
   &--rates {
     z-index: 4;
-    padding-top: 100px;
+    padding-top: 135px;
     background-color: #edeff6;
   }
 
@@ -137,10 +141,37 @@
 
   &--outline {
     border: 2px solid #121936;
+
+    &:hover,
+    &:focus {
+      background-color: #192144;
+      color: #ffffff;
+    }
+
+    &:hover .section__btn-icon,
+    &:focus .section__btn-icon {
+      fill: #ffffff;
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+    }
+
+    &:active .section__btn-icon {
+      fill: rgba(255, 255, 255, 0.3);
+    }
   }
 
   &--top {
     display: none;
+  }
+
+  &:hover .section__btn-icon {
+    opacity: 0.7;
+  }
+
+  &:active .section__btn-icon {
+    opacity: 0.3;
   }
 }
 
@@ -149,6 +180,7 @@
   height: 14px;
   fill: #1d2e5b;
   margin-left: auto;
+  transition: all 0.3s;
 }
 
 .section__countries {
@@ -170,6 +202,10 @@
     position: absolute;
     top: -41px;
     left: -37px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background: url("../img/rogovaya-back-mobile@2x.png") 0 0 / cover no-repeat;
+    }
   }
 }
 
@@ -187,13 +223,17 @@
     position: absolute;
     top: -20px;
     right: -144px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background: url("../img/rates@2x.png") center center / contain no-repeat;
+    }
   }
 }
 
 .section__rates {
   @include list;
   width: 100%;
-  margin: 0 auto;
+  padding-right: 30px;
   margin-bottom: 35px;
 }
 
@@ -234,6 +274,10 @@
         width: 281px;
         height: 281px;
         background-image: url("../img/rogovaya-back-desktop@1x.png");
+
+        @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+          background-image: url("../img/rogovaya-back-desktop@2x.png");
+        }
       }
     }
   }
@@ -301,6 +345,10 @@
       background-image: url("../img/smolov-back-desktop@1x.png");
       top: -94px;
       left: -28px;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/smolov-back-desktop@2x.png");
+      }
     }
   }
 
@@ -330,6 +378,7 @@
 
   .section__rates {
     padding-left: 90px;
+    padding-right: 60px;
     position: relative;
     z-index: 2;
   }
@@ -359,7 +408,7 @@
       }
 
       &::after {
-        top: 530px;
+        top: 475px;
         left: 185px;
       }
     }
@@ -383,10 +432,9 @@
 
   .section__content {
     order: 2;
-    margin-left: 800px;
 
     &--travelers {
-      margin-left: 0;
+      order: -1;
     }
   }
 
@@ -431,6 +479,11 @@
     width: 325px;
   }
 
+  .section__countries {
+    margin: 0;
+    margin-right: 171px;
+  }
+
   .section__travelers {
     margin: 0;
     width: 630px;
@@ -440,6 +493,7 @@
     margin: 0;
     margin-bottom: 30px;
     padding-left: 165px;
+    padding-right: 270px;
   }
 
   .section__address {
@@ -454,6 +508,14 @@
     &--outline {
       min-width: 322px;
       border-width: 3px;
+    }
+
+    &--top {
+      display: flex;
+    }
+
+    &--down {
+      display: none;
     }
   }
 }
