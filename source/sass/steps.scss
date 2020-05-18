@@ -299,6 +299,22 @@
     height: 14px;
     background: url("../img/qty-plus-mobile.svg") center center / cover no-repeat;
   }
+
+  &--blue {
+    background-color: #1d2e5b;
+    z-index: 4;
+  }
+
+  &--blue .steps__countrie {
+    color: #ffffff;
+  }
+
+  &--blue::after {
+    width: 12px;
+    height: 12px;
+    background: url("../img/filter-close-wight.svg") center center / cover no-repeat;
+    opacity: 1;
+  }
 }
 
 .steps__countrie {
@@ -344,7 +360,7 @@
   width: 44px;
   height: 44px;
   background-color: #ffffff;
-  border: 0.5px solid #cbced9;
+  border: 1px solid #cbced9;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -751,10 +767,27 @@
     width: 100%;
   }
 
+  .steps__select-btn {
+    &::after {
+      width: 17px;
+      height: 9px;
+    }
+
+    &--plus::after {
+      width: 18px;
+      height: 18px;
+    }
+
+    &--blue::after {
+      width: 18px;
+      height: 18px;
+    }
+  }
+
   /* Dropdown alphabet start */
 
   .steps__alphabet-wrapper {
-    top: 77px;
+    top: 70px;
     width: 575px;
     height: 417px;
     padding: 35px 30px;

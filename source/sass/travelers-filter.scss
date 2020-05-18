@@ -221,6 +221,10 @@
     font-size: 20px;
     margin-right: 20px;
     margin-bottom: 0;
+
+    &::after {
+      display: none;
+    }
   }
 
   .travelers-filter__group {
@@ -311,6 +315,10 @@
   .travelers-filter__item-name {
     margin-right: 0;
     margin-bottom: 25px;
+
+    &::after {
+      display: block;
+    }
   }
 
   .travelers-filter__group {
