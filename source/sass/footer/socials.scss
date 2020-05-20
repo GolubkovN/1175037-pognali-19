@@ -5,7 +5,7 @@
   margin: 0 auto;
 }
 
-.social__item {
+.social__link {
   width: 45px;
   height: 45px;
   border-radius: 50%;
@@ -13,6 +13,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  &:hover,
+  &:focus {
+    background-color: #ffbd30;
+  }
+
+  &:active .social__icon {
+    opacity: 0.3;
+  }
 }
 
 .social__icon {

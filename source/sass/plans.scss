@@ -65,13 +65,15 @@
   font-weight: 500;
   color: #b2b2b2;
   text-transform: uppercase;
+  outline: none;
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: #1d2e5b;
   }
 
-  &:focus {
-    color: #1d2e5b;
+  &:active {
+    color: rgba(0, 0, 0, 0.1);
   }
 }
 

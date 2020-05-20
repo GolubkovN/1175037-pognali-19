@@ -447,6 +447,7 @@
 
   .travelmates__countries-list {
     display: flex;
+    flex-wrap: wrap;
   }
 
   .travelmates__countries-item {

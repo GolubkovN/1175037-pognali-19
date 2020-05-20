@@ -72,6 +72,7 @@
     line-height: 1.5;
     display: flex;
     align-items: center;
+    transition: opacity 0.3s;
 
     &::after {
       content: "";
@@ -79,6 +80,15 @@
       height: 18px;
       background: url("../img/return.svg") center center /contain no-repeat;
       margin-left: 25px;
+    }
+
+    &:hover,
+    &:focus {
+      opacity: 0.7;
+    }
+
+    &:active {
+      opacity: 0.3;
     }
   }
 }
