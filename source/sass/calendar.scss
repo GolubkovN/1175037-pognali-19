@@ -15,12 +15,25 @@
 .calendar__btn {
   border: none;
   background: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:focus .calendar__btn-icon,
+  &:hover .calendar__btn-icon {
+    opacity: 0.5;
+  }
+
+  &:active .calendar__btn-icon {
+    opacity: 0.1;
+  }
 }
 
 .calendar__btn-icon {
   width: 20px;
   height: 20px;
-  fill: #b8b8b8;
+  fill: #000000;
+  opacity: 0.3;
 }
 
 .calendar__month {
@@ -61,6 +74,7 @@
 }
 
 .calendar__days-item {
+  position: relative;
   width: 32.25px;
   height: 32.25px;
   border: 1px solid #cbced9;
@@ -78,23 +92,24 @@
 
   &--check {
     color: #ffffff;
-    background-color: #1d2e5b;
+    background-color: #101d41;
   }
 
   &--used {
     background-color: #edeff6;
     color: #444444;
 
-    &:hover {
+    &:hover,
+    &:focus {
       background-color: #1d2e5b;
       color: #ffffff;
     }
   }
 }
 
-.calendar__days-item--active {
+.calendar__days-item:not(.calendar__days-item--disabled) {
   position: relative;
-  border: none;
+  outline: none;
 
   &::before {
     content: "";
@@ -106,6 +121,17 @@
     top: 0;
     left: 0;
     right: 0;
+    display: none;
+  }
+
+  &:focus,
+  &:hover {
+    border: none;
+  }
+
+  &:focus::before,
+  &:hover::before {
+    display: block;
   }
 }
 

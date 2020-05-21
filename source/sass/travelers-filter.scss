@@ -313,11 +313,14 @@
   }
 
   .travelers-filter__item-name {
+    width: 100%;
     margin-right: 0;
     margin-bottom: 25px;
 
     &::after {
       display: block;
+      width: 10px;
+      height: 10px;
     }
   }
 

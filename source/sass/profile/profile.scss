@@ -126,6 +126,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    outline: none;
+
+    &:hover,
+    &:focus {
+      border-color: #aeb4cb;
+    }
   }
 
   .profile__transport-wrapper {
@@ -146,6 +152,12 @@
 
   .profile__textarea {
     font-size: 20px;
+    outline: none;
+
+    &:hover,
+    &:focus {
+      border-color: #aeb4cb;
+    }
   }
 }
 
@@ -176,11 +188,18 @@
 
   .profile__data-upload {
     display: block;
+    margin-top: -5px;
   }
 
   .profile__change-pic-top {
     border-radius: 0 0 10px 10px;
     font-size: 20px;
+    outline: none;
+
+    &:hover,
+    &:focus {
+      background-color: #d1d7e9;
+    }
   }
 
   .profile__level {

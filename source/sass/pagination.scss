@@ -79,7 +79,11 @@
     height: auto;
   }
 
-  .pagination__prev {
+  .pagination__prev,
+  .pagination__next {
     border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }

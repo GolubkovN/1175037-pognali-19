@@ -44,6 +44,17 @@
   color: #ffd74b;
   text-decoration: underline;
   text-decoration-color: #ffd74b;
+
+  &:hover,
+  &:focus {
+    color: #ff8d30;
+    text-decoration-color: #ff8d30;
+  }
+
+  &:active {
+    color: rgba(255, 141, 48, 0.3);
+    text-decoration-color: rgba(255, 141, 48, 0.3);
+  }
 }
 
 .feedback__form {
@@ -55,6 +66,7 @@
   border: none;
   border-radius: 10px;
   margin-bottom: 30px;
+  overflow: hidden;
 }
 
 .feedback__input {
@@ -66,27 +78,26 @@
   font-size: 18px;
   color: #192144;
   border-radius: 10px 0 0 10px;
+  outline: none;
 
-  &:focus ~ .feedback__label {
-    font-size: 10px;
-    top: 10px;
+  &:hover {
+    background-color: #edeff6;
   }
 
-  &:valid ~ .feedback__label {
-    font-size: 10px;
-    top: 10px;
+  &:focus {
+    background-color: #192144;
+    border: 3px solid #ffffff;
+    border-right: none;
+    color: #ffffff;
   }
-}
 
-.feedback__label {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translate(34%, -48%);
-  font-family: $titles-font;
-  font-size: 18px;
-  color: rgba(214, 143, 143, 0.3);
-  transition: all 0.3s;
+  &::placeholder {
+    color: rgba(68, 68, 68, 0.3);
+  }
+
+  &:hover::placeholder {
+    color: rgba(68, 68, 68, 0.5);
+  }
 }
 
 .feedback__btn {
@@ -144,6 +155,7 @@
 .feedback__contacts-icon {
   width: 18px;
   height: 18px;
+  fill: #ffd74b;
 }
 
 /* Tablet */
@@ -181,11 +193,7 @@
 
   .feedback__input {
     padding: 25px 45px;
-    border-radius: 20px 0 20px 0;
-    font-size: 28px;
-  }
-
-  .feedback__label {
+    border-radius: 20px 0 0 20px;
     font-size: 28px;
   }
 
@@ -215,10 +223,30 @@
   .feedback__contacts-icon {
     width: 32px;
     height: 32px;
+    transition: fill 0.3s;
   }
 
   .feedback__group {
     font-size: 28px;
+    transition: all 0.3s;
+
+    &:hover,
+    &:focus {
+      color: #ffbd30;
+    }
+
+    &:active {
+      color: rgba(255, 189, 48, 0.3);
+    }
+
+    &:focus .feedback__contacts-icon,
+    &:hover .feedback__contacts-icon {
+      fill: #ffbd30;
+    }
+
+    &:active .feedback__contacts-icon {
+      fill: rgba(255, 189, 48, 0.3);
+    }
   }
 }
 

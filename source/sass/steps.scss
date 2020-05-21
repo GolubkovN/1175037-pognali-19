@@ -290,8 +290,17 @@
   }
 
   &--plus {
-    background-color: #edeff6;
+    background-color: transparent;
     border: none;
+
+    &:hover,
+    &:focus {
+      background-color: #cbced9;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   &--plus::after {
@@ -313,6 +322,9 @@
     width: 12px;
     height: 12px;
     background: url("../img/filter-close-wight.svg") center center / cover no-repeat;
+  }
+
+  &--blue:hover::after {
     opacity: 1;
   }
 }
@@ -367,6 +379,10 @@
 
   &--check {
     background-color: #edeff6;
+  }
+
+  &:hover {
+    border-color: #959bb2;
   }
 }
 
@@ -521,7 +537,7 @@
     content: "";
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(to left, #ffffff 33%, transparent 40% 100%);
+    background-image: linear-gradient(to left, #ffffff 33%, transparent 33% 100%);
     position: absolute;
   }
 
@@ -639,6 +655,22 @@
 
   .steps__quantity-block {
     height: 73px;
+
+    &:hover {
+      border-color: #959bb2;
+    }
+
+    &:hover .steps__button-icon {
+      fill: #959bb2;
+    }
+
+    &:focus {
+      border-color: #161c35;
+    }
+
+    &:focus .steps__button-icon {
+      fill: #161c35;
+    }
   }
 
   .steps__numb {
@@ -647,6 +679,10 @@
 
   .steps__button {
     padding: 0 16px;
+
+    &:focus .steps__button-icon {
+      fill: #161c35;
+    }
   }
 
   .steps__button-icon {
@@ -675,6 +711,16 @@
       height: 15px;
       top: 10px;
       left: 10px;
+    }
+
+    &:hover,
+    &:focus {
+      border-color: #959bb2;
+    }
+
+    &:active {
+      background-color: #e2e5f1;
+      border: none;
     }
   }
 
@@ -716,6 +762,15 @@
   .steps__back {
     font-size: 24px;
     text-transform: none;
+
+    &:hover,
+    &:focus {
+      opacity: 0.7;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   .steps__back-icon {
