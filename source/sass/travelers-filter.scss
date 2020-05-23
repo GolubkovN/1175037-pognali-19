@@ -41,6 +41,16 @@
   font-family: $titles-font;
   color: #1d2e5b;
   text-transform: uppercase;
+  cursor: pointer;
+
+  &:focus,
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .travelers-filter__group {
@@ -54,6 +64,17 @@
 .travelers-filter__check-input {
   &:checked ~ .travelers-filter__customize::before {
     opacity: 1;
+  }
+}
+
+.travelers-filter__check-label {
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
@@ -141,6 +162,11 @@
   &--2 {
     border-radius: 0 5px 5px 0;
   }
+
+  &:hover,
+  &:focus {
+    border-color: #161c35;
+  }
 }
 
 .travelers-filter__range {
@@ -175,9 +201,8 @@
     top: -12px;
   }
 
-  &:hover .travelers-filter__button-inner {
-    width: 25px;
-    height: 25px;
+  &:active {
+    box-shadow: 0 3px 7px 0 rgba(29, 46, 91, 0.35);
   }
 
   &--1 {
@@ -283,6 +308,17 @@
 
   .travelers-filter__btn {
     font-size: 20px;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      background-color: #ffffff;
+      box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.08);
+    }
+
+    &:active {
+      background-color: #f3c72b;
+    }
   }
 }
 

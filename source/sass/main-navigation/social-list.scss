@@ -5,6 +5,17 @@
   align-items: center;
 }
 
-.social-list__item:not(:last-child) {
-  margin-right: 36px;
+.social-list__item {
+  &:not(:last-child) {
+    margin-right: 36px;
+  }
+
+  &:focus,
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }

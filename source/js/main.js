@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
   console.log("DOM fully loaded and parsed");
 
+
   var header = document.querySelector(".header");
   var toggleNav = document.querySelector(".header__toggle");
 
@@ -16,6 +17,18 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   })
 
+  window.onscroll = function() {myFunction()};
+  var header = document.querySelector(".header--closed");
+
+  function myFunction() {
+  if (window.pageYOffset > 400) {
+    header.classList.add("header--fixed");
+  } else {
+    header.classList.remove("header--fixed");
+  }
+}
+
+
   var modalOpen = document.querySelector(".rates__link");
   var modal = document.querySelector(".modal");
   var modalClose = document.querySelector(".modal__close");
@@ -27,6 +40,7 @@ document.addEventListener("DOMContentLoaded", function() {
     evt.preventDefault();
     modal.classList.remove("modal--show");
   });
+
 });
 
 function initMap() {
@@ -47,38 +61,34 @@ function initMap() {
       scaledSize: new google.maps.Size(30, 30)
     }
   });
-
-  var select = document.querySelector(".steps__select-btn--choose");
-  var minAlphabet = document.querySelector(".steps__alphabet-wrapper");
-
-  select.addEventListener("click", function(){
-    select.classList.toggle("steps__select-btn--blue");
-    minAlphabet.classList.toggle("is-show");
-  })
 }
 
 
-var filterToggle = document.querySelector(".countries-filter__toggle");
-var countriesFilter = document.querySelector(".countries-filter");
-var filterCollapse = document.querySelector(".countries-filter__collapse");
+var filter = function () {
+  var filterToggle = document.querySelector(".countries-filter__toggle");
+  var countriesFilter = document.querySelector(".countries-filter");
+  var filterCollapse = document.querySelector(".countries-filter__collapse");
 
 
-countriesFilter.classList.remove("countries-filter--nojs");
+  countriesFilter.classList.remove("countries-filter--nojs");
 
-filterToggle.addEventListener("click", function () {
-  if(countriesFilter.classList.contains("countries-filter--closed")) {
-    countriesFilter.classList.remove("countries-filter--closed");
-    countriesFilter.classList.add("countries-filter--opened");
-  }else {
-    countriesFilter.classList.add("countries-filter--closed");
+  filterToggle.addEventListener("click", function () {
+    if(countriesFilter.classList.contains("countries-filter--closed")) {
+      countriesFilter.classList.remove("countries-filter--closed");
+      countriesFilter.classList.add("countries-filter--opened");
+    }else {
+      countriesFilter.classList.add("countries-filter--closed");
+      countriesFilter.classList.remove("countries-filter--opened");
+    }
+  });
+
+  filterCollapse.addEventListener("click", function() {
     countriesFilter.classList.remove("countries-filter--opened");
-  }
-});
+    countriesFilter.classList.add("countries-filter--closed");
+  });
+}
+filter();
 
-filterCollapse.addEventListener("click", function() {
-  countriesFilter.classList.remove("countries-filter--opened");
-  countriesFilter.classList.add("countries-filter--closed");
-});
 
 var alphabet = function () {
   var countNav = document.querySelectorAll(".alphabet__link");
@@ -110,23 +120,5 @@ var alphabet = function () {
   }
 };
 alphabet();
-
-
-function anim(duration) {
-  var temp;
-  return function(sel) {
-      cancelAnimationFrame(temp);
-      var start = performance.now();
-      var from = window.pageYOffset || document.documentElement.scrollTop,
-      to = document.querySelector(sel).getBoundingClientRect().top;
-      requestAnimationFrame(function step(timestamp) {
-          var progress = (timestamp - start) / duration;
-          1 <= progress && (progress = 1);
-          window.scrollTo(0, from + to * progress | 0);
-          1 > progress && (temp = requestAnimationFrame(step))
-      })
-  }
-};
-var scrollMenu = anim(700)
 
 

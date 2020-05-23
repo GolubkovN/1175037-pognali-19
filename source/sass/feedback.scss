@@ -98,6 +98,11 @@
   &:hover::placeholder {
     color: rgba(68, 68, 68, 0.5);
   }
+
+  &:invalid {
+    background-color: #ffefef;
+    color: #ff0000;
+  }
 }
 
 .feedback__btn {
