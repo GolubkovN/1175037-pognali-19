@@ -32,15 +32,17 @@ document.addEventListener("DOMContentLoaded", function() {
   var modalOpen = document.querySelector(".rates__link");
   var modal = document.querySelector(".modal");
   var modalClose = document.querySelector(".modal__close");
-  modalOpen.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    modal.classList.add("modal--show");
-  });
-  modalClose.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    modal.classList.remove("modal--show");
-  });
 
+  if ( modal !== null ) {
+    modalOpen.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      modal.classList.add("modal--show");
+    });
+    modalClose.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      modal.classList.remove("modal--show");
+    });
+  }
 });
 
 function initMap() {
@@ -63,14 +65,25 @@ function initMap() {
   });
 }
 
+var select = document.querySelector(".steps__select-btn--choose");
+var minAlphabet = document.querySelector(".steps__alphabet-wrapper");
 
-var filter = function () {
+if ( select !== null ) {
+  select.addEventListener("click", function(){
+    select.classList.toggle("steps__select-btn--blue");
+    minAlphabet.classList.toggle("is-show");
+  })
+}
+
+
+var filter = function () {}
   var filterToggle = document.querySelector(".countries-filter__toggle");
   var countriesFilter = document.querySelector(".countries-filter");
   var filterCollapse = document.querySelector(".countries-filter__collapse");
 
-
+  if ( countriesFilter !== null ) {
   countriesFilter.classList.remove("countries-filter--nojs");
+
 
   filterToggle.addEventListener("click", function () {
     if(countriesFilter.classList.contains("countries-filter--closed")) {
@@ -87,7 +100,6 @@ var filter = function () {
     countriesFilter.classList.add("countries-filter--closed");
   });
 }
-filter();
 
 
 var alphabet = function () {
@@ -120,5 +132,3 @@ var alphabet = function () {
   }
 };
 alphabet();
-
-
