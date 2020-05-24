@@ -8,10 +8,15 @@
   <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-  <header class="header header--closed header--nojs">
+  <header class="header header--nojs header--closed">
     <div class="header__inner">
       <div class="header__top">
         <a href="./index.html" class="header__logo">
+          <picture>
+            <source media="(min-width: 768px)" srcset="./img/logo-desktop-blue@1x.png 1x, img/logo-desktop-blue@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="./img/logo-tablet-blue@1x.png 1x, img/logo-tablet-blue@2x.png 2x">
+            <img src="./img/logo-mobile-blue@1x.png" srcset="./img/logo-mobile-blue@2x.png 2x" width="100" height="19" alt="логотип сервиса Погнали" class="header__logo-pic header__logo-pic--blue">
+          </picture>
           <picture>
             <source media="(min-width: 768px)" srcset="./img/logo-desktop-white@1x.png 1x, img/logo-desktop-white@2x.png 2x">
             <source media="(min-width: 768px)" srcset="./img/logo-tablet-white@1x.png 1x, img/logo-tablet-white@2x.png 2x">
@@ -65,7 +70,7 @@
             </li>
             <li class="main-nav__item contacts__item">
               <a href="tel:88005558628" class="contacts__link">
-                <div class="contacts__icon-wrapper contacts__icon-wrapper---orange">
+                <div class="contacts__icon-wrapper">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" class="contacts__icon">
                     <path d="M18 0C11.6 0 5.2 1.1 2.8 3.4.9 5.3.2 8.7 0 10.8v.3c0 .8.7 1.5 1.5 1.5.1 0 3.7-.3 5.9-.5h.2c.8 0 1.5-.7 1.5-1.5v-3C9 6.7 9.7 6 10.7 6h14.7c.8 0 1.6.7 1.6 1.7v3c0 .8.7 1.5 1.5 1.5h.2c2.2.2 5.8.5 5.9.5.8 0 1.5-.7 1.5-1.5v-.3c-.2-2.1-.9-5.5-2.8-7.4C30.8 1.1 24.4 0 18 0zm0 19.5c-1.7 0-3 1.3-3 3s1.3 3 3 3 3-1.3 3-3-1.3-3-3-3zm-2.3-6.8v-1.9c0-1-.8-1.9-1.9-1.9s-1.8.9-1.8 2v1.9L1.9 23.6c-.7.7-1.1 1.6-1.1 2.7v3c0 1.7 1.3 3 3 3h.8v1.9c0 1 .8 1.9 1.9 1.9s1.9-.8 1.9-1.9v-1.9h19.5v1.9a1.9 1.9 0 103.8 0v-1.9h.8c1.7 0 3-1.3 3-3v-3c0-1.1-.4-2-1.1-2.7L24 12.7v-1.9c0-1-.8-1.9-1.9-1.9s-1.9.8-1.9 1.9v1.9h-4.5zm2.3 3.8c3.3 0 6 2.7 6 6s-2.7 6-6 6-6-2.7-6-6 2.7-6 6-6z"/>
                   </svg>
@@ -75,7 +80,7 @@
             </li>
             <li class="main-nav__item contacts__item">
               <a href="mailto:mail@htmlacademy.ru" class="contacts__link">
-                <div class="contacts__icon-wrapper contacts__icon-wrapper--yellow">
+                <div class="contacts__icon-wrapper">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 26" class="contacts__icon">
                     <path d="M0 23a3 3 0 003 3h30c1.7 0 3-1.3 3-3V3a3 3 0 00-3-3H3C1.3 0 0 1.3 0 3v20zm11-10L4.2 6.2c-.6-.6-.6-1.5 0-2 .6-.6 1.5-.6 2.1 0l11 10.9c.4.4 1.2.4 1.6 0l11-10.9c.6-.6 1.5-.6 2.1 0 .6.6.6 1.5 0 2L25 13l6.9 6.8c.6.6.6 1.5 0 2-.6.6-1.5.6-2.1 0L22.9 15s-2.1 2.2-2.5 2.5c-.6.6-1.4 1-2.4 1-.9 0-1.8-.4-2.4-1L13.1 15l-6.9 6.8c-.6.6-1.5.6-2.1 0-.6-.6-.6-1.5 0-2L11 13z"/>
                   </svg>
@@ -1359,7 +1364,11 @@
               </li><!--/.countries-filter__tab-->
             </ul><!--/.countries-filter__tabs-->
           </div><!--/.countries-filter__alphabetWrap-->
-          <button class="countries-filter__collapse button" type="button">Свернуть</button>
+          <button class="countries-filter__collapse button" type="button">
+            <span>
+              Свернуть
+            </span>
+          </button>
         </div><!--/.countries-filter__review-->
       </div><!--/.countries-filter__wrapper-->
     </div><!--/.countries-filter-->
@@ -1547,9 +1556,8 @@
                 <div class="travelnmates__info-block">
                   <a href="#" class="travelmates__name">Таня Фирсова</a>
                   <div class="travelmates__status">
-                    <button class="travelmates__heart">
-                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 11" width="13" heigth="11"
-                        class="travelmates__heart-icon travelmates__heart-icon--active">
+                    <button class="travelmates__heart travelmates__heart--active">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 11" width="13" heigth="11" class="travelmates__heart-icon">
                         <path d="M12 1a3.32 3.32 0 00-4.7 0l-.8.7-.8-.7A3.32 3.32 0 001 1a3.2 3.2 0 000 4.6l.8.8L6.5 11l4.7-4.6.8-.8A3.2 3.2 0 0012 1z" />
                       </svg>
                     </button>
@@ -1663,8 +1671,7 @@
                   <a href="#" class="travelmates__name">Петя Демин</a>
                   <div class="travelmates__status">
                     <button class="travelmates__heart">
-                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 18" width="13" heigth="11"
-                        class="travelmates__heart-icon">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 18" width="13" heigth="11" class="travelmates__heart-icon">
                         <path
                           d="M18.5 1.5c-2-2-5.3-2-7.3 0L10 2.7 8.8 1.5c-2-2-5.3-2-7.3 0s-2 5.2 0 7.2l1.2 1.2L10 17l7.3-7.2 1.2-1.2c2-1.9 2-5.1 0-7.1zm-3.6 8.3L10 14.6 5.1 9.8 2.7 7.5a3.44 3.44 0 010-4.8c1.3-1.3 3.5-1.3 4.9 0L10 5.1l2.4-2.4c1.3-1.3 3.5-1.3 4.9 0 1.3 1.3 1.3 3.5 0 4.8l-2.4 2.3z" />
                       </svg>

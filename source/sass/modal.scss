@@ -13,8 +13,7 @@
 }
 
 .modal__content {
-  margin: 0 auto;
-  margin-top: 30px;
+  margin-top: 100px;
   max-width: 750px;
   height: 1px;
   min-height: 443px;
@@ -37,7 +36,7 @@
 .modal__list {
   @include list;
   padding: 0 25px;
-  margin-bottom: 30px;
+  margin-bottom: 44px;
 }
 
 .modal__item {
@@ -83,8 +82,8 @@
   }
 
   .modal__content {
+    margin-top: 200px;
     padding-top: 52px;
-    margin-top: 50px;
   }
 
   .modal__title {

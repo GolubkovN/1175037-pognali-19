@@ -72,6 +72,11 @@
     &--active {
       background-color: #ffd74b;
     }
+
+    &:hover,
+    &:focus {
+      opacity: 0.6;
+    }
   }
 
   .pagination__arrows {
@@ -85,5 +90,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    &:focus,
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 }

@@ -59,17 +59,35 @@
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background-color: #f9eaea;
+  background-color: #edeff6;
   border: none;
   margin-right: 5px;
+
+  &--active .travelmates__heart-icon {
+    fill: #f02323;
+  }
+
+  &:focus,
+  &:hover {
+    background-color: #e2e5f2;
+  }
+
+  &:active .travelmates__heart-icon {
+    opacity: 0.3;
+  }
+
+  &--active {
+    background-color: #f9eaea;
+
+    &:focus,
+    &:hover {
+      background-color: #f9d8d8;
+    }
+  }
 }
 
 .travelmates__heart-icon {
   fill: #adb1c0;
-
-  &--active {
-    fill: #f02323;
-  }
 }
 
 .travelmates__followers {
@@ -336,6 +354,15 @@
     background: url("../img/show-more-plus.svg") center center / contain no-repeat;
     margin-right: 15px;
   }
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 /* Tablet */
@@ -404,6 +431,15 @@
 
     &--rogovaya::before {
       left: 230px;
+    }
+
+    &:hover,
+    &:focus {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
     }
   }
 

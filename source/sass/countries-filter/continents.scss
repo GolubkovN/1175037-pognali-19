@@ -7,6 +7,11 @@
   &--active {
     color: #192144;
   }
+
+  &:hover,
+  &:focus {
+    color: rgba(25, 33, 68, 0.6);
+  }
 }
 
 /* tablet */
