@@ -45,6 +45,11 @@
   text-transform: uppercase;
   letter-spacing: 2px;
   margin-bottom: 25px;
+
+  &:hover,
+  &:focus {
+    background-color: #d1d7e9;
+  }
 }
 
 .profile__tags {
@@ -195,11 +200,6 @@
     border-radius: 0 0 10px 10px;
     font-size: 20px;
     outline: none;
-
-    &:hover,
-    &:focus {
-      background-color: #d1d7e9;
-    }
   }
 
   .profile__level {
