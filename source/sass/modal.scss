@@ -9,11 +9,14 @@
 }
 
 .modal--show {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .modal__content {
   margin-top: 100px;
+  min-width: 270px;
   max-width: 750px;
   height: 1px;
   min-height: 443px;
