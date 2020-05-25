@@ -51,7 +51,7 @@ gulp.task("images", function() {
 });
 
 gulp.task("webp", function() {
-  let src = "source/img/**/*.{jpg,png}";
+  let src = "source/img/**/*.png";
   let dest = "source/img";
 
   return gulp.src(src)
