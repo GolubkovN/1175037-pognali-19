@@ -1,7 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
   console.log("DOM fully loaded and parsed");
 
-
   var header = document.querySelector(".header");
   var toggleNav = document.querySelector(".header__toggle");
 
