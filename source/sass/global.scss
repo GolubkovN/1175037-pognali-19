@@ -23,6 +23,12 @@ a {
 
 img {
   max-width: 100%;
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+img[data-src] {
+  opacity: 0;
 }
 
 .visually-hidden {

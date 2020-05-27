@@ -2,6 +2,15 @@
   font: inherit;
   line-height: 1.38;
   color: #444444;
+
+  &:hover,
+  &:focus {
+    color: #1d2e5b;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 /* tablet */
