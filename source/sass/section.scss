@@ -204,10 +204,7 @@
 }
 
 .section__rates {
-  @include list;
   width: 100%;
-  padding-right: 30px;
-  margin-bottom: 35px;
 }
 
 .section__address {
@@ -331,8 +328,6 @@
   }
 
   .section__rates {
-    padding-left: 90px;
-    padding-right: 60px;
     position: relative;
     z-index: 2;
   }
@@ -430,13 +425,6 @@
   .section__travelers {
     margin: 0;
     width: 630px;
-  }
-
-  .section__rates {
-    margin: 0;
-    margin-bottom: 30px;
-    padding-left: 165px;
-    padding-right: 270px;
   }
 
   .section__address {

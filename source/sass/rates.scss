@@ -1,3 +1,9 @@
+.rates__list {
+  @include list;
+  padding-right: 30px;
+  margin-bottom: 35px;
+}
+
 .rates__item {
   height: 1px;
   min-height: 65px;
@@ -61,6 +67,11 @@
 /* Tablet */
 
 @media (min-width: 768px) {
+  .rates__list {
+    padding-left: 90px;
+    padding-right: 60px;
+  }
+
   .rates__item {
     font-size: 28px;
 
@@ -123,6 +134,13 @@
 /*Desktop */
 
 @media (min-width: 1440px) {
+  .rates__list {
+    margin: 0;
+    margin-bottom: 30px;
+    padding-left: 165px;
+    padding-right: 270px;
+  }
+
   .rates__link {
     padding: 0 74px;
   }

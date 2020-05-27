@@ -54,7 +54,7 @@
   border-radius: 0 0 10px 10px;
 }
 
-.travalers__desc-list {
+.travelers__desc-list {
   @include list;
   display: flex;
   justify-content: center;
@@ -63,7 +63,7 @@
   margin-bottom: 15px;
 }
 
-.travalers__desc-item {
+.travelers__desc-item {
   width: 35px;
   height: 24px;
   position: relative;
@@ -239,7 +239,7 @@
     border-radius: 0 0 20px 20px;
   }
 
-  .travalers__desc-list {
+  .travelers__desc-list {
     margin-bottom: 20px;
   }
 

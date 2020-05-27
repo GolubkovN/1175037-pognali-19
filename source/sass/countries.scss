@@ -148,8 +148,18 @@
     }
   }
 
+  .coountries__text {
+    font-size: 20px;
+  }
+
   .countries__users {
     position: static;
+    font-size: 20px;
+
+    &::before {
+      width: 21px;
+      height: 20px;
+    }
   }
 }
 

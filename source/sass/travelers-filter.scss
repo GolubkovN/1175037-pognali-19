@@ -65,6 +65,11 @@
   &:checked ~ .travelers-filter__customize::before {
     opacity: 1;
   }
+
+  &:focus + .travelers-filter__customize {
+    outline: thin dotted;
+    outline-width: 5px auto;
+  }
 }
 
 .travelers-filter__check-label {
