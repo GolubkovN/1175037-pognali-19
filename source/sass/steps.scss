@@ -281,6 +281,11 @@
   align-items: center;
   justify-content: space-between;
 
+  &:hover,
+  &:focus {
+    border-color: #959bb2;
+  }
+
   &::after {
     content: "";
     width: 12px;
