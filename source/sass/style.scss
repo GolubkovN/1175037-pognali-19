@@ -5,44 +5,44 @@
 @import "../sass/global.scss";
 @import "../sass/mixins.scss";
 @import "../sass/variables.scss";
-@import "../sass/button.scss";
-@import "../sass/address.scss";
-@import "../sass/container.scss";
-@import "../sass/header.scss";
-@import "../sass/main-navigation/main-nav.scss";
-@import "../sass/main-navigation/site-list.scss";
-@import "../sass/main-navigation/contacts.scss";
-@import "../sass/main-navigation/social-list.scss";
-@import "../sass/intro/intro.scss";
-@import "../sass/intro/features.scss";
-@import "../sass/section.scss";
-@import "../sass/countries.scss";
-@import "../sass/travelers.scss";
-@import "../sass/progressbar.scss";
-@import "../sass/rates.scss";
-@import "../sass/feedback.scss";
-@import "../sass/map.scss";
-@import "../sass/footer/footer.scss";
-@import "../sass/footer/socials.scss";
-@import "../sass/footer/copyright.scss";
-@import "../sass/modal.scss";
+@import "../sass/blocks/button.scss";
+@import "../sass/blocks/address.scss";
+@import "../sass/blocks/container.scss";
+@import "../sass/blocks/header.scss";
+@import "../sass/blocks/main-nav.scss";
+@import "../sass/blocks/site-list.scss";
+@import "../sass/blocks/contacts.scss";
+@import "../sass/blocks//social-list.scss";
+@import "../sass/blocks/intro.scss";
+@import "../sass/blocks/features.scss";
+@import "../sass/blocks/section.scss";
+@import "../sass/blocks/countries.scss";
+@import "../sass/blocks/travelers.scss";
+@import "../sass/blocks/progressbar.scss";
+@import "../sass/blocks/rates.scss";
+@import "../sass/blocks/feedback.scss";
+@import "../sass/blocks/map.scss";
+@import "../sass/blocks/footer.scss";
+@import "../sass/blocks/socials.scss";
+@import "../sass/blocks/copyright.scss";
+@import "../sass/blocks/modal.scss";
 
 /********************* index.html end **********************/
 /********************  directions.html ********************/
 
-@import "../sass/main.scss";
-@import "../sass/profile/profile.scss";
-@import "../sass/plans.scss";
-@import "../sass/steps.scss";
-@import "../sass/calendar.scss";
-@import "../sass/check-transport.scss";
+@import "../sass/blocks/main.scss";
+@import "../sass/blocks/profile.scss";
+@import "../sass/blocks/plans.scss";
+@import "../sass/blocks/steps.scss";
+@import "../sass/blocks/calendar.scss";
+@import "../sass/blocks/check-transport.scss";
 
 /********************* directions.html end**************/
 
-@import "../sass/countries-filter/countries-filter.scss";
-@import "../sass/countries-filter/continents.scss";
-@import "../sass/countries-filter/alphabet.scss";
-@import "../sass/countries-filter/regions.scss";
-@import "../sass/travelers-filter.scss";
-@import "../sass/travelmates.scss";
-@import "../sass/pagination.scss";
+@import "../sass/blocks/countries-filter.scss";
+@import "../sass/blocks/continents.scss";
+@import "../sass/blocks/alphabet.scss";
+@import "../sass/blocks/regions.scss";
+@import "../sass/blocks/travelers-filter.scss";
+@import "../sass/blocks/travelmates.scss";
+@import "../sass/blocks/pagination.scss";
